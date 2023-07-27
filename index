@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>MALICE MIZER Info</title>
+		<meta name="description" content="Library for the 90's Japanese visual kei band, MALICE MIZER">
+		
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<!--------------------------- for BS accordion --------------------------->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>		
+		<!--------------------------- for BS accordion --------------------------->
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		
+		<style>
+			.accordion1,
+			.accordion2	{
+				padding: 0 10%;
+			}
+		
+			.accordion-button {
+				background-color: #671316;
+				font-size: 24px;
+				color: white;
+			}		
+
+			.accordion-button:not(.collapsed) {
+				background-color: #48090c;
+				color: white;
+			}
+			
+			.accordion-button::after {
+				background-image: url(white-arrow.png);
+			}
+			
+			.accordion-button:not(.collapsed)::after {
+				background-image: url(white-arrow.png);
+			}
+					
+			.accordion-button:focus {
+				z-index: 3;
+				outline: 0;
+				box-shadow: none;
+			}
+			
+			.accordion-body {
+				background-color: #121212;
+				font-size: 18px;
+                color: white;
+			}
+			
+			@media (max-width: 768px) {
+				.accordion1,
+				.accordion2	{
+					padding: 0 5%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+	
+		<!-- responsive nav-bar starts -->
+		<div class="topnav" id="myTopnav">
+			<a href="/">MALICE MIZER Info</a>
+			<a href="#about">About</a>
+			<a href="#members">Members</a>
+			<a href="#releases">Releases</a>
+			<a href="#biography">Biography</a>
+			<a href="/links">Links</a>
+
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+		</script>
+		<!-- responsive nav-bar ends -->
+
+		<main style="padding-bottom:40px;">
+			
+			<section id="about">
+				<section-text>
+					<p class="size36" style="text-align: center">"What is human?"<br>
+					<span class="size28">"Nothing but a being of malice and misery."</span></p>
+					<p>After the disbandment of Matenrou (摩天楼), Mana and Közi formed a new band together, naming it MALICE MIZER, which was taken from their answer to the question "What is human? Nothing but a being of malice and misery."</p>
+					
+					<p>Inspired by classical music and Italian horror soundtracks, the pair sought to create a twin guitar sound and recruited vocalist Tetsu, bassist Yu〜ki, and drummer Gaz to complete their line-up.</p>
+
+					<p>Throughout the band's nine-year history, they went through line-up, musical, and visual changes. With vocalist Tetsu, they had a baroque sound that evolved into French pop and became renowned for their extravagant theatrics after Gackt joined the band. Their sound evolved into gothic after Gackt's departure and Kami's subsequent death, and they continued with Klaha as their third and final vocalist until their indefinite hiatus.</p>
+				</section-text>				
+			</section>
+
+
+			
+			
+			<div id="members">
+				<h2 class="title">Tous les membres</h2>
+				<div class="member-flip-grid-container">
+					<div class="grid-card">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="mana-profile.webp" alt="Mana profile" width="20.7vw">
+								</div>
+								<div class="flip-card-back mana-signature">
+									<p class="member-name">Mana</p>
+									<p class="position-years">Guitar & Synthesizer<br>
+									<sup>1992.08—2001.12</sup></p>
+									<p>Birthday: 03.19<br>
+									Birthplace: Hiroshima<br>
+									Blood type: O<br>
+									Height: 173cm<br>
+									Shoe size: 24.5〜25.0cm</p>
+									<a href="https://twitter.com/m_d_m_official" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a> <a href="http://www.mana-sama.com/" target="_blank" aria-label="Personal Site"><i class="fa-solid fa-house" ></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="grid-card">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="Kozi-profile.webp" alt="Közi profile" width="20.7vw">
+								</div>
+								<div class="flip-card-back közi-signature">
+									<p class="member-name">Közi</p>
+									<p class="position-years">Guitar & Synthesizer<br>
+									<sup>1992.08—2001.12</sup></p>
+									<p>Birthdate: 1972.05.29<br>
+									Birthplace: Niigata<br>
+									Blood type: A<br>
+									Height: 175cm<br>
+									Shoe size: 26cm</p>
+									<a href="https://twitter.com/Kzi_official" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a> <a href="http://www.kozi-info.com/" target="_blank" aria-label="Personal Site"><i class="fa-solid fa-house" ></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="grid-card">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="Yuki-profile.webp" alt="Yu〜ki profile" width="20.7vw">
+								</div>
+								<div class="flip-card-back yuki-signature">
+									<p class="member-name">Yu〜ki</p> 
+									<p class="position-years">Bass<br>
+									<sup>1992.08—2001.12</sup></p>
+									<p>Birthdate: 1972.08.08<br>
+									Birthplace: Fukuoka<br>
+									Blood type: A<br>
+									Height: 176cm<br>
+									Shoe size: 26cm</p>
+									<a href="https://twitter.com/mother_of_life_" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a> <a href="https://www.instagram.com/The_world_of_silence_2022/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a> <a href="https://abstract2022.handcrafted.jp/" target="_blank" aria-label="Base Web-Shop"><i class="fa-solid fa-cart-shopping"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="grid-card">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="Tetsu-profile.webp" alt="Tetsu profile" width="20.7vw">
+								</div>
+								<div class="flip-card-back tetsu-signature ">
+									<p class="member-name">Tetsu<br>
+									<sup>高野哲 (Tetsu Takano)</sup></p> 
+									<p class="position-years">Vocals<br>
+									<sup>1992.08—1994.12.27</sup></p>
+									<p>Birthdate: 1972.12.12<br>
+									Birthplace: Tokyo<br>
+									Blood type: B<br>
+									Height: 171cm</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="grid-card">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="Gaz-profile.webp" alt="Gaz profile" width="20.7vw">
+								</div>
+								<div class="flip-card-back">
+									<p class="member-name">Gaz†</p> 
+									<p class="position-years">Drums<br>
+									<sup>1992.08—1993.03.15</sup></p>
+									<p>Birthdate: 1972.02.01<br>
+									Death date: 2017.12.22<br>
+									Birthplace: Gunma<br>
+									Blood type: O</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="grid-card">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="Kami-profile.webp" alt="Kami profile" width="20.7vw">
+								</div>
+								<div class="flip-card-back">
+									<p class="member-name">Kami†<br>
+									<sup>神村 右京 (Ukyou Kamimura)</sup></p> 
+									<p class="position-years">Drums<br>
+									<sup>1993.03.17—1999.06.21</sup></p>
+									<p>Birthdate: 1972.02.01<br>
+									Death date: 1999.06.21<br>
+									Birthplace: Ibaraki<br>
+									Blood type: A<br>
+									Height: 177cm<br>
+									Shoe size: 25cm</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="grid-card">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="Gackt-profile.webp" alt="Gackt profile" width="20.7vw">
+								</div>
+								<div class="flip-card-back gackt-signature">
+									<p class="member-name">Camui Gackt<br>
+									<sup>大城 ガクト (Gakuto Oshiro)</sup></p> 
+									<p class="position-years">Vocals & Piano<br>
+									<sup>1995.10.10—1999.01.01</sup></p>
+									<p>Birthdate: 1973.07.04<br>
+									Birthplace: Okinawa<br>
+									Blood type: A<br>
+									Height: 178cm<br>
+									Shoe size: 26cm</p>
+									<a href="https://gackt.com/" target="_blank" aria-label="Personal Site"><i class="fa-solid fa-house"></i></a> <a href="https://twitter.com/gackt" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a> <a href="https://www.instagram.com/gackt/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="grid-card">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="Klaha-profile.webp" alt="Klaha profile" width="20.7vw">
+								</div>
+								<div class="flip-card-back klaha-signature">
+									<p class="member-name">Klaha<br>
+									<sup>春名 真樹 (Masaki Haruna)</sup></p> 
+									<p class="position-years">Vocals<br>
+									<sup>2000.08.31—2001.12</sup></p>
+									<p>Birthdate: 1970.05.03<br>
+									Birthplace: Osaka<br>
+									Blood type: B<br>
+									Height: 176cm</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>			
+			</div>
+			
+			
+			
+			
+			<div id="releases">
+				<h2 class="title">Sorties</h2>
+				<!-- tabs source: https://codepen.io/alvarotrigo/pen/ZEXdwqv -->
+				<div class="warpper">
+					<input class="radio" id="one" name="group" type="radio" checked>
+					<input class="radio" id="two" name="group" type="radio">
+					<input class="radio" id="three" name="group" type="radio">
+					<input class="radio" id="four" name="group" type="radio">
+					<input class="radio" id="five" name="group" type="radio">
+
+					<div class="tabs">
+						<label class="tab" id="single" for="one">SINGLE</label>
+						<label class="tab" id="album" for="two">ALBUM</label>
+						<label class="tab" id="video" for="three">VIDEO</label>
+						<label class="tab" id="publication" for="four">PUBLICATION</label>
+						<label class="tab" id="other" for="five">OTHER</label>
+					</div>
+
+					<div class="release-panels">
+						<div class="release-panel" id="single">
+							<div class="grid-container">
+								<div class="grid-item">							
+									<a href="/garnet"><div class="grid-item-content garnet"></div></a>
+								</div>
+								<div class="grid-item">		
+									<a href="/mayonaka"><div class="grid-item-content mayonaka"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/beast-of-blood"><div class="grid-item-content beast"></div></a>
+								</div> 
+								<div class="grid-item">							
+									<a href="/gardenia"><div class="grid-item-content gardenia-r"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/gardenia"><div class="grid-item-content gardenia-l"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/shiroi"><div class="grid-item-content shiroi"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/kyomu"><div class="grid-item-content kyomu"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/saikai"><div class="grid-item-content saikai-cd"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/saikai"><div class="grid-item-content saikai-vinyl"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/le-ciel"><div class="grid-item-content le-ciel"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/illuminati"><div class="grid-item-content ILLUMINATI"></div></a>
+								</div>						
+								<div class="grid-item">							
+									<a href="/gekka"><div class="grid-item-content gekka"></div></a>
+								</div>						
+								<div class="grid-item">							
+									<a href="/au-revoir"><div class="grid-item-content au-revoir"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/bel-air"><div class="grid-item-content bel-air"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/ma-cherie"><div class="grid-item-content ma-cherie"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/uruwashiki"><div class="grid-item-content uruwashiki"></div></a>
+								</div>
+							</div>
+						</div>
+						<div class="release-panel" id="album">
+							<div class="grid-container">
+								<div class="grid-item">							
+									<a href="/la-meilleur"><div class="grid-item-content meilleur"></div></a>
+								</div>
+								<div class="grid-item">				
+									<a href="/singles"><div class="grid-item-content collection-des-singles"></div></a>
+								</div>
+								<div class="grid-item">				
+									<a href="/bara-no-seidou"><div class="grid-item-content seidou-regular"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/bara-no-seidou"><div class="grid-item-content seidou-limited"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/merveilles"><div class="grid-item-content merveilles-regular"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/merveilles"><div class="grid-item-content merveilles-limited "></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/voyage"><div class="grid-item-content voyage-regular"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/voyage"><div class="grid-item-content voyage-limited"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/memoire"><div class="grid-item-content memoire-DX"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/memoire"><div class="grid-item-content memoire"></div></a>
+								</div>						
+							</div>
+						</div>
+						<div class="release-panel" id="video">
+							<div class="grid-container">
+								<div class="grid-item">							
+									<a href="/dsvi"><div class="grid-item-content deep-sanctuary"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/performances"><div class="grid-item-content selection-de-performances"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/cinq-parallele-dvd"><div class="grid-item-content cinq-parallele～dvd"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/merveilles-lespace-dvd"><div class="grid-item-content lespace-dvd"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/bara-no-konrei"><div class="grid-item-content konrei-dvd"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/bara-no-konrei"><div class="grid-item-content konrei-vhs"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/cardinal"><div class="grid-item-content cardinal-dvd"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/cardinal"><div class="grid-item-content cardinal-vhs"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/societe"><div class="grid-item-content société-de-parenté-vhs"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/bara-no-denshou"><div class="grid-item-content denshou-dvd"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/bara-no-denshou"><div class="grid-item-content denshou-vhs"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/beast-of-blood-de-limage"><div class="grid-item-content beast-dvd"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/beast-of-blood-de-limage"><div class="grid-item-content beast-vhs"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/derniere-dvd"><div class="grid-item-content kiseki-dvd"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/bara-no-kiseki"><div class="grid-item-content kiseki-vhs"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/derniere-dvd"><div class="grid-item-content san-retour-dvd"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/bara-no-irodorareta"><div class="grid-item-content irodorareta-dvd"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/bara-no-irodorareta"><div class="grid-item-content irodorareta-vhs"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/kyomu-vhs"><div class="grid-item-content kyomu-vhs"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/saikai-vhs"><div class="grid-item-content saikai-vhs"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/merveilles-lespace-vhs"><div class="grid-item-content lespace-vhs"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/cinq-parallele-vhs"><div class="grid-item-content cinq-parallele～vhs"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/bel-air-vhs"><div class="grid-item-content bel-air-vhs"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/derniere-vhs"><div class="grid-item-content san-retour-vhs"></div></a>
+								</div>						
+							</div>
+						</div>
+						<div class="release-panel" id="publication">
+							<div class="grid-container">
+								<div class="grid-item">							
+									<a href="/bara-no-higeki"><div class="grid-item-content higeki"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/kousai-rikurihen"><div class="grid-item-content kousai-rikurihen"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/cathedrale"><div class="grid-item-content cathédrale"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/bara-no-rinbu"><div class="grid-item-content rinbu"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/livre-rose-blanche"><div class="grid-item-content livre"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/hyaku-hanahen"><div class="grid-item-content hyaku-hanahen"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/tenchi-meidouhen"><div class="grid-item-content tenchi-meidouhen"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/uv-special"><div class="grid-item-content uv"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/retour"><div class="grid-item-content retour"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/band-score"><div class="grid-item-content band-score"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/itanjinmon.html"><div class="grid-item-content itanjinmon"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/tanbi.html"><div class="grid-item-content tanbi"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/a-deux-dimension"><div class="grid-item-content merveilles"></div></a>
+								</div>					
+							</div>
+						</div>
+						<div class="release-panel" id="other">
+							<h2>Box Set</h2>
+							<div class="grid-container">						
+								<div class="grid-item">							
+									<a href="/merveilles-collection"><div class="grid-item-content merveilles-box-set"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/singles-collection"><div class="grid-item-content singles-box-set"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/shinwa"><div class="grid-item-content kami-box-set"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/bel-air-box-set"><div class="grid-item-content bel-air-box-set"></div></a>
+								</div>						
+							</div>
+							<h2>Demo Tape</h2>
+							<div class="grid-container">						
+								<div class="grid-item">							
+									<a href="/"><div class="grid-item-content anniversary"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/"><div class="grid-item-content sadness"></div></a>
+								</div>								
+								<div class="grid-item">							
+									<a href="/"><div class="grid-item-content sans-logique"></div></a>
+								</div>						
+							</div>
+							<h2>Compilation</h2>
+							<div class="grid-container">						
+								<div class="grid-item">							
+									<a href="/genten"><div class="grid-item-content genten"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/rock-nippon"><div class="grid-item-content rock-nippon"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/shock-wave"><div class="grid-item-content shock-wave"></div></a>
+								</div>
+								<div class="grid-item">							
+									<a href="/braintrash"><div class="grid-item-content braintrash"></div></a>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div lang="ja-jp" id="biography">
+				<h2 class="title">Biographie</h2>
+				<div class="accordion1" id="accordionActive" lang="ja-jp">
+					<p class="accordion-header" style="padding: 2%;">YEARS ACTIVE</p>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingOne">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=	"#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							1992
+							</button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionActive">
+							<div class="accordion-body">
+								<div class="biography-grid-container">
+									<div class="item1">08.??</div>
+									<div class="item2">MALICE MIZER was formed by guitarists Mana and Közi</div>			
+									<div class="item1">10.31</div>
+									<div class="item2">first live, "SANS LOGIQUE", held at Meguro Rockmaykan (目黒鹿鳴館)</div><div class="item1">11.16</div>
+									<div class="item2">live held at Ichikawa CLUB GIO (市川 CLUB GIO)</div>
+									<div class="item1">11.24</div>
+									<div class="item2">live held at Shinjuku LOFT (新宿 LOFT)</div>
+									<div class="item1">12.30</div>
+									<div class="item2">live held at Koenji lazy ways (高円寺 lazy ways)</div>
+									<div class="item1">12.31</div>
+									<div class="item2">live held at Yokohama MONSTER (横浜 MONSTER)</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingTwo">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							1993
+							</button>
+						</h2>
+						<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionActive">
+							<div class="accordion-body">
+								<div class="biography-grid-container">
+									<div class="item1">02.24</div>
+									<div class="item2">the omnibus album <i>BRAIN TRASH</i> was released and features the band’s song, “SPEED OF DESPERATE” as the third track</div>			
+									<div class="item1">03.15</div>
+									<div class="item2">live held at Yoyogi Chocolate City (代々木チョコレートシティ)</div>
+									<div class="item1"></div>
+									<div class="item2">drummer Gaz departed the band</div>
+									<div class="item1">03.17</div>
+									<div class="item2">drummer Kami joined the band</div>
+									<div class="item1"></div>
+									<div class="item2">live held at Yokohama Monster (横浜モンスタ)</div>
+									<div class="item1">04.05</div>
+									<div class="item2">live held at Namba Rockets (難波ロケッツ)</div>			
+									<div class="item1"></div>
+									<div class="item2">released first live demo tape <i>SADNESS</i></div>
+								</div>
+								<div class="biography-grid-container">										
+									<div class="item6">～Se・duc・tive TOUR～ (7 locations in total)</div> 
+									<div class="item3"></div> 
+									<div class="item4">08.09</div>
+									<div class="item5">Yokohama MONSTER (横浜 モンスタ)</div>			
+									<div class="item3"></div>  
+									<div class="item4">08.11</div>
+									<div class="item5">Osaka ROCKETS (大阪 ROCKETS)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.13</div>
+									<div class="item5">Nagoya MUSIC FARM (名古屋 MUSIC FARM)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.17</div>
+									<div class="item5">Ibaraki Lighthouse (茨城 ライトハウス)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.19</div>
+									<div class="item5">Niigata JUNK BOX (新潟 JUNK BOX)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.21</div>
+									<div class="item5">Nagano J (長野 J)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.27</div>
+									<div class="item5">Kawasaki CLUB CITTA (川崎 CLUB CITTA) TOUR FINAL</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingThree">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							1994
+							</button>
+						</h2>
+						<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionActive">
+							<div class="accordion-body">
+								<div class="biography-grid-container">
+									<div class="item1">01.22</div>
+									<div class="item2">Dai Niya Higeki no Bansan Vol.2 (第二夜 悲劇の晩餐 Vol.2／Second Night Tragedy Supper Vol.2) held at Shinjuku LOFT (新宿LOFT) and featured bands SIAM SHADE and BAISER</div>
+									<div class="item1">06.04</div>
+									<div class="item2">Dai Sanya Higeki no Bansan Vol.3 (第三夜 悲劇の晩餐 Vol.3／Third Night Tragedy Supper Vol.3) held at Shinjuku LOFT (新宿LOFT) and featured bands Vice†risk (ヴァイス リスク) and Blanche (ブランシュ)</div>
+									<div class="item1">07.24</div>
+									<div class="item2">under Mana’s new label, Midi:Nette, the band released their first album <i>memoire</i>; all 3,000 copies were sold out from pre-orders</div>			
+									<div class="item1">07.30</div>
+									<div class="item2">live held at Shinjuku LOFT (新宿 LOFT)</div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item6">Cher de memoire Tour 1994 (15 locations in total)</div> 
+									<div class="item3"></div>  
+									<div class="item4">08.03</div>
+									<div class="item5">Sapporo Mess Hall (メッセホール)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.05</div>
+									<div class="item5">Sendai Kimachi YAMAHA Hall (仙台 木町 YAMAHAホール)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.08</div>
+									<div class="item5">Nagoya MUSIC FARM (名古屋 MUSIC FARM)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.10</div>
+									<div class="item5">Osaka ROCKETS (大阪 ROCKETS)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.12</div>
+									<div class="item5">Okayama Pepperland (岡山 ペパーランド)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.13</div>
+									<div class="item5">Hiroshima Namiki Junction (広島 ナミキジャンクション)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.15</div>
+									<div class="item5">Oita TOP'S (大分 TOP'S)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.17</div>
+									<div class="item5">Hakata Be-1 (博多 Be-1)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.19</div>
+									<div class="item5">Kochi Caravan Sary (高知 キャラバンサライ)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.22</div>
+									<div class="item5">Meguro Rockmaykan (目黒鹿鳴館)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.24</div>
+									<div class="item5">Nagano J (長野 J)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.26</div>
+									<div class="item5">Niigata JUNK BOX (新潟 JUNK BOX)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.28</div>
+									<div class="item5">Ibaraki Lighthouse (茨城 ライトハウス)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.30</div>
+									<div class="item5">Maebashi Rattan (前橋 ラタン)</div>
+									<div class="item3"></div>  
+									<div class="item4">09.23</div>
+									<div class="item5">TOUR FINAL at Meguro Rockmaykan (目黒鹿鳴館) One-man SOLD OUT</div>
+								</div>		
+								<div class="biography-grid-container">
+									<div class="item1">10.23</div>
+									<div class="item2">2nd Anniversary live at Meguro Rockmaykan (目黒鹿鳴館) SOLD OUT</div>
+									<div class="item1">11.17</div>
+									<div class="item2">Dai Shiya Higeki no Bansan Vol.4 (第四夜　悲劇の晩餐 Vol.4／Fourth Night Tragedy Supper Vol.4) is held at Shinjuku LOFT (新宿LOFT)</div>
+									<div class="item1">12.04</div>
+									<div class="item2">2nd pressing of <i>memoire</i>, titled <i>memoire DX</i>, is released with an additional song</div>			
+								</div>
+								<div class="biography-grid-container">
+									<div class="item6">Cher de memoire II One-man Tour 1994 (7 locations in total)</div> 
+									<div class="item3"></div>  
+									<div class="item4">12.05</div>
+									<div class="item5">Nagoya MUSIC FARM (名古屋 MUSIC FARM)</div>
+									<div class="item3"></div>  
+									<div class="item4">12.07</div>
+									<div class="item5">Osaka ROCKETS (大阪 ROCKETS)</div>			
+									<div class="item3"></div>  
+									<div class="item4">12.10</div>
+									<div class="item5">Okayama Pepperland (岡山 ペパーランド)</div>
+									<div class="item3"></div>  
+									<div class="item4">12.12</div>
+									<div class="item5">Hakata Be-1 (博多 Be-1)</div>
+									<div class="item3"></div>  
+									<div class="item4">12.17</div>
+									<div class="item5">Sendai Birdland (仙台 バードランド)</div>
+									<div class="item3"></div>  
+									<div class="item4">12.19</div>
+									<div class="item5">Nagano J (長野 J)</div>
+									<div class="item3"></div>  
+									<div class="item4">12.21</div>
+									<div class="item5">Niigata O-DO "RISKY GAME" (新潟 O-DO “RISKY GAME”)</div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item1">12.27</div>
+									<div class="item2">live held at Meguro Rockmaykan (目黒鹿鳴館) SOLD OUT</div>
+									<div class="item1"></div>
+									<div class="item2">vocalist TETSU departed the band</div>
+								</div>						
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingFour">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+							1995
+							</button>
+						</h2>
+						<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionActive">
+							<div class="accordion-body">
+								<div class="biography-grid-container">
+									<div class="item1">09.22</div>
+									<div class="item2">Dai Goya Higeki no Bansan Vol.5 (第五夜 悲劇の晩餐 Vol.5／Fifth Night Tragedy Supper Vol.5) held at Shinjuku LOFT (新宿LOFT)</div>
+									<div class="item1">10.10</div>
+									<div class="item2">vocalist Gackt joined the band</div>
+									<div class="item1"></div>
+									<div class="item2">live held at Shibuya ON AIR WEST (渋谷ON AIR WEST) SOLD OUT</div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item6">Sans retour Voyage 1995 One-man tour (9 locations in total)</div>  
+									<div class="item3"></div>  
+									<div class="item4">11.01</div>
+									<div class="item5">Nagano J (長野 J)</div>
+									<div class="item3"></div>  
+									<div class="item4">11.03</div>
+									<div class="item5">Niigata O-DO (新潟 O-DO)</div>
+									<div class="item3"></div>  
+									<div class="item4">11.06</div>
+									<div class="item5">Sendai Ichibancho YAMAHA Hall (仙台 一番町YAMAHAホール)</div>
+									<div class="item3"></div>  
+									<div class="item4">11.12</div>
+									<div class="item5">Osaka ROCKETS (大阪　ROCKETS)</div>
+									<div class="item3"></div>  
+									<div class="item4">11.14</div>
+									<div class="item5">Hakata Be-1 (博多　Be-1)</div>
+									<div class="item3"></div>  
+									<div class="item4">11.16</div>
+									<div class="item5">Hiroshima BAD LANDS (広島 BAD LANDS)</div>
+									<div class="item3"></div>  
+									<div class="item4">11.18</div>
+									<div class="item5">Matsuyama Salon Kitty (松山 サロンキティ)</div>
+									<div class="item3"></div>  
+									<div class="item4">11.20</div>
+									<div class="item5">Kyoto Muse Hall (京都 ミューズホール)</div>
+									<div class="item3"></div>  
+									<div class="item4">11.22</div>
+									<div class="item5">Nagoya MUSIC FARM (名古屋 MUSIC FARM)</div>
+								</div>	
+								<div class="biography-grid-container">
+									<div class="item1">12.09</div>
+									<div class="item2">1st single release commemorative event at ALINNOS; visitors received autographed CDs and posters (NOT FOR SALE)</div>
+									<div class="item1">12.10</div>
+									<div class="item2">1st single release 麗しき仮面の招待状 (Uruwashiki Kamen no Shoutaijou／Invitation of the Beautiful Mask)</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingFive">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+							1996
+							</button>
+						</h2>
+						<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionActive">
+							<div class="accordion-body">
+								<div class="biography-grid-container">
+									<div class="item1">01.06</div>
+									<div class="item2">live held at Tokyo ON AIR WEST (東京 ON AIR WEST) SOLD OUT</div>			
+									<div class="item1">01.09</div>
+									<div class="item2">live held at Nagoya Heartland (名古屋 ハートランド)</div>
+									<div class="item1">01.11</div>
+									<div class="item2">live held at Osaka W'OHOL (大阪W'OHOL)</div>
+									<div class="item1">03.17</div>
+									<div class="item2">live held at Nagoya Diamond Hall (名古屋　ダイヤモンドホール) "SHOCK WAVE"</div>
+									<div class="item1">03.24</div>
+									<div class="item2">live held at Osaka W'OHOL (大阪W'OHOL)</div>			
+									<div class="item1">03.31</div>
+									<div class="item2">live held at Tokyo ON AIR WEST (東京　ON AIR WEST) SOLD OUT</div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item6">TOKYO 3DAYS IN CLUB HOUSE (3 locations in total)</div>
+									<div class="item3"></div>  
+									<div class="item4">05.03</div>
+									<div class="item5">Meguro Rockmaykan (目黒鹿鳴館) SOLD OUT</div>
+									<div class="item3"></div>  
+									<div class="item4">05.04</div>
+									<div class="item5">Shinjuku LOFT (新宿 LOFT) SOLD OUT</div>
+									<div class="item3"></div>  
+									<div class="item4">05.05</div>
+									<div class="item5">Ikebukuro CYBER (池袋 CYBER) SOLD OUT</div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item1">06.09</div>
+									<div class="item2">released 1st full album <i>Voyage 〜sans retour〜</i> in two types; limited to 5,000 copies, the limited edition sold out from pre-orders</div>
+									<div class="item1">06.1?</div>
+									<div class="item2">release autograph session at 帝都無線・自主盤倶楽部 (Teito musen jishubankurabu／Teito Radio Jishuban Club)</div>
+									<div class="item1">06.16</div>
+									<div class="item2">release autograph session at 仙台 スーパーレコード (Sendai Super Record)</div>
+									<div class="item1">06.23</div>
+									<div class="item2">Voyage 〜sans retour〜 release commemorative performance ON AIR WEST SOLD OUT</div>
+									<div class="item1">06.30</div>
+									<div class="item2">live held at Koriyama HIPSHOT JAPAN (郡山 ヒップショットジャパン)</div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item6">Sans retour Voyage deux 1996 One-man Tour (11 locations in total)</div>  
+									<div class="item3"></div>  
+									<div class="item4">07.20</div>
+									<div class="item5">Nagoya Heartland (古屋 ハートランド) SOLD OUT</div>
+									<div class="item3"></div>  
+									<div class="item4">07.22</div>
+									<div class="item5">Kyoto Muse Hall (京都 ミューズホール) SOLD OUT</div>
+									<div class="item3"></div>  
+									<div class="item4">07.24</div>
+									<div class="item5">Hiroshima Namiki Junction (広島 ナミキジャンクション)</div>
+									<div class="item3"></div>  
+									<div class="item4">07.26</div>
+									<div class="item5">Okayama Pepperland (岡山 ペパーランド)</div>
+									<div class="item3"></div>  
+									<div class="item4">07.29</div>
+									<div class="item5">Kumamoto Django (熊本 ジャンゴ)</div>
+									<div class="item3"></div>  
+									<div class="item4">07.31</div>
+									<div class="item5">Hakata Be-1 (博多 Be-1)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.06</div>
+									<div class="item5">Osaka W'OHOL (大阪 W'OHOL)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.11</div>
+									<div class="item5">Kawasaki Club Citta (川崎 CLUB CITTA)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.23</div>
+									<div class="item5">Nagano J (長野 J) SOLD OUT</div>
+									<div class="item3"></div>  
+									<div class="item4">08.25</div>
+									<div class="item5">Sendai MACANA (仙台 MACANA) SOLD OUT</div>
+									<div class="item3"></div>  
+									<div class="item4">08.28</div>
+									<div class="item5">Niigata O-DO (新潟 O-DO)</div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item1">10.10</div>
+									<div class="item2">released pre-order limited single <i>ma chérie 〜Itoshii Kimi e〜 (ma chérie ～愛しい君へ～／ma chérie 〜To You Dear〜)</i></div>
+									<div class="item1">10.1?</div>
+									<div class="item2">release commemorative talk & autograph session at Shinseido Asakusa ROX Multi-Coat (新星堂浅草 ROX マルチコート)</div>
+									<div class="item1">10.13</div>
+									<div class="item2">release commemorative talk & autograph session at Teito musen / Jishubankurabu (帝都無線・自主盤倶楽部／Teito Radio / Jishuban Club)</div>
+									<div class="item1">10.20</div>
+									<div class="item2">held a release commemorative talk & autograph session at Kyoto Beaver Records (京都ビーバーレコード)</div>
+									<div class="item1">10.26</div>
+									<div class="item2">held a release commemorative autograph session at Sendai Super Record (仙台スーパーレコード)</div>
+									<div class="item1">10.27</div>
+									<div class="item2">held a release commemorative talk & autograph session at Niigata Risky Drugstore (新潟リスキードラッグストア)</div>
+									<div class="item1">11.08</div>
+									<div class="item2">held session event "Comedy Supper Vol.1" SOLD OUT</div>
+									<div class="item1">11.09</div>
+									<div class="item2">held 1st fanclub event held at Ikebukuro CYBER (池袋CYBER)</div>
+									<div class="item1">11.17</div>
+									<div class="item2">performance at Mejiro gakuen joshitandai gakuen-sai (目白学園女子短大 学園祭／Mejiro Gakuen Women's Junior College School Festival) SOLD OUT</div>
+									<div class="item1">12.27</div>
+									<div class="item2">2nd fanclub event at ON AIR WEST</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingSix">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+							1997
+							</button>
+						</h2>
+						<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionActive">
+							<div class="accordion-body">
+								<div class="biography-grid-container">	
+									<div class="item1">01.10</div>
+									<div class="item2">live 〜 Sans retour Voyage “derniere” 〜 held at Nippon Seinenkan (日本青年館) SOLD OUT</div>
+									<div class="item1">02.23</div>
+									<div class="item2">held a fanclub event in Chichibu</div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item6">Sans retour Voyage “derniere”～ additional performances (2 locations)</div>  
+									<div class="item3"></div>  
+									<div class="item4">03.24</div>
+									<div class="item5">Osaka Mielparque Hall (大阪 メルパルクホール) SOLD OUT</div>
+									<div class="item3"></div>  
+									<div class="item4">04.01</div>
+									<div class="item5">Tokyo Shibuya Koukaidou (東京 渋谷公会堂／Shibuya Public Hall) SOLD OUT</div>
+								</div>
+								<div class="biography-grid-container">		
+									<div class="item1">04.02</div>
+									<div class="item2">held a guerrilla event to announce the band's major debut</div>
+									<div class="item1">06.30</div>
+									<div class="item2">fanclub event "C.E.D.P" held at Shibuya Club Asia (渋谷 クラブ エイジア))</div>
+									<div class="item1"></div>
+									<div class="item2">live held at Shibuya Koukaidou (渋谷公会堂／Shibuya Public Hall)</div>
+									<div class="item1"></div>
+									<div class="item2">digest version of the indie last performance on April 1st is released on VHS live video  titled <i>Sans retour Voyage" derniere "〜encoure une fois〜</i></div>
+									<div class="item1">07.??</div>
+									<div class="item2">MALICE MIZER signed with major record label NIPPON COLOMBIA</div>
+									<div class="item1">07.19</div>
+									<div class="item2">1st major release <i>Bel Air 〜Kuuhaku no Shunkan no Naka de〜 (ヴェル・エール～空白の瞬間の中で～)</i></div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item6">STANDING TOUR '97 Pays de merveilles 〜Kuuhaku no Shunkan no Naka de〜('97 Pays de merveilles ～空白の瞬間の中で～)</div>
+									<div class="item3"></div>
+									<div class="item4">07.20</div>
+									<div class="item5">Akasaka BLITZ (赤坂BLITZ)</div>
+									<div class="item3"></div>  
+									<div class="item4">07.21</div>
+									<div class="item5">Akasaka BLITZ (赤坂BLITZ)</div>
+									<div class="item3"></div>  
+									<div class="item4">07.25</div>
+									<div class="item5">Sendai MACANA (仙台MACANA)</div>
+									<div class="item3"></div>  
+									<div class="item4">07.26</div>
+									<div class="item5">Sendai MACANA (仙台MACANA)</div>
+									<div class="item3"></div>  
+									<div class="item4">07.28</div>
+									<div class="item5">Sapporo Penny Rain 24 (札幌 ペニーレイン24)</div>
+									<div class="item3"></div>  
+									<div class="item4">07.30</div>
+									<div class="item5">Niigata Phase (新潟 フェイズ)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.01</div>
+									<div class="item5">Kanazawa AZ (金沢 AZ)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.03</div>
+									<div class="item5">Kobe Chicken George (神戸 チキンジョージ)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.19 </div>
+									<div class="item5">Nagoya Diamond Hall (名古屋 ダイヤモンドホール)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.21</div>
+									<div class="item5">Kyoto Muse Hall (京都 ミューズホール)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.22</div>
+									<div class="item5">Osaka IMP Hall (大阪IMPホール)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.24</div>
+									<div class="item5">Hiroshima Namiki Junction (広島　ナミキジャンクション)</div>
+									<div class="item3"></div>  
+									<div class="item4">08.26</div>
+									<div class="item5">Fukuoka LOGOS (福岡LOGOS)</div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item1">08.06</div>
+									<div class="item2">released regular edition of <i>ヴェル・エール～空白の瞬間の中で～</i></div>
+									<div class="item1">09.03</div>
+									<div class="item2">released <i>ヴェル・エール ～空白の瞬間の中で～ de l'image</i> on VHS</div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item6">Two days at Hibiya Yagai Ongakudou (日比谷野外音楽堂／Hibiya Open Air Concert Hall)</div>
+									<div class="item3"></div>
+									<div class="item4">10.10</div>
+									<div class="item5">deuxieme anniversaire</div>
+									<div class="item3"></div>  
+									<div class="item4">10.11</div>
+									<div class="item5">pays de merveilles</div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item1">10.12</div>
+									<div class="item2">regular radio show MALICE MIZERの真夜中のシルヴプレ (MALICE MIZER no Mayonaka no s'il vous plaît) started on CBC Radio, airing on Sunday nights from 24:00 to 24:30 and starred Gackt, Közi, and Kami</div>
+									<div class="item1">12.03</div>
+									<div class="item2">released 2nd single <i>au revoir</i></div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item6">“Ville de merveilles 透明の螺旋” tour begins</div>
+									<div class="item3"></div>
+									<div class="item4">12.22</div>
+									<div class="item5">Aichi Kinrou Kaikan (愛知勤労会館) SOLD OUT</div>
+									<div class="item3"></div>
+									<div class="item4">12.24</div>
+									<div class="item5">Osaka Kousei Nenkin Kaikan (Ou) (大阪厚生年金会館（大）／Osaka Welfare Pension Hall (Large)) SOLD OUT</div>
+									<div class="item3"></div>  
+									<div class="item4">12.28</div>
+									<div class="item5">Shibuya Koukaidou (渋谷公会堂／Shibuya Public Hall) SOLD OUT</div>
+									<div class="item3"></div>  
+									<div class="item4">12.29</div>
+									<div class="item5">Shibuya Koukaidou (渋谷公会堂／Shibuya Public Hall) SOLD OUT</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingSeven">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+							1998
+							</button>
+						</h2>
+						<div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionActive">
+							<div class="accordion-body">
+								<div class="biography-grid-container">
+									<div class="item1">02.11</div>
+									<div class="item2">released 3rd single <i>月下の夜想曲 (Gekka no Yasoukyoku)</i></div>
+									<div class="item1">03.18</div>
+									<div class="item2">relased 1st major album <i>merveilles</i></div>
+									<div class="item1">03.24</div>
+									<div class="item2">secret live 「人間とは」を考える会症候群〜Human Science High Society Syndrome〜 ("Ningen to wa" wo kangaeru kai shoukougun) held at Shinjuku Nisshin Power Station (日清パワーステーション)</div>
+									<div class="item1">04.01</div>
+									<div class="item2">merveilles ～終焉と帰趨～live at Nippon Budokan (日本武道館) SOLD OUT after two minutes</div>
+									<div class="item1">04.06</div>
+									<div class="item2">regular radio show "MALICE MIZER no shisetsu hisho no chojutsu" (『MALICE MIZERの私設秘書の著述 ／“MALICE MIZER’s Writing of a Secret Book”) started airing on bay-fm radio on Monday nights at 1am</div>
+									<div class="item1">05.20</div>
+									<div class="item2">released 5th single <i>ILLUMINATI [P-type]</i><br>※it was used as an ending theme for Yomiuri TV’s (読売TV) talk show, Downtown DX (ダウンタウンDX)</div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item6">1998 TOUR 「merveilles ～終焉と帰趨～」 (all lives were sold out)</div>
+									<div class="item3"></div>
+									<div class="item4">05.23</div>
+									<div class="item5">Ichikawa Bunka Kaikan (市川市文化会館) (Fanclub only)</div>
+									<div class="item3"></div>
+									<div class="item4">05.29</div>
+									<div class="item5">Sapporo Shikyouiku Bunka Kaikan (Ou) (札幌市教育文化会館（大）)</div>
+									<div class="item3"></div>  
+									<div class="item4">06.01</div>
+									<div class="item5">Sendai Shimin Kaikan (Ou ) (仙台市民会館（大）)</div>
+									<div class="item3"></div>  
+									<div class="item4">06.03</div>
+									<div class="item5">Niigata Telsa (新潟テルサ)</div>
+									<div class="item3"></div>  
+									<div class="item4">06.14</div>
+									<div class="item5">Ibaraki Kenritsu Kenmin Bunka Center (茨城県立県民文化センター)</div>
+									<div class="item3"></div>  
+									<div class="item4">06.18</div>
+									<div class="item5">Nagoya Shimin Kaikan (名古屋市民会館)</div>
+									<div class="item3"></div>  
+									<div class="item4">06.20</div>
+									<div class="item5">Osaka Kosei Nenkin Kaikan (Ou) (大阪厚生年金会館（大）／Osaka Welfare Pension Hall (Large))</div>
+									<div class="item3"></div>  
+									<div class="item4">06.23</div>
+									<div class="item5">Hiroshima Aster (Ou) (広島アステール（大）／Hiroshima Aster (Large))</div>
+									<div class="item3"></div>  
+									<div class="item4">06.25</div>
+									<div class="item5">Kobe Kokusai Kaikan Haborland Plaza (神戸国際会館ハーバーランドプラザ)</div>
+									<div class="item3"></div>  
+									<div class="item4">06.27</div>
+									<div class="item5">Fukuoka Shimin Kaikan (福岡市民会館)</div>
+									<div class="item3"></div>  
+									<div class="item4">06.29</div>
+									<div class="item5">Ehime Kenmin Bunka Kaikan (愛媛県民文化会館サブホール)</div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item1">06.21</div>
+									<div class="item2">live held at Osaka Kosei Nenkin Kaikan (Ou) (大阪厚生年金会館（大）／Osaka Welfare Pension Hall (Large))</div>
+									<div class="item1">07.19</div>
+									<div class="item2">live held at Tokyo Hibiya Yagai Ongakudo (日比谷野外音楽堂)</div>
+									<div class="item1">07.22</div>
+									<div class="item2">live held at Yokohama Arena (横浜アリーナ)</div>
+									<div class="item1">09.30</div>
+									<div class="item2">released 6th single <i>Le ciel 〜Kuuhaku no Kanata e〜 (Le ciel ～空白の彼方へ～)</i></div>
+									<div class="item1">10.28</div>
+									<div class="item2">released live video of Tour'98 merveilles ～終焉と帰趨～, <i>merveilles ～終焉と帰趨～l'espace</i>; first press limited editions came in a blue slipcase</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingEight">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+							1999
+							</button>
+						</h2>
+						<div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionActive">
+							<div class="accordion-body">
+								<div class="biography-grid-container">
+									<div class="item1">01.01</div>
+									<div class="item2">vocalist Gackt Camui departed the band</div>
+									<div class="item1">02.24</div>
+									<div class="item2">released 1st video clip, <i>merveilles -cinq parallele-</i></div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item6">fanclub limited event “Human Science High Society Syndrome -M.†.M- System File 002”</div>
+									<div class="item3"></div>
+									<div class="item4">04.03</div>
+									<div class="item5">Shibuya Koukaidou (渋谷公会堂／Shibuya Public Hall)</div>
+									<div class="item3"></div>  
+									<div class="item4">04.04</div>
+									<div class="item5">Shibuya Koukaidou (渋谷公会堂／Shibuya Public Hall)</div>
+									<div class="item3"></div>  
+									<div class="item4">04.06</div>
+									<div class="item5">Sendai Seinen Bunka Center (仙台市青年文化センター)</div>
+									<div class="item3"></div>  
+									<div class="item4">04.08</div>
+									<div class="item5">Zepp SAPPORO</div>
+									<div class="item3"></div>  
+									<div class="item4">04.12</div>
+									<div class="item5">Fukuoka Momochi Palace (福岡ももちパレス)</div>
+									<div class="item3"></div>  
+									<div class="item4">04.14</div>
+									<div class="item5">Hiroshima Aster Plaza (広島アステールプラザ)</div>
+									<div class="item3"></div>  
+									<div class="item4">04.15</div>
+									<div class="item5">Nagoya Shimin Kaikan (Naka) (名古屋市民会館（中）)</div>
+									<div class="item3"></div>  
+									<div class="item4">04.18</div>
+									<div class="item5">Zepp OSAKA (2 performances)</div>			
+									<div class="item3"></div>  
+									<div class="item4">04.20</div>
+									<div class="item5">Niigata Phase (新潟 フェイズ)</div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item1">06.21</div>
+									<div class="item2">drummer Kami passed away</div>
+									<div class="item1">09.??</div>
+									<div class="item2">MALICE MIZER returned to Mana’s label, now Midi:Nette M.†.M</div>
+									<div class="item1">11.03</div>
+									<div class="item2">released single <i>Saikai no Chi to Bara (再会の血と薔薇／Reunion of Blood and Rose)</i> on CD and vinyl</div>
+									<div class="item1">12.21</div>
+									<div class="item2">relased PV video <i>Saikai no Chi to Bara ～de l'mage～ (再会の血と薔薇～de l'mage～)</i>; first press limited editions came with a luxurious 20-page booklet containing all new photos</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingNine">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+							2000
+							</button>
+						</h2>
+						<div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionActive">
+							<div class="accordion-body">
+								<div class="biography-grid-container">
+									<div class="item1">02.01</div>
+									<div class="item2">released box set Kami Memorial BOX <i>神話 (Shinhwa／Mythology)</i></div>
+									<div class="item1">04.09</div>
+									<div class="item2">"MALICE MIZER Midnight de S'il Vous Plait" (MALICE MIZER　真夜中deシルヴプレ) regular radio program started airing every Sunday from 24:30 to 25:00 on CBC Radio</div>
+									<div class="item1">05.31</div>
+									<div class="item2">released single <i>虚無の中での遊戯 (Kyomu no Naka de no Yuugi／Play in Nothingness)</i> and video <i>虚無の中での遊戯～de l'mage～</i></div>
+									<div class="item1">07.26</div>
+									<div class="item2">released single <i>Shiroi Hada ni Kuruu Ai to Kanashimi no Rondo (白い肌に狂う愛と哀しみの輪舞)</i></div>
+									<div class="item1">08.23</div>
+									<div class="item2">released album <i>Bara no Seidou (薔薇の聖堂／Cathedral of Roses)</i></div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item6">Two consecutive One-man “Bara ni Irodorareta Akui to Higeki no Makuake” (『薔薇に彩られた悪意と悲劇の幕開け』) at Nippon Budokan (日本武道館)</div>
+									<div class="item3"></div>
+									<div class="item4">08.31</div>
+									<div class="item5">vocalist Klaha officially joined the band</div>
+									<div class="item3"></div>  
+									<div class="item4"></div>
+									<div class="item5">Dai Ichi-yo Saikai no Bara (第一夜　再会の薔薇／First Night, Reunion Rose)</div>
+									<div class="item3"></div>  
+									<div class="item4">09.01</div>
+									<div class="item5">Dai Ni-yo Yakusoku no Bara (第二夜　約束の薔薇／Second Night, Promised Rose)</div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item1">11.19</div>
+									<div class="item2">fanclub event at Koutouku ZEPP TOKYO (江東区ZEPP TOKYO), "Societe de parente" ～新たなる血族との饗宴～ System File 003 (〜Aratanaru ketsuzoku to no kyouen〜／〜Feast of New Blood Relative〜)</div>
+									<div class="item1">11.22</div>
+									<div class="item2">released <i>Bara ni Irodorareta Akui to Higeki no Makuake (薔薇に彩られた悪意と悲劇の幕開け)</i> on VHS and DVD</div>
+									<div class="item1">12.30</div>
+									<div class="item2">special radio program "MALICE MIZER SPECIAL Yuyami de S'il Vous Plait" (『MALICE MIZER SPECIAL　夕闇 de シルヴプレ』) aired </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingTen">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+							2001
+							</button>
+						</h2>
+						<div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionActive">
+							<div class="accordion-body">
+								<div class="biography-grid-container"> 		
+									<div class="item1">04.18</div>
+									<div class="item2">released DVD <i>sans retour Voyage “derniere”～encoure une fois～</i></div>
+									<div class="item1">04.25</div>
+									<div class="item2">released video <i>Bara no Kisek (i薔薇の軌跡)</i> on VHS and DVD</div>
+									<div class="item1">05.30</div>
+									<div class="item2">released single <i>Gardenia</i> in two editions</div>
+									<div class="item1">06.21</div>
+									<div class="item2">released single <i>Beast of Blood</i></div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item6">Gardenia〜"Yoake no teien〜” (Gardenia～"夜明けの庭園～") tour (4 shows)</div>
+									<div class="item3"></div>
+									<div class="item4">07.02</div>
+									<div class="item5">SHIBUYA-AX</div>
+									<div class="item3"></div>  
+									<div class="item4">07.03</div>
+									<div class="item5">SHIBUYA-AX</div>
+									<div class="item3"></div>  
+									<div class="item4">07.05</div>
+									<div class="item5">ZEPP OSAKA</div>
+									<div class="item3"></div>  
+									<div class="item4">07.09</div>
+									<div class="item5">Akasaka BLITZ (赤坂 BLITZ)</div>
+								</div>
+								<div class="biography-grid-container">
+									<div class="item1">07.11</div>
+									<div class="item2">released <i>Beast of Blood～de l'image～</i> on DVD</div>
+									<div class="item1">08.26</div>
+									<div class="item2">performed at what would be their last live event, SHOCKWAVE ILLUSION 2001</div>
+									<div class="item1">10.30</div>
+									<div class="item2">released single <i>Mayonaka ni Kawashita Yakusoku 〜Bara no Konrei〜(真夜中に交わした約束～薔薇の婚礼～)</i></div>
+									<div class="item1">11.03</div>
+									<div class="item2">first screening of their self-produced feature film, <i>Bara no Konrei ~Mayonaka ni Kawashita Yakusoku~ (薔薇の婚礼~真夜中に交わした約束~)</i> at Cine Libre Ikebukuro (シネ・リーブル池袋)</div>
+									<div class="item1">11.24</div>
+									<div class="item2">additional screening of their self-produced feature film, <i>Bara no Konrei ~Mayonaka ni Kawashita Yakusoku~ (薔薇の婚礼~真夜中に交わした約束~)</i> at Cine Libre Umeda (シネ・リーブル梅田)</div>
+									<div class="item1">11.30</div>
+									<div class="item2">released single <i>Garnet～禁断の園へ～</i></div>
+									<div class="item1">12.08</div>
+									<div class="item2">additional screening of their self-produced feature film, <i>Bara no Konrei ~Mayonaka ni Kawashita Yakusoku~ (薔薇の婚礼~真夜中に交わした約束~)</i>, at Cine Libre Kobe (シネ・リーブル神戸)</div>
+									<div class="item1"></div>
+									<div class="item2">additional screening of their self-produced feature film, <i>Bara no Konrei ~Mayonaka ni Kawashita Yakusoku~ (薔薇の婚礼~真夜中に交わした約束~)</i> at Cine Libre Hakata-eki (シネ・リーブル博多駅／Cine Libre Hakata Station)</div>
+									<div class="item1">12.??</div>
+									<div class="item2">MALICE MIZER went on indefinite hiatus</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>		
+		
+				<div class="accordion2" id="accordionHiatus" lang="ja-jp">
+					<p class="accordion-header" style="padding: 2%;">POST INDEFINITE HIATUS</p>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingEleven">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+							2002
+							</button>
+						</h2>
+						<div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionHiatus">
+							<div class="accordion-body">
+								<div class="biography-grid-container">
+									<div class="item1">02.06</div>
+									<div class="item2">released PV collection <i>Cardinal</i> on VHS and DVD</div>
+									<div class="item1">03.22</div>
+									<div class="item2">released silent film <i>Bara no Konrei 〜Mayonaka ni Kawashita Yakusoku〜</i> on DVD</div>
+									<div class="item1">03.30</div>
+									<div class="item2">released PV collection <i>merveilles -cinq parallèle-</i> and live recording <i>merveilles 〜Shuuen to Kisuu〜 l'espace (merveilles 〜終焉と帰趨〜 l'espace)</i> on DVD</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingTwelve">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+							2004
+							</button>
+						</h2>
+						<div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionHiatus">
+							<div class="accordion-body">
+								<div class="biography-grid-container">
+									<div class="item1">09.29</div>
+									<div class="item2">the band's former major label, Columbia, released the first box set <i>La Collection des Singles -L'édition Limitée-</i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingThirteen">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+							2005
+							</button>
+						</h2>
+						<div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionHiatus">
+							<div class="accordion-body">
+								<div class="biography-grid-container">
+									<div class="item1">10.05</div>
+									<div class="item2">the band's former major label, Columbia, released the second box set <i>La Collection "Merveilles" -L'édition Limitée-</i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingFourteen">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+							2006
+							</button>
+						</h2>
+						<div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen" data-bs-parent="#accordionHiatus">
+							<div class="accordion-body">
+								<div class="biography-grid-container">
+									<div class="item1">10.18</div>
+									<div class="item2">the band's former major label, Columbia, released best album <i>La meilleur selection de MALICE MIZER</i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingFifteen">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+							2007
+							</button>
+						</h2>
+						<div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen" data-bs-parent="#accordionHiatus">
+							<div class="accordion-body">
+								<div class="biography-grid-container">
+									<div class="item1">01.24</div>
+									<div class="item2">the omnibus album <i>ROCK NIPPON Noriko Shouji SELECTION (ロックNIPPON 東海林のり子セレクション)</i> is released and features “ヴェル・エール〜空白の瞬間の中で〜 (Bel Air 〜Kuuhaku no Toki no Naka de〜)” as the eighth track</div>
+									<div class="item1">03.28</div>
+									<div class="item2">the band's former major label, Columbia, released best collection of live performances <i>Selection de performances live</i> on DVD</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingSixteen">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+							2010
+							</button>
+						</h2>
+						<div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen" data-bs-parent="#accordionHiatus">
+							<div class="accordion-body">
+								<div class="biography-grid-container">
+									<div class="item1">10.06</div>
+									<div class="item2">omnibus album <i>Genten (原点)</i> is released and features “Gekka no Yasoukyoku (月下の夜想曲)” as the fifteenth track</div>
+									<div class="item1">07.17</div>
+									<div class="item2">Mana, Közi, and Yu~ki reunited  at Akasaka BLITZ to perform "Beast of Blood" on Moi dix Mois' Deep Sanctuary II tour</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingSeventeen">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+							2017
+							</button>
+						</h2>
+						<div id="collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="headingSeventeen" data-bs-parent="#accordionHiatus">
+							<div class="accordion-body">
+								<div class="biography-grid-container">
+									<div class="item1">12.22</div>
+									<div class="item2">former drummer Gaz passed away</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingEighteen">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+							2018
+							</button>
+						</h2>
+						<div id="collapseEighteen" class="accordion-collapse collapse" aria-labelledby="headingEighteen" data-bs-parent="#accordionHiatus">
+							<div class="accordion-body">
+								<div class="biography-grid-container">
+									<div class="item6">two day 25th Anniversary Memorial live</div>
+									<div class="item3"></div>
+									<div class="item4">09.08</div>
+									<div class="item5">Koutouku Toyosu Pit</div>
+									<div class="item3"></div>
+									<div class="item4">09.09</div>
+									<div class="item5">Koutouku Toyosu Pit</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingNinteen">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNinteen" aria-expanded="false" aria-controls="collapseNinteen">
+							2019
+							</button>
+						</h2>
+						<div id="collapseNinteen" class="accordion-collapse collapse" aria-labelledby="headingNinteen" data-bs-parent="#accordionHiatus">
+							<div class="accordion-body">
+								<div class="biography-grid-container">
+									<div class="item1">06.21</div>
+									<div class="item2">live Blu-ray and photo book are released as <i>〜Deep Sanctuary Ⅵ MALICE MIZER 25th Anniversary Special 〜LIVE at TOYOSU PIT September 9〜</i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+		<!-- back to top button starts -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+		
+		<script>
+			// Get the button
+			let mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<!-- back to top button ends -->
+
+	</body>
+</html>

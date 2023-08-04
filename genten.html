@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Genten | MALICE MIZER Info</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+		<style>
+			body {
+				padding: 63px 0;
+			}
+			
+			a:hover {
+				color: darkred;
+			}
+		
+			img {
+				display: block;
+				margin: auto;
+				width: 100%;
+				max-width: 500px;
+				padding: 20px;
+			}
+			
+			p {
+				color: gray;
+			}
+			
+			b {
+				color: white;
+			}
+			
+			span {
+				color: gray;
+			}
+			
+			invisible {
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<body>		
+		
+		<!-- responsive nav-bar starts -->
+		<div class="topnav" id="myTopnav">
+		  <a href="/">MALICE MIZER Info</a>
+		  <a href="/#about">About</a>
+		  <a href="/#members">Members</a>
+		  <a href="/#releases">Releases</a>
+		  <a href="/#biography">Biography</a>
+		  <a href="/">Links</a>
+
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		</div>
+
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+		</script>
+		<!-- responsive nav-bar ends -->
+		
+		<div class="previous-next-container">
+			<div class="previous">
+				<a class="previous-next-link" href="/performances">
+					<span>←&nbsp;</span>
+					<div class="previous-next-link-text">Selection de performances live</div>
+				</a>
+			</div>
+			<div class="next">
+				<a class="previous-next-link" href="/dsvi">				
+					<div class="previous-next-link-text">Deep Sanctuary Ⅵ MALICE MIZER 25th Anniversary Special ～ LIVE at TOYOSU PIT September 9 ～</div>
+					<span>&nbsp;→</span>
+				</a>
+			</div>
+		</div>
+		
+
+		<div class="release-container">
+			<div class="booklet-slider-left">
+				<img src="原点.webp">
+			</div>			
+			
+			<div class="tracklist-info-right">
+				<p class="size28" lang="ja-jp">Genten<br>
+				<span><sup>原点</sup></span></p>
+				<p class="size22">
+				[Omnibus Album]<br>
+				2010.10.06 Release<br>
+				UICZ-8078<br>
+				¥2,381 (tax out) / ¥2,500 (tax in)<br>
+				UNIVERSAL MUSIC GROUP</p>
+				
+				<span class="invisible">.</span>
+				
+				<p lang="ja-jp">
+				1. LUNA SEA / gravity<br>
+				2. BUCK-TICK / Uta<br>					
+				<span class="invisible">2. BUCK-TICK / </span><sup>唄</sup><br>
+				3. ZI:KILL / HERO<br>
+				4. SHAZNA / Melty Love<br>
+				5. La'cryma Christi / Mirai Kouro<br>					
+				<span class="invisible">5. La'cryma Christi / </span><sup>未来航路</sup><br>
+				6. D-SHADE / ENDLESS LOVE<br>
+				7. Lastier / SkY<br>
+				8. PIERROT / Last Letter<br>					
+				<span class="invisible">8. PIERROT / </span><sup>ラストレター</sup><br>
+				9. Plastic Tree / Slide.<br>					
+				<span class="invisible">9. Plastic Tree / </span><sup>スライド</sup><br>
+				10. ROUAGE / Shiroi Yami<br>					
+				<span class="invisible">10. ROUAGE / </span><sup>白い闇</sup><br>
+				11.	Laputa / meet again<br>
+				12.	CASCADE / Congrats<br>					
+				<span class="invisible">12. CASCADE / </span><sup>コングラッチェ</sup><br>
+				13.	PENICILLIN / Romance<br>					
+				<span class="invisible">13. PENICILLIN / </span><sup>ロマンス</sup><br>
+				14. SIAM SHADE / 1/3 no Junjou na Kanjou<br>					
+				<span class="invisible">14. SIAM SHADE / </span><sup>1/3の純情な感情</sup><br>
+				<b>15. MALICE MIZER / Gekka no Yasoukyoku<br>					
+				<span class="invisible">15. MALICE MIZER / </span><sup>月下の夜想曲</sup></b></p>
+			</div>
+		</div>
+		
+		<!-- back to top button starts -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+		
+		<script>
+			// Get the button
+			let mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<!-- back to top button ends -->
+
+	</body>
+</html>

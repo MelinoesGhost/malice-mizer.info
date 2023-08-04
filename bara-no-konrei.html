@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bara no Konrei | MALICE MIZER Info</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+		<style>
+			body {
+				padding: 63px 0;
+			}
+
+			img {
+				display: block;
+				margin: auto;
+				width: 100%;
+				max-width: 500px;
+			}
+			
+			.vhs-dvd-container {
+				display: flex;
+			}
+
+			.vhs-dvd-container > div {
+				margin: 20px;
+				font-size: 22px;
+			}
+			
+			span {
+				color: gray;
+			}
+			
+			invisible {
+				visibility: hidden;
+			}
+			
+			a:hover {
+				color: darkred;
+			}
+					
+			* {
+			  box-sizing: border-box;
+			}
+			
+			.accordion {
+				padding: 0 5%;
+			}
+		
+			.accordion-button {
+				background-color: #671316;
+				font-size: 24px;
+				color: white;
+			}		
+
+			.accordion-button:not(.collapsed) {
+				background-color: #48090c;
+				color: white;
+			}
+			
+			.accordion-button::after {
+				background-image: url(white-arrow.png);
+			}
+			
+			.accordion-button:not(.collapsed)::after {
+				background-image: url(white-arrow.png);
+			}
+					
+			.accordion-button:focus {
+				z-index: 3;
+				outline: 0;
+				box-shadow: none;
+			}
+			
+			.accordion-body {
+				background-color: #121212;
+				font-size: 18px;
+                color: white;
+			}
+			
+			#hcg-slider-1 .hcg-slide-container {
+				max-width:: 500px;
+				height: auto;
+			}
+			.hcg-slider {
+				text-align: center;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			.hcg-slide-container {
+				max-width: 100%;
+				display: inline-block;
+				position: relative;
+			}
+			.hcg-slides {
+				display: none;
+				overflow: hidden;
+				justify-content: center;
+				align-items: center;
+				border-radius: 5px;
+				border: solid 1px #a0a0a0;
+			}
+			.hcg-slides img {
+				max-width: 500px;
+				max-height: auto;
+				display: inline-block;
+			}
+			.hcg-slide-text {
+				color: #ffffff;
+				font-size: 14px;
+				padding: 3px 5px;
+				position: absolute;
+				bottom: 0;
+				border-radius: 5px;
+				left: 50%;
+				text-align: center;
+				text-shadow: 0 0 2px #000;
+				background-color: rgba(255,255,255,0.30);
+				display: inline-block;
+				transform: translate(-50%, -5px);
+			}
+			.hcg-slide-dot-control {
+				margin-top: 10px;
+				text-align: center;
+			}
+			.hcg-slide-dot {
+				cursor: pointer;
+				height: 13px;
+				width: 13px;
+				margin: 0 2px;
+				background-color: #bbb;
+				border-radius: 50%;
+				display: inline-block;
+			}
+			.hcg-slide-dot.dot-active {
+				background-color: #717171;
+			}
+			.hcg-slide-number {
+				color: #ffffff;
+				font-size: 12px;
+				padding: 4px 7px;
+				position: absolute;
+				border-radius: 5px;
+				top: 5px;
+				left: 5px;
+				background-color: rgba(255,255,255,0.30);
+			}
+		</style>
+	</head>
+	<body>
+	
+		<!-- responsive nav-bar starts -->
+		<div class="topnav" id="myTopnav">
+			<a href="/">MALICE MIZER Info</a>
+		  	<a href="/#about">About</a>
+			<a href="/#members">Members</a>
+			<a href="/#releases">Releases</a>
+		  	<a href="/#biography">Biography</a>
+			<a href="/links">Links</a>
+
+		  	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+		</script>
+		<!-- responsive nav-bar ends -->
+		
+		<div class="previous-next-container">
+			<div class="previous">
+				<a class="previous-next-link" href="/bara-no-higeki">
+					<span>←&nbsp;</span>
+					<div class="previous-next-link-text">Bara no Higeki Mayonaka ni Kawashita Yakusoku</div>
+				</a>
+			</div>
+			<div class="next">
+				<a class="previous-next-link" href="/cinq-parallele-dvd">				
+					<div class="previous-next-link-text">merveilles～cinq parallele～ [DVD]</div>
+					<span>&nbsp;→</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="release-container">
+			<div class="booklet-slider-left">
+				<div id="hcg-slider-1" class="hcg-slider">
+					<div class="hcg-slide-container">
+						<div class="hcg-slider-body">
+							<a class="hcg-slides animated" style="display:flex">
+								<span class="hcg-slide-number">1/5</span>
+								<img src="https://malice-mizer.info/薔薇の婚礼-vhs.webp" alt="bara no konrei vhs cover">
+								<span class="hcg-slide-text"></span>
+							</a>
+						</div>
+					</div>
+					<div class="hcg-slide-dot-control"></div>
+				</div>
+
+			</div>
+			
+			<div class="tracklist-info-right">
+				<p class="size28" lang="ja-jp">Bara no Konrei ～Mayonaka ni Kawashita Yakusoku～<br>
+				<span>薔薇の婚礼 ～真夜中に交わした約束～ DVD</span></p>
+				
+				<div class="vhs-dvd-container">
+					<div>[VHS]<br>
+						2002.03.22 Release<br>
+						<br>
+						¥4,800 (tax out) / ¥5,040 (tax in)<br>
+						KSS, Inc.
+					</div>
+					<div>[DVD]<br>
+						2002.03.22 Release<br>
+						KSXD24319<br>
+						¥6,800 (tax out) / ¥7,140 (tax in)<br>
+						KSS, Inc.
+					</div>
+				</div>
+				
+				<br>
+				
+				<p>MALICE MIZER's silent film with 84 mins of runtime</p>
+				
+				<p>In medieval London, a young man receives a letter requsting his services. Leaving behind his fiancée, Cecil, he travels to Transylvania to meet his client, Count Dracula, not knowing that a terrible nightmare is about to unfold at the castle.</p>
+			</div>
+		</div>
+		
+		<div class="accordion" id="accordionExample">
+			
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingOne">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=	"#collapseOne" aria-expanded="false" aria-controls="collapseOne" lang="ja-jp">
+					CREDITS
+					</button>
+				</h2>
+				<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<p style="text-align: center">Cast<br>
+						Klaha ( Klaha ) - The heroine's fiancée and a young man<br>
+						Mana - <br>
+						Közi (Közi) - a rival vampire<br>
+						Count Dracula (Yu~ki) - A vampire with long black hair and Mana's master<br>
+						Cecil (Terumi Nagayoshi) - The heroine and the fiancé of the young man<br><br>
+						
+						------------------------------------------------------------<br><br>
+
+						Main Staff<br>
+						Distribution: Gaga Communications = K Cinema Group<br><br>
+						
+						Produced by: Yukio Nihira, Shinichi Magami<br>
+						Planning: Hideo Takano, Katsuaki Takemoto<br>
+						Producers: Yoshie Hayashi, Tsutomu Kimino<br>
+						Director: Hiroyuki Mutoh<br>
+						Screenplay: Hiroyuki Mutoh<br>
+						Assistant Director: Akemi Shimada, Takao Kurosawa<br>
+						Co. Producers: Hiromitsu Suzuki, Yasushi Sakaue<br>
+						Line Producer: Masao Maruyama<br>
+						Technical Director: Tsutomu Ishigaki<br><br>
+						
+						Chief Photographer: Shingo Nakano<br>
+						Photographers: Jun Takako, Yusuke Fuchino<br>
+						Lighting Director: Hiroaki Yamaguchi<br>
+						Editing: Takahashi Shinaotaka, Toshihide Fukano<br>
+						Art Producer: Chiharu Hashimoto<br>
+						Art Director: Hitoshi Shiota<br>
+						Costumes: Osamu Takeuchi, Osamu Yasuhide<br>
+						Music Supervisor: Shoji Tsuchida<br>
+						Scripter: Hiromi Inoue<br>
+						Steel: Kenji Tsukagoshi<br>
+						Special effects: Locust<br>
+						Sound effects: Shimojo Yoshiyuki<br>
+						Special makeup: Masahiro Yotsuka<br>
+						</p>	
+					</div>
+				</div>
+			</div>			
+		</div>
+		
+		<script>
+			(() => {
+			//If you want to add more images, add the link name and URL image URL in the array list below.
+				const images_list = [
+			{
+				"url": "https://malice-mizer.info/薔薇の婚礼-VHS.webp",
+				"alt": "Saikai no Chi to Bara CD cover",
+				"name": "VHS"
+			},
+			{
+				"url": "https://malice-mizer.info/薔薇の婚礼-DVD.webp",
+				"alt": "saikai no chi to bara vinyl cover",
+				"name": "DVD"
+			}
+				];
+
+			// generated by https://www.html-code-generator.com/html/image-slideshow-generator
+				let slider_id = document.querySelector("#hcg-slider-1");
+
+				// append all images
+				let dots_div = "";
+				let images_div = "";
+				for (let i = 0; i < images_list.length; i++) {
+					// if no link without href="" tag
+					let href = (images_list[i].link == "" ? "":' href="'+images_list[i].link+'"');
+					images_div += '<a'+href+' class="hcg-slides animated"'+(i === 0 ? ' style="display:flex"':'')+'>'+
+									'<span class="hcg-slide-number">'+(i+1)+'/'+images_list.length+'</span>'+
+									'<img src="'+images_list[i].url+'" alt="'+images_list[i].name+'">'+
+									'<span class="hcg-slide-text">'+images_list[i].name+'</span>'+
+								 '</a>';
+					dots_div += '<a href="#" class="hcg-slide-dot'+(i === 0 ? ' dot-active':'')+'" data-id="'+i+'"></a>';
+				}
+				slider_id.querySelector(".hcg-slider-body").innerHTML = images_div;
+				slider_id.querySelector(".hcg-slide-dot-control").innerHTML = dots_div;
+
+				let slide_index = 0;
+
+				const images = slider_id.querySelectorAll(".hcg-slides");
+				const dots = slider_id.querySelectorAll(".hcg-slide-dot");
+				const showSlides = () => {
+					if (slide_index > images.length-1) {
+						slide_index = 0;
+					}
+					if (slide_index < 0) {
+						slide_index = images.length-1;
+					}
+					for (let i = 0; i < images.length; i++) {
+						images[i].style.display = "none";
+						dots[i].classList.remove("dot-active");
+						if (i == slide_index) {
+							images[i].style.display = "flex";
+							dots[i].classList.add("dot-active");
+						}
+					}
+				}
+
+				const dot_click = event => {
+					event.preventDefault();
+					slide_index = event.target.dataset.id;
+					showSlides();
+				}
+
+				for (let i = 0; i < dots.length; i++) {
+					dots[i].addEventListener("click", dot_click, false);
+				}
+				// auto play
+				setInterval(() => {
+					slide_index++;
+					showSlides();
+				}, 5000);
+
+			})();
+		</script>
+		
+		<!-- back to top button starts -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+		
+		<script>
+			// Get the button
+			let mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<!-- back to top button ends -->
+
+	</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<style>
+		.grid-footer {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 10px;
+			padding: 10px;
+			background-color: #121212;
+		}
+		
+		.grid-footer > div {
+			text-align: center;
+			padding: 20px 0;
+			font-size: 30px;
+		}
+		
+		.footer {
+			width: 60px;
+			height: 2px;
+			margin-top: -30px;
+		}
+		
+		@media (max-width: 768px) {
+			.grid-footer {
+				grid-template-columns: repeat(1, 1fr);
+			}
+		}
+		</style>
+	</head>
+	<body>
+
+		<div class="grid-footer">
+			<div>
+				 <h4>MALICE MIZER Info</h4>
+				<hr class="footer">
+				<p>Fansite for the 90's Japanese visual kei band, MALICE MIZER containing releases, lyrics, interviews, and more.</p>
+				<p>
+					<a href="#!">About MMI</a> ● <a href="#!">Update Log</a>
+				</p>
+			</div>
+			<div>
+				<h4 class="text-uppercase fw-bold">Site Links</h4>
+				<hr class="footer">
+				<p>
+					<a href="#!">Official Links</a>
+				</p>
+				<p>
+					<a href="#!">Releases</a>					
+				</p>
+				<p>
+					<a href="#!">Gallery</a>
+				</p>
+				<p>
+					<a href="#!">Interviews</a>
+				</p>
+			</div>
+			<div>
+				<h4 class="text-uppercase fw-bold">Contact</h4>
+				<hr class="footer">
+				<p><a href="https://twitter.com/melinoesghost" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+				<a href="https://www.instagram.com/melinoesghost" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></p>
+				<!-- <a href="">
+					<i class="fa-brands fa-facebook"></i>
+				</a> -->
+				<p><a href=""><i class="fa-solid fa-envelope"></i> info@example.com</a></p>				
+			</div>
+		</div>
+	
+	</body>
+</html>

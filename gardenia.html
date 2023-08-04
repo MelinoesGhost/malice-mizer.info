@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Gardenia | MALICE MIZER Info</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+		
+		<style>
+			body {
+				padding: 63px 0;
+			}
+			
+			a:hover {
+				color: darkred;
+			}
+			
+			span {
+				color: gray;
+			}
+			
+			invisible {
+				visibility: hidden;
+			}
+					
+			* {
+			  box-sizing: border-box;
+			}
+			
+			.accordion {
+				padding: 0 5%;
+			}
+		
+			.accordion-button {
+				background-color: #671316;
+				font-size: 24px;
+				color: white;
+			}		
+
+			.accordion-button:not(.collapsed) {
+				background-color: #48090c;
+				color: white;
+			}
+			
+			.accordion-button::after {
+				background-image: url(white-arrow.png);
+			}
+			
+			.accordion-button:not(.collapsed)::after {
+				background-image: url(white-arrow.png);
+			}
+					
+			.accordion-button:focus {
+				z-index: 3;
+				outline: 0;
+				box-shadow: none;
+			}
+			
+			.accordion-body {
+				background-color: #121212;
+				font-size: 18px;
+                color: white;
+			}
+		</style>
+	</head>
+	
+	<body>
+		
+		<!-- responsive nav-bar starts -->
+		<div class="topnav" id="myTopnav">
+		  <a href="/index">MALICE MIZER Info</a>
+		  <a href="/index#about">About</a>
+		  <a href="/index#members">Members</a>
+		  <a href="/index#releases">Releases</a>
+		  <a href="/index#biography">Biography</a>
+		  <a href="/links">Links</a>
+
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		</div>
+
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+		</script>
+		<!-- responsive nav-bar ends -->
+		
+		<div class="previous-next-container">
+			<div class="previous">
+				<a class="previous-next-link" href="/livre-rose-blanche">
+					<span>←&nbsp;</span>
+					<div class="previous-next-link-text">Livre Rosé Blanche</div>
+				</a>
+			</div>
+			<div class="next">
+				<a class="previous-next-link" href="/beast-of-blood">				
+					<div class="previous-next-link-text">Beast of Blood</div>
+					<span>&nbsp;→</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="release-container">
+			<div class="booklet-slider-left">
+				<div id="hcg-slider-1" class="hcg-slider">
+	<div class="hcg-slide-container">
+	<div class="hcg-slider-body">
+		<a class="hcg-slides animated" style="display:flex">
+			<span class="hcg-slide-number">1/5</span>
+			<img src="https://malice-mizer.info/Gardenia-limited.png" alt="">
+			<span class="hcg-slide-text"></span>
+		</a>
+	</div>
+</div>
+<div class="hcg-slide-dot-control"></div>
+</div>
+
+			</div>
+			
+			<div class="tracklist-info-right">
+				<p class="size28" lang="ja-jp">Gardenia</p>
+				
+				<p class="size22">
+					2001.5.30<br>
+					MMCD-019<br>					
+					¥1,200(tax out) / ¥1,260(tax in)<br>
+					Midi:Nette
+				</p>
+				
+				<span class="invisible">.</span>
+				
+				<p lang="ja-jp">
+					I. prologue〜Kaisou〜<br>
+					<span class="invisible">I. </span><span>prologue〜回想〜</span><br>
+					<sup>(Composed by Mana)</sup><br>
+					II. Gardenia<br>
+					<sup>(Lyrics by Klaha / Composed by Mana)</sup><br>
+					III. Houkai Jokyoku<br>
+					<span class="invisible">III. </span><span>崩壊序曲</span><br>
+					<sup>(Lyrics by Klaha / Composed by Mana)</sup><br>
+					IV. Gardenia (Instrumental)<br>
+					<sup>(Composed by Mana)</sup><br>
+					IV. Houkai Jokyoku (Instrumental)<br>
+					<span class="invisible">IV. </span><span>崩壊序曲 (Instrumental)</span><br>
+					<sup>(Composed by Mana)</sup>
+				</p>
+			</div>
+		</div>
+		
+		<!-- accordion -->
+		<div class="accordion" id="accordionExample">
+			<h2 class="lyrics">Lyrics</h2>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingOne">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+				II. Gardenia
+				</button>
+				</h2>
+				<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<p class="size22">Lyrics by Klaha / Composed by Mana</p>
+						<div class="lyric-columns">								
+							<div>
+								<p class="size22" lang="ja-jp"><b>Japanese</b></p>
+								<p>朝もやに零れた光　永遠の夜に終わりを告げて<br>
+								君は今　震えるまぶたを開き広がる夜明けの庭園で<br><br>
+
+								貴女と共に……<br><br>
+
+								微かな陽差しに佇む君に　僕が差し出した白い花を<br>
+								その指に触れて胸に抱くとき　つぼみの花は開く<br><br>
+
+								ガーデニア　君のあどけない瞳　愛しいその全て<br>
+								貴女を連れ去りこのまま優しく　抱きしめて離さないように<br><br>
+
+								まるであの日見た夢の続き　回想の森に浮かぶ光景<br>
+								君を迎えよう誓いの庭園で　つぼみの花が開く<br><br>
+
+								ガーデニア　君のあどけない瞳　愛しいその全て<br>
+								貴女を連れ去りこのまま優しく　抱きしめたい<br>
+								ガーデニア　君と汚れなき花の甘い香りに包まれて<br>
+								貴女を連れ去りこのまま優しく　抱きしめて離さないように<br><br>
+
+								夜明けと共に貴女へと囁く<br><br>
+								「愛しい人…  ガーデニア」</p>
+						  	</div>
+						   	<div>
+								<p class="size22"><b>Romaji</b></p>
+								<p>Asamoya ni koboreta hikari towa no yoru ni owari o tsugete<br>
+								Kimi wa ima furueru mabuta o hiraki, hirogaru yoake no teien de<br><br>
+
+								Anata to tomo ni…<br><br>
+
+								Kasuka na hizashi ni tatazumu kimi ni boku ga sashidashita shiroi hana o<br>
+								Sono yubi ni furete mune ni idaku toki tsubomi no hana wa hiraku<br><br>
+
+								Gardenia kimi no adokenai hitomi itoshii sono subete<br>
+								Anata o tsuresari kono mama yasashiku dakishimete hanasanai yō ni<br><br>
+
+								Marude ano hi mita yume no tsuzuki kaisō no mori ni ukabu kōkei<br>
+								Kimi o mukaeyō chikai no teien de tsubomi no hana ga hiraku<br><br>
+
+								Gardenia kimi no adokenai hitomi itoshii sono subete<br>
+								Anata o tsuresari kono mama yasashiku dakishimetai<br>
+								Gardenia kimi to kegarenaki hana no amai kaori ni tsutsumarete<br>
+								Anata o tsuresari kono mama yasashiku dakishimete hanasanai yō ni<br><br>
+
+								Yoake to tomo ni anata e to sasayaku<br><br>
+
+								“Itoshii hito… Gardenia</p>
+						  	</div>
+						  	<div>
+								<p class="size22"><b>English</b></p>
+								<p>The scattered light in the morning mist ends the everlasting night and<br>
+								In the garden where dawn is unfolding, you now open your quivering eyelids and<br><br>
+
+								Together with you…<br><br>
+
+								When you hold the white flower which I gave you, who were standing still in the faint sunlight<br>
+								Pressed against my chest that you touch with those fingers the buds of the flower open<br><br>
+
+								Gardenia your childlike eyes all of you I love<br>
+								Not to let you go, I will take you away with me will gently hold you in my arms as we are now and<br><br>
+
+								Just like the continuation of the dream I had that day… is the spectacle I recollect from the forest in my reminiscence<br>
+								I will welcome you in the garden of our vow the budding flower blossoms<br><br>
+
+								Gardenia your childlike eyes all of you I love<br>
+								I will take you away with me and will gently hold you in my arms as we are now<br><br>
+								Gardenia being enveloped by you and the sweet scents of sinless flowers<br>
+								Not to let you go, I will take you away with me will gently hold you in my arms as we are now and<br><br>
+
+								With the dawn<br><br>
+
+								I whisper to you<br><br>
+
+								“My darling… Gardenia”</p>
+							  	</div>
+						</div>	
+						Romaji and English translation by <a href="https://the-lair-of-madame-tarantula.blogspot.com/" target="_blank">Madame Tarantula</a>
+					</div>
+				</div>
+			</div>		
+			
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingTwo">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+				III. 崩壊序曲 (Hōkai jokyoku / Collaspe Overture)
+				</button>
+				</h2>
+				<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<p class="size22">Composed by Mana</p>
+						<div class="lyric-columns">								
+							<div>
+								<p>delusion and dream<br>
+								a moment when reality fades<br>
+								two voices crossing<br>
+								memory of red blood<br>
+								cells tremble<br>
+								they tremble in pleasure<br>
+								fate / shrieks / urge / resonance / the end<br><br>
+
+								constraining voice<br>
+								a temptation toward ruin<br>
+								all for destruction<br>
+								all for bloodshed<br>
+								birth / rule / lust / sequent<br><br>
+
+								a runaway playback of memories<br>
+								a body that has lost its senses<br>
+								program crash<br>
+								out of control<br>
+								and it repeats all over again<br>
+								mind / life / scenario / lasting / the end<br><br>
+
+								collapsing thoughts<br>
+								diminishing vision<br>
+								resounding heartbeat<br>
+								approaching silence<br>
+								and it repeats all over again<br>
+								birth / rule / lust / sequent<br>
+								last of the end<br><br>
+
+								man-made memories<br>
+								ordained destiny</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingThree">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+				Credits
+				</button>
+				</h2>
+				<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<p style="text-align: center">						
+							MALICE MIZER<br>
+							Mana<br>
+							Közi<br>
+							Yu〜ki<br><br>
+
+							Lyrics by Klaha<br>
+							Composed by Mana<br>
+							Arranged by MALICE MIZER<br><br>
+
+							Directed by Motohide Tanaka (Midi:Nette)<br>
+							Sound Advisor: Kyo Ichinose<br><br>
+
+							Cooperation to arrangement: Kazune<br>
+							Synthesizer Manipulator: Shigehiko Saito<br><br>
+
+							Recorded & Mixed by Astuo Akabae<br><br>
+
+							Additional Engineer: Hitomi Suzuki (MIXER'S LAB / ON AIR AZABU st.)<br>
+							Recorded & Mixed at ON AIR AZABU st.<br>
+							Mastering Engineer: Masao Nakazato (ONKIO HAUS)<br><br>
+
+							Addtional Musician [M:2]: Shue (Drums), Yuichiro Goto (Violin)<br>
+							Musician Coordinator: Tetsuya Kawashima (Shinshitsu)<br><br>
+
+							Artist Manageer: Keiko Hachitani (Midi:Nette)<br><br>
+
+							Art Direction & Design: Teruhisa Abe (C2)<br>
+							Photography: Kenji Tsukagoshi<br>
+							Styling: Yukari Ohba<br>
+							Hairstyling	: Naomi Uchida<br>
+							Object: Rui Toda (Penn Communications)<br><br>
+
+							Doll Artist	Koitsukihime<br>
+							Special Thanks: Ningyouya Sakichi<br><br>
+
+							Executive Producer: Yukie Itoh (Midi:Nette)<br><br>
+
+							Special Thanks to: All of you always in need of MALICE MIZER<br><br>
+
+							Eternal blood relative<br>
+							Kami<br><br>
+
+							Total Produced by MALICE MIZER
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			(() => {
+			//If you want to add more images, add the link name and URL image URL in the array list below.
+				const images_list = [
+			{
+				"url": "https://malice-mizer.info/Gardenia-limited.webp",
+				"alt": "gardenia limited",
+				"name": "Limited 1st Press Slipcase Cover",
+				"link": ""
+			},
+			{
+				"url": "https://malice-mizer.info/Gardenia-regular.webp",
+				"alt": "gardenia regular",
+				"name": "Booklet Cover",
+				"link": ""
+			}
+				];
+
+			// generated by https://www.html-code-generator.com/html/image-slideshow-generator
+				let slider_id = document.querySelector("#hcg-slider-1");
+
+				// append all images
+				let dots_div = "";
+				let images_div = "";
+				for (let i = 0; i < images_list.length; i++) {
+					// if no link without href="" tag
+					let href = (images_list[i].link == "" ? "":' href="'+images_list[i].link+'"');
+					images_div += '<a'+href+' class="hcg-slides animated"'+(i === 0 ? ' style="display:flex"':'')+'>'+
+									'<span class="hcg-slide-number">'+(i+1)+'/'+images_list.length+'</span>'+
+									'<img src="'+images_list[i].url+'" alt="'+images_list[i].name+'">'+
+									'<span class="hcg-slide-text">'+images_list[i].name+'</span>'+
+								 '</a>';
+					dots_div += '<a href="#" class="hcg-slide-dot'+(i === 0 ? ' dot-active':'')+'" data-id="'+i+'"></a>';
+				}
+				slider_id.querySelector(".hcg-slider-body").innerHTML = images_div;
+				slider_id.querySelector(".hcg-slide-dot-control").innerHTML = dots_div;
+
+				let slide_index = 0;
+
+				const images = slider_id.querySelectorAll(".hcg-slides");
+				const dots = slider_id.querySelectorAll(".hcg-slide-dot");
+				const showSlides = () => {
+					if (slide_index > images.length-1) {
+						slide_index = 0;
+					}
+					if (slide_index < 0) {
+						slide_index = images.length-1;
+					}
+					for (let i = 0; i < images.length; i++) {
+						images[i].style.display = "none";
+						dots[i].classList.remove("dot-active");
+						if (i == slide_index) {
+							images[i].style.display = "flex";
+							dots[i].classList.add("dot-active");
+						}
+					}
+				}
+
+				const dot_click = event => {
+					event.preventDefault();
+					slide_index = event.target.dataset.id;
+					showSlides();
+				}
+
+				for (let i = 0; i < dots.length; i++) {
+					dots[i].addEventListener("click", dot_click, false);
+				}
+				// auto play
+				setInterval(() => {
+					slide_index++;
+					showSlides();
+				}, 4000);
+
+			})();
+		</script>
+		
+		<!-- back to top button starts -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+		
+		<script>
+			// Get the button
+			let mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<!-- back to top button ends -->
+
+	</body>
+</html>
+
+

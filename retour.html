@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>retour | MALICE MIZER Info</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<style>
+			body {
+				padding: 63px 0;
+			}
+
+			img {
+				display: block;
+				margin: auto;
+				width: 100%;
+				max-width: 500px;
+			}
+			
+			a:hover {
+				color: darkred;
+			}
+			
+			span {
+				color: gray;
+			}
+			
+			invisible {
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<body>
+	
+		<!-- responsive nav-bar starts -->
+		<div class="topnav" id="myTopnav">
+			<a href="/">MALICE MIZER Info</a>
+		  	<a href="/#about">About</a>
+			<a href="/#members">Members</a>
+			<a href="/#releases">Releases</a>
+		  	<a href="/#biography">Biography</a>
+			<a href="/links">Links</a>
+
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		</div>
+
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+		</script>
+		<!-- responsive nav-bar ends -->
+		
+		<div class="previous-next-container">
+			<div class="previous">
+				<a class="previous-next-link" href="/band-score">
+					<span>←&nbsp;</span>
+					<div class="previous-next-link-text">merveilles Band Score</div>
+				</a>
+			</div>
+			<div class="next">
+				<a class="previous-next-link" href="/cinq-parallele-vhs">				
+					<div class="previous-next-link-text">merveilles ～cinq parallele～</div>
+					<span>&nbsp;→</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="release-container">
+			<div class="booklet-slider-left">
+				<img src="https://malice-mizer.info/retour_1992-1998.webp" alt="retour cover">
+			</div>
+			
+			<div class="tracklist-info-right">
+				<p class="size28" lang="ja-jp">retour</p>
+				
+				<p class="size22">
+				[Photobook]<br>
+				1999.2.5 Release<br>
+				¥2,857 (tax out) / ¥3,000 (tax in)<br>
+				ISBN-10: 4938716151 <br>
+				ISBN-13: 978-4938716158</p>
+				
+				<span class="invisible">.</span>
+				
+				<p>MALICE MIZER's first official interview book contains a collection of articles printed in the magazine Fool's Mate from 1992 to 1998. This must have book for fans is additionally packed with commentary, valuable undisclosed live photos and artist photos. It is a complete chronology from the formation of the band, that includes history, interviews, goods, and flyers from the indie era! </p>				
+			</div>
+		</div>		
+		
+		<!-- back to top button starts -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+		
+		<script>
+			// Get the button
+			let mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<!-- back to top button ends -->
+
+	</body>
+</html>

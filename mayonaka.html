@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Mayonaka ni Kawashita Yakusoku | MALICE MIZER Info</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">	
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+		<style>
+			body {
+				padding: 63px 0;
+			}
+		
+			img {
+				display: block;
+				margin: auto;
+				width: 100%;
+				max-width: 500px;
+				padding-top: 20px;
+			}
+			
+			a:hover {
+				color: darkred;
+			}
+			
+			span {
+				color: gray;
+			}
+			
+			invisible {
+				visibility: hidden;
+			}
+			
+			hr {
+				color: silver;
+			}
+			
+			<!-- OR -->	
+			
+			* {
+			  box-sizing: border-box;
+			}
+			
+			.accordion {
+				padding: 0 5%;
+			}
+		
+			.accordion-button {
+				background-color: #671316;
+				font-size: 24px;
+				color: white;
+			}		
+
+			.accordion-button:not(.collapsed) {
+				background-color: #48090c;
+				color: white;
+			}
+			
+			.accordion-button::after {
+				background-image: url(white-arrow.png);
+			}
+			
+			.accordion-button:not(.collapsed)::after {
+				background-image: url(white-arrow.png);
+			}
+					
+			.accordion-button:focus {
+				z-index: 3;
+				outline: 0;
+				box-shadow: none;
+			}
+			
+			.accordion-body {
+				background-color: #121212;
+				font-size: 18px;
+                color: white;
+			}
+			
+		</style>
+	</head>
+	<body>
+	
+		<!-- responsive nav-bar starts -->
+		<div class="topnav" id="myTopnav">
+			<a href="/index">MALICE MIZER Info</a>
+			<a href="/index#about">About</a>
+			<a href="/index#members">Members</a>
+			<a href="/index#releases">Releases</a>
+			<a href="/index#biography">Biography</a>
+			<a href="/links">Links</a>
+
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			  <i class="fa fa-bars"></i>
+		  </a>
+		</div>
+
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+		</script>
+		<!-- responsive nav-bar ends -->
+		
+		<div class="previous-next-container">
+			<div class="previous">
+				<a class="previous-next-link" href="/bara-no-denshou">
+					<span>←&nbsp;</span>
+					<div class="previous-next-link-text">Bara no Denshou</div>
+				</a>
+			</div>
+			<div class="next">
+				<a class="previous-next-link" href="bara-no-rinbu">				
+					<div class="previous-next-link-text">Bara no Rinbu Mayonaka ni Kawashita Yakusoku</div>
+					<span>&nbsp;→</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="release-container">
+			<div class="booklet-slider-left">
+				<img src="mayonaka.webp">
+			</div>
+			
+			<div class="tracklist-info-right">
+				<p class="size28" lang="ja-jp">Mayonaka ni Kawashita Yakusoku ～Bara no Konrei～<br>
+				<span><sup>真夜中に交わした約束～薔薇の婚礼～</sup></span></p>
+				<p class="size22">
+					[13th Single]<br>
+					(CD & DVD)<br>
+					2001.10.30<br>
+					MMCD-025<br>
+					¥2,700 (tax out) / ¥2,835 (tax in)<br>
+					Midi:Nette
+				</p>
+				
+				<span class="invisible">.</span>
+				
+				<p lang="ja-jp">
+					[CD]<br>
+					I. Mayonaka ni Kawashita Yakusoku<br>
+					<span class="invisible">I. </span><span><sup>真夜中に交わした約束</sup></span><br>
+					<sup>(Lyrics & Composition by Mana)</sup><br>
+					II. Mayonaka ni Kawashita Yakusoku (Instrumental<br>
+					<span class="invisible">II. </span><span><sup>真夜中に交わした約束 (Instrumental)</sup></span><br>
+					<sup>(Composed by Mana)</sup><br>
+					III. Seinaru Toki Eien no Inori (Instrumental)<br>
+					<span class="invisible">III. </span><span><sup>聖なる刻 永遠の祈り (Instrumental)</sup></span><br>
+					<sup>(Composed by Mana)</sup><br>
+					IV. Chikasuimyaku no Meiro (Instrumental)<br>
+					<span class="invisible">IV. </span><span><sup>地下水脈の迷路 (Instrumental)</sup></span><br>
+					<sup>(Composed by Közi)</sup>
+				</p>
+				
+				<p>[DVD]<br>
+				I. Mayonaka ni Kawashita Yakusoku ～Bara no Konrei～ (PV)<br>
+				<span class="invisible">I. </span><span><sup>真夜中に交わした約束～薔薇の婚礼～ (PV)</sup></span><br></p>				
+				
+				<p>Mayonaka ni Kawashita Yakusoku ～Bara no Konrei～ is a specially edited PV  that includes unreleased footage from the movie</p>
+			</div>
+		</div>
+
+		<div class="accordion" id="accordionExample">
+			<!--<h2 class="lyrics">Lyrics</h2>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingOne">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=	"#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+					I. 真夜中に交わした約束
+					</button>
+				</h2>
+				<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<p class="size22">Lyrics & Composition by Mana</p>
+						<div class="lyric-columns">								
+							<div>
+								<p class="size22" lang="ja-jp"><b>Japanese</b><br>
+								真夜中に交わした約束</p>
+								
+								<hr>
+								
+								<p>黄昏の中　浮かぶ影<br>
+								いつか見たこの光景<br><br>
+
+								C'est une imagination capricieuse comme la nuit<br>
+								Elle est douce, la rencontre fatale<br><br>
+
+								囁き冷めた吐息　しのび寄る風よ<br>
+								私は琥珀の憂い　引き裂かれてゆく<br><br>
+
+								真夜中に交わした約束<br>
+								嘆き　闇の彼方<br>
+								教会の鐘　鳴り響く時<br>
+								淡い　光の中<br><br>
+
+								淡き月の光に　照らされた影よ<br>
+								私は真紅の薔薇のように染まりゆく<br><br>
+
+								真夜中に交わした約束<br>
+								嘆き　闇の彼方<br>
+								教会の鐘　鳴り響く時<br>
+								揺らぐ　光は今<br><br>
+
+								太陽と共に落ちてゆく<br>
+								願い　刻の彼方<br>
+								夕闇と共に昇りゆく<br>
+								白い　眠りの中</p>
+						  	</div>													
+						   	<div>
+								<p class="size22"><b>Romaji</b><br>
+								Mayonaka ni Kawashita Yakusoku</p>
+								
+								<hr>								
+								
+								<p>tasogare no naka ukabu kage<br>
+								itsuka mita kono kōkei<br><br>
+								
+								C’est une imagination capricieuse comme la nuit<br>
+								Elle est douce, la rencontre fatale<br><br>
+								
+								sasayaki sameta toiki shinobiyoru kaze yo<br>
+								watashi wa kohaku no urei hikisakareteyuku<br><br>
+								
+								mayonaka ni kawashita yakusoku<br>
+								nageki yami no kanata<br>
+								kyoukai no kane narihibiku toki<br>
+								awai hikari no naka<br><br>	
+								
+								awaki tsuki no hikari ni terasareta kage yo<br>
+								watashi wa shinku no bara no yō ni somari yuku<br><br>
+								
+								mayonaka ni kawashita yakusoku<br>
+								nageki yami no kanata<br>
+								kyoukai no kane narihibiku toki<br>
+								yuragu hikari wa ima<br>
+								taiyou to tomoni ochiteyuku<br><br>
+								
+								negai koku no kanata<br>
+								yuuyami to tomoni nobori yuku<br>
+								shiroi nemuri no naka</p>
+						  	</div>
+						  	<div>
+								<p class="size22"><b>English</b><br>
+								The Promise Exchanged at Midnight</p>
+								
+								<hr>
+								
+								<p>At dusk floating images<br>
+								This scene (I) have seen before<br><br>
+
+								It is a capricious imagination like the night<br>
+								It is soft, the fatal meeting<br><br>
+
+								A whisper, no zeal in (your) breath a creeping-up wind<br>
+								I am being torn up (by) the sorrow of amber<br><br>
+
+								The promise exchanged at midnight<br>
+								Grief far in the distance of the darkness<br>
+								When the church bell rings<br>
+								In the pale light<br><br>
+
+								The shadows illuminated by the pale moonlight<br>
+								I am dyed in the colors of the crimson rose
+
+								The promise exchanged at midnight<br>
+								Grief… far in the distance of the darkness<br>
+								When the church bell rings<br>
+								The flickering light is now<br><br>
+
+								Descending with the sun<br>
+								A wish far in the distance of time<br>
+								Ascending with the evening darkness<br>
+								In a white slumber</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>-->
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingTwo">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" lang="ja-jp">
+					Credits
+					</button>
+				</h2>
+				<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+					<div class="accordion-body">							
+						<p style="text-align: center">MALICE MIZER<br>
+							Klaha<br>
+							Mana<br>
+							Közi<br>
+							Yu～ki
+						</p>
+							
+						<div class="lyric-columns-half">
+							<div>
+								CD<br>
+								I. 真夜中に交わした約束<br>
+								Lyrics & Composed & Sound Programmed by Mana / Arrangement by MALICE MIZER<br>
+								II. 真夜中に交わした約束 (Instrumental)<br>
+								Composed & Sound Programmed by Mana / Arrangement by MALICE MIZER<br>
+								III. 聖なる刻 永遠の祈り (Instrumental)<br>
+								Composed & Sound Programmed by Mana / Arrangement by MALICE MIZER<br>
+								IV. 地下水脈の迷路 (Instrumental)<br>
+								Composed & Sound Programmed by Közi / Arrangement by MALICE MIZER<br><br>
+
+								Directed: Motohide Tanaka<br>
+								Sound Adviser: Kotaro Nakagawa &lt;M-I . II&gt;<br>
+								<span class="invisible">Sound Adviser: </span>Kyo Ichinose &lt;M-III . IV&gt;<br>
+								Synthesizer Manipulator: Kotaro Nakagawa &lt;M-I . II&gt;<br>
+								<span class="invisible">Synthesizer Manipulator: </span>Shigehiko Saito &lt;M-III . IV&gt;<br>
+								Recorded & Mixed by Atsuo Akabae &lt;M-I . II . III&gt;<br>
+								<span class="invisible">Recorded & Mixed by </span>Yoichiro Kano &lt;M-IV&gt;<br><br>
+
+								Additional Engineers: Hitomi Suzuki (MIXER'S LAB/ON AIR Azabu st.)<br>
+								<span class="invisible">Additional Engineers: </span>Hideyuki Hanaki (HITOKUCHIZAKA st.)<br>
+								<span class="invisible">Additional Engineers: </span>Yoshio Ohira (WARNER MUSIC RECORDING st.)<br><br>
+
+								Recorded at ON AIR Azabu st. & HITOKUCHIZAKA st.<br>
+								<span class="invisible">Recorded at </span>& WARNER MUSIC RECORDING st.<br><br>
+							</div>
+							
+							<div>
+								DVD<br>
+								Directed by Hiroyuki Muto<br>
+								Presented by KSS,INC. &<br>
+								<span class="invisible">Presented by </span>GAGA COMMUNICATIONS, INC.<br>
+
+								Design: Asaka Yamamoto (glitter glow)<br>
+								Front Cover Art: Emi Yoshida<br>
+								Photography	: Kenji Tsukagoshi<br>
+								Manager: Keiko Hachitani (Midi:Nette)<br><br>
+
+								Executive Producer: Yukie Itoh (Midi:Nette)<br><br>
+
+								Special Thanks to:<br>
+								All of you always in need of MALICE MIZER<br><br>
+
+								Eternal blood relative<br>
+								Kami<br><br>
+
+								Total Produced by MALICE MIZER
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				
+		<!-- back to top button starts -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+		
+		<script>
+			// Get the button
+			let mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<!-- back to top button ends -->
+
+	</body>
+</html>
+
+

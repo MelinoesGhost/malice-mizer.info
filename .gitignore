@@ -1,0 +1,9 @@
+# ignore all these files
+*.png
+*.webp
+*.xlsx
+*.ttf
+previous versions/
+CD booklets/
+flyers/
+Gardenia pamphlet/

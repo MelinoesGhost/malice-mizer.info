@@ -1,0 +1,11 @@
+<IfModule mod_headers.c>
+Header set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set X-Content-Type-Options "nosniff"
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+Header set Content-Security-Policy "upgrade-insecure-requests; object-src 'none'"
+Header always set Permissions-Policy "accelerometer=(),autoplay=(self),camera=(),encrypted-media=(),fullscreen=*,geolocation=(),gyroscope=(),magnetometer=(),microphone=(),sync-xhr=*,usb=(),xr-spatial-tracking=()"
+</IfModule>
+
+
+#Header set Content-Security-Policy "default-src 'self' https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css; upgrade-insecure-requests; script-src https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

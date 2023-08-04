@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>merveilles l'espace VHS | MALICE MIZER Info</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<style>
+			body {
+				padding: 63px 0;
+			}
+
+			img {
+				display: block;
+				margin: auto;
+				width: 100%;
+				max-width: 600px;
+				pointer-events: none;
+			}
+			
+			.vhs-dvd-container {
+				display: flex;
+			}
+
+			.vhs-dvd-container > div {
+				margin: 20px;
+				font-size: 22px;
+			}
+			
+			a:hover {
+				color: darkred;
+			}
+			
+			span {
+				color: gray;
+			}
+			
+			invisible {
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<body>
+	
+		<!-- responsive nav-bar starts -->
+		<div class="topnav" id="myTopnav">
+			<a href="/">MALICE MIZER Info</a>
+		  	<a href="/#about">About</a>
+			<a href="/#members">Members</a>
+			<a href="/#releases">Releases</a>
+		  	<a href="/#biography">Biography</a>
+			<a href="/links">Links</a>
+
+		  	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+		</script>
+		<!-- responsive nav-bar ends -->
+		
+		<div class="previous-next-container">
+			<div class="previous">
+				<a class="previous-next-link" href="/tanbi">
+					<span>←&nbsp;</span>
+					<div class="previous-next-link-text">Tanbi Jikken Kakumei</div>
+				</a>
+			</div>
+			<div class="next">
+				<a class="previous-next-link" href="/itanjinmon">				
+					<div class="previous-next-link-text">Itanjinmon</div>
+					<span>&nbsp;→</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="release-container">
+			<div class="booklet-slider-left">
+				<img src="https://malice-mizer.info/merveilles-VHS.webp" alt="merveilles l'espace VHS cover">
+			</div>
+			
+			<div class="tracklist-info-right">				
+				<p class="size28" lang="ja-jp">merveilles ～Shuuen to Kisuu～ l'espace<br>
+				<span><sup>merveilles～終焉と帰趨～l'espace</sup></span></p>
+				<p class="size22">
+				[VHS]<br>
+				1998.10.28<br>
+				COVA-6191<br>
+				¥5,700 (tax out) / ¥5,985 (tax in)<br>
+				Maitrize</p>
+				
+				<span class="invisible">.</span>
+				
+				<p lang="ja-jp">
+				1. Bois de merveilles<br>
+				2. S-CONSCIOUS<br>
+				3. ILLUMINATI<br>
+				4. Me same no rasen<br>
+				<span class="invisible">4. </span><span><sup>目醒めの螺旋</sup></span><br>
+				5. ～de merveilles<br>
+				6. Syunikiss～Nidome no Aitou～<br>
+				<span class="invisible">6. </span><span><sup>Syunikiss ～二度目の哀悼～</sup></span><br>
+				7. Gekka no Yasoukyoku<br>
+				<span class="invisible">7. </span><span><sup>月下の夜想曲</sup></span><br>
+				8. Bel Air ～Kuuhaku no Toki no Naka de～<br>
+				<span class="invisible">8. </span><span><sup>ヴェル・エール～空白の瞬間の中で～</sup></span><br>
+				9. Aegean ～Sugisarishi Kaze to Tomo ni～<br>
+				<span class="invisible">9. </span><span><sup>エーゲ～過ぎ去りし風と共に</sup></span><br>
+				10. Hamon/Kyousoukyoku<br>
+				<span class="invisible">10. </span><span><sup>波紋/協奏曲</sup></span><br>
+				11. →>>8<<←<br>
+				12. Gekka no Yasoukyoku de l'image<br>
+				<span class="invisible">12. </span><span><sup>月下の夜想曲 de l'image</sup></span><br>
+				13. Ju te veux<br>
+				14. Brise<br>
+				15. au revoir<br>
+				16. Le ciel<br>
+				17. Bois de merveiiles</p>
+			</div>
+		</div>			
+		
+		<!-- back to top button starts -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+		
+		<script>
+			// Get the button
+			let mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<!-- back to top button ends -->
+
+	</body>
+</html>

@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>merveilles | MALICE MIZER Info</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+		<style>
+			body {
+				padding: 63px 0;
+			}
+
+			img {
+				display: block;
+				margin: auto;
+				width: 100%;
+				max-width: 500px;
+			}
+			
+			.vhs-dvd-container {
+				display: flex;
+			}
+
+			.vhs-dvd-container > div {
+				margin: 20px;
+				font-size: 22px;
+			}
+			
+			span {
+				color: gray;
+			}
+			
+			invisible {
+				visibility: hidden;
+			}
+			
+			a:hover {
+				color: darkred;
+			}
+					
+			* {
+			  box-sizing: border-box;
+			}
+			
+			.accordion {
+				padding: 0 5%;
+			}
+		
+			.accordion-button {
+				background-color: #671316;
+				font-size: 24px;
+				color: white;
+			}		
+
+			.accordion-button:not(.collapsed) {
+				background-color: #48090c;
+				color: white;
+			}
+			
+			.accordion-button::after {
+				background-image: url(white-arrow.png);
+			}
+			
+			.accordion-button:not(.collapsed)::after {
+				background-image: url(white-arrow.png);
+			}
+					
+			.accordion-button:focus {
+				z-index: 3;
+				outline: 0;
+				box-shadow: none;
+			}
+			
+			.accordion-body {
+				background-color: #121212;
+				font-size: 18px;
+                color: white;
+			}
+			
+			#hcg-slider-1 .hcg-slide-container {
+				max-width:: 500px;
+				height: auto;
+			}
+			.hcg-slider {
+				text-align: center;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			.hcg-slide-container {
+				max-width: 100%;
+				display: inline-block;
+				position: relative;
+			}
+			.hcg-slides {
+				display: none;
+				overflow: hidden;
+				justify-content: center;
+				align-items: center;
+				border-radius: 5px;
+				border: solid 1px #a0a0a0;
+			}
+			.hcg-slides img {
+				max-width: 500px;
+				max-height: auto;
+				display: inline-block;
+			}
+			.hcg-slide-text {
+				color: #ffffff;
+				font-size: 14px;
+				padding: 3px 5px;
+				position: absolute;
+				bottom: 0;
+				border-radius: 5px;
+				left: 50%;
+				text-align: center;
+				text-shadow: 0 0 2px #000;
+				background-color: rgba(255,255,255,0.30);
+				display: inline-block;
+				transform: translate(-50%, -5px);
+			}
+			.hcg-slide-dot-control {
+				margin-top: 10px;
+				text-align: center;
+			}
+			.hcg-slide-dot {
+				cursor: pointer;
+				height: 13px;
+				width: 13px;
+				margin: 0 2px;
+				background-color: #bbb;
+				border-radius: 50%;
+				display: inline-block;
+			}
+			.hcg-slide-dot.dot-active {
+				background-color: #717171;
+			}
+			.hcg-slide-number {
+				color: #ffffff;
+				font-size: 12px;
+				padding: 4px 7px;
+				position: absolute;
+				border-radius: 5px;
+				top: 5px;
+				left: 5px;
+				background-color: rgba(255,255,255,0.30);
+			}
+		</style>
+	</head>
+	<body>
+	
+		<!-- responsive nav-bar starts -->
+		<div class="topnav" id="myTopnav">
+			<a href="/">MALICE MIZER Info</a>
+		  	<a href="/#about">About</a>
+			<a href="/#members">Members</a>
+			<a href="/#releases">Releases</a>
+		  	<a href="/#biography">Biography</a>
+			<a href="/links">Links</a>
+
+		  	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+		</script>
+		<!-- responsive nav-bar ends -->
+		
+		<div class="previous-next-container">
+			<div class="previous">
+				<a class="previous-next-link" href="/au-revoir">
+					<span>←&nbsp;</span>
+					<div class="previous-next-link-text">au revoir</div>
+				</a>
+			</div>
+			<div class="next">
+				<a class="previous-next-link" href="/illuminati">				
+					<div class="previous-next-link-text">ILLUMINATI [P-type]</div>
+					<span>&nbsp;→</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="release-container">
+			<div class="booklet-slider-left">
+				<div id="hcg-slider-1" class="hcg-slider">
+					<div class="hcg-slide-container">
+						<div class="hcg-slider-body">
+							<a class="hcg-slides animated" style="display:flex">
+								<span class="hcg-slide-number">1/5</span>
+								<img src="https://malice-mizer.info/薔薇の婚礼-vhs.webp" alt="bara no konrei vhs cover">
+								<span class="hcg-slide-text"></span>
+							</a>
+						</div>
+					</div>
+					<div class="hcg-slide-dot-control"></div>
+				</div>
+
+			</div>
+			
+			<div class="tracklist-info-right">
+				<p class="size28" lang="ja-jp">merveilles</p>
+				<p class="size22">
+				[Album]<br>
+				1998.3.18 Release<br>
+				COCA-14866<br>
+				¥2,774 (tax out) / ¥2,913 (tax in)<br>
+				Maitrize</p>
+				
+				<span class="invisible">.</span>
+				
+				<p>First press limited edition came as an A5, 12 page book while the regular edition were pressed in a tradional CD case. Both have the same catalogue number and release date.</p>
+				
+				<p lang="ja-jp">
+					I. ～de merveilles～<br>
+					<sup>(Composed by Mana)</sup><br>
+					II. Syunikiss ～Nidome no Aitou～<br>
+					<span class="invisible">II. </span><span><sup>Syunikiss～二度目の哀悼～</sup></span><br>
+					<sup>(Lyrics by Gackt / Composed by Yu～ki)</sup><br>
+					III. Bel Air ～Kuuhaku no Toki no Naka de～<br>
+					<span class="invisible">III. </span><span><sup>ヴェル・エール～空白の瞬間の中で～</sup></span><br>
+					<sup>(Lyrics by Gackt / Composed by Mana)</sup><br>
+					IV. ILLUMINATI<br>
+					<sup>(Lyrics by Gackt / Composed by Közi)</sup><br>
+					V. Brise<br>
+					<sup>(Lyrics by Gackt / Composed by Közi)</sup><br>
+					VI. Aegean ～Sugisarishi Kaze to Tomo ni～<br>
+					<span class="invisible">VI. </span><span><sup>エーゲ～過ぎ去りし風と共に～</sup></span><br>
+					<sup>(Lyrics by Gackt / Composed by Mana)</sup><br>
+					VII. au revoir<br>
+					<sup>(Lyrics by Gackt / Composed by Mana)</sup><br>
+					VIII. Ju te veux<br>
+					<sup>(Lyrics by Gackt / Composed by Közi)</sup><br>
+					IX. S-CONSCIOUS<br>
+					<sup>(Lyrics by Gackt / Composed by Mana)</sup><br>
+					X. Le ciel<br>
+					<sup>(Lyrics & Composition by Gackt)</sup><br>
+					XI. Gekka no Yasoukyoku<br>
+					<span class="invisible">XI. </span><span><sup>月下の夜想曲</sup></span><br>
+					<sup>(Lyrics by Gackt / Composed by Közi)</sup><br>
+					XIV. Bois de merveilles<br>
+					<sup>(Lyrics by Gackt / Composed by MALICE MIZER)</sup>
+				</p>
+			</div>
+		</div>
+		
+		<div class="accordion" id="accordionExample">
+			<!--<h2 class="lyrics">Lyrics</h2>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingOne">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+				Syunikiss～二度目の哀悼～ (Syunikiss ～Nidome no Aitō～)
+				</button>
+				</h2>
+				<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<h3>Lyrics by Gackt / Composed by Yu～ki</h3>
+						<div class="lyric-columns">								
+							<div>
+								<h2><b>Japanese</b></h2>
+								<p>Hold on… you’re gonna be okey…<br>
+								somebody… help us…<br><br>
+
+								Ah…　君が繰り返す独り言は君の最後に僕が叫んだ言葉<br><br>
+
+								祈りが届いたのか…目の前に記憶のままの君が居る<br><br>
+
+								Ah…　君が繰り返す独り言は誰も知るはずもない最後の言葉<br><br>
+
+								駆け寄った僕は君を抱き震える指で頬をなぞる<br><br>
+
+								Ah…　僕の願いを叶えてくれた空にやどる主へ<br>
+								もう一度願いを叶えて…「彼女に心を戻して」<br><br>
+
+								冷たい瞳で空を見つめてる<br>
+								帰るべき場所を知っているかのように<br><br>
+
+								Ah…　僕の願いを叶えてくれた空にやどる主へ<br>
+								もう一度願いを叶えて…「彼女に心を戻して」<br><br>
+
+								Ah…　僕の願いを叶えてくれた空にやどる主へ<br>
+								最後の願いを叶えて…「彼女を安らかに眠らせて」<br><br>
+
+								冷たい指で涙の跡をなぞる<br>
+								震える声で「空に帰して…」と繰り返す</p>
+						  	</div>
+						   	<div>
+								<h2><b>Romaji</b></h2>
+								<p>Hold on…you’re gonna be okay…<br>
+								Somebody… help us…<br><br>
+
+								Ah… kimi ga kurikaesu, hitorigoto wa kimi no saigo ni boku ga sakenda kotoba<br><br>
+
+								Inori ga todoita no ka?… Me no mae ni, kioku no mama no kimi ga iru<br><br>
+
+								Ah… kimi ga kurikaesu, hitorigoto wa daremo shiru hazu mo nai saigo no kotoba<br><br>
+
+								Kakeyotta boku wa kimi o dakifurueru yubi de hoho o nazoru<br><br>
+
+								Ah… boku no negai o kanaete kureta sora ni yadoru aruji e<br>
+								Mō ichido negai o kanaete… “Kanojo ni kokoro o modoshite”<br><br>
+
+								Tsumetai hitomi de sora o mitsumeteru<br>
+								Kaerubeki basho o shitte iru ka no yō ni<br><br>
+
+								Ah… boku no negai o kanaete kureta sora ni yadoru aruji e<br>
+								Mō ichido negai o kanaete… “Kanojo ni kokoro o modoshite”<br><br>
+
+								Ah… boku no negai o kanaete kureta sora ni yadoru aruji e<br>
+								Saigo no negai o kanaete… “Kanojo o yasuraka ni nemurasete”<br><br>
+
+								Tsumetai yubi de namida no ato o nazoru<br>
+								Furueru koe de, “Sora ni kaeshite…” to kurikaesu</p>
+						  	</div>
+						  	<div>
+								<h2><b>English</b></h2>
+								<p>Hold on…you’re gonna be okay…<br>
+								Somebody…help us…<br><br>
+
+								Ah… the words you repeat to yourself are the words I shouted in your final moments<br><br>
+
+								Have my prayers been answered?… Before my eyes, you are here as you were in my memories<br><br>
+
+								Ah… the words you repeat to yourself are the last words no one should come to know<br><br>
+
+								I ran up to embrace you as I tremble and brush your cheek with my fingers<br><br>
+
+								Ah… to the lord who lives in the sky who granted my wish<br>
+								Grant my wish once more… “Return the girl’s heart to her”<br><br>
+
+								She stares at the sky with cold eyes<br>
+								As if she knows the place she should return to<br><br>
+
+								Ah… to the lord who lives in the sky who granted my wish<br>
+								Grant my wish once more… “Return the girl’s heart to her”<br><br>
+
+								Ah… to the lord who lives in the sky who granted my wish<br>
+								Grant my last wish… “Let her sleep peacefully”<br><br>
+
+								I follow the traces of my tears with her cold fingers<br>
+								I repeat, “Return to the sky…” with a voice that trembles</p>
+							</div>
+						</div>	
+						Romaji and English translation by <a href="https://the-lair-of-madame-tarantula.blogspot.com/">Madame Tarantula</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingTwo">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+				ヴェル・エール～空白の瞬間の中で～ (Veru Ēru ～Kūhaku no Toki no Naka de～ / Bel Air/Beautiful Air ～Within the Time of a Void～)
+				</button>
+				</h2>
+				<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<h3>Lyrics by Gackt / Composed by Mana</h3>
+						<div class="lyric-columns">								
+							<div>
+								<h2><b>Japanese</b></h2>
+								<p>さあ目を開けて僕を見てよ<br>
+								ほらまだ温もりさえ　僕の手の平に抱かれている現実は<br>
+								もう痛みも無い中で<br>
+								貴女は何を現在も想っているの<br><br>
+
+								この背中を包む夜と闇に絵を描く僕は　時間という名の支配者に操られて<br><br>
+
+								大空に浮かべた思い出の中で　踊る二人を見つめ泣いていた<br>
+								最後までさよならさえ言えずこの場所で　眠りに落ちた貴女を抱いていたくて<br><br>
+
+								揺れながら足を浮かせ…<br><br>
+
+								この痛みを増す夜に同じ言葉を繰り返し　揺れながら空に足を浮かせて<br><br>
+
+								大空に浮かべた思い出の中で　僕を見つめた貴女は微笑んで<br>
+								最後まで腕を伸ばして薄れていく声は　現実を見つめることを祈って<br><br>
+
+								そっと<br><br>
+
+								大空に浮かべた思い出の中で　踊る二人は今も微笑んで<br>
+								長い夜の終わりを告げるこの腕で　眠りに落ちた貴女を抱いていたくて<br><br>
+
+								揺れながら足を浮かせ…<br><br>
+
+								揺れながら空に身を寄せて…</p>
+						  	</div>
+						   	<div>
+								<h2><b>Romaji</b></h2>
+								<p>Sā, me o akete boku o mite yo!<br>
+								Hora, mada nukumori sae?… Boku no tenohira ni dakarete iru genjitsu wa<br>
+								Mō itami mo nai naka de<br>
+								Anata wa nani o genzai mo omotte iru no?<br><br>
+
+								Kono senaka o tsutsumu yoru to yami ni e o egaku boku wa… “genzai” to iu na no shihaisha ni ayatsurarete…<br><br>
+
+								Ōzora ni ukabeta, omoide no naka de…odoru futari o mitsumenaite ita<br>
+								Saigo made sayonara sae iezu, kono basho de… nemuri ni ochita anata o daite itakute…<br><br>
+
+								Yurenagara, ashi o ukase…<br><br>
+
+								Kono itami o masu yoru ni onaji kotoba o kurikaeshi… yurenagara, sora ni ashi o ukasete…<br><br>
+
+								Ōzora ni ukabeta, omoide no naka de…boku o mitsumeta anata wa hohoende<br>
+								Saigo made ude o nobashite, usurete iku koe wa… genjitsu o mitsumeru koto o inotte…<br><br>
+
+								Sotto…<br><br>
+
+								Ōzora ni ukabeta, omoide no naka de…odoru futari wa ima mo hohoende<br>
+								Nagai yoru no owari o tsugeru kono ude de… nemuri ni ochita anata o daite itakute…<br><br>
+
+								Yurenagara, ashi o ukase…<br><br>
+
+								Yurenagara, sora ni mi o yosete…</p>
+						  	</div>
+						  	<div>
+								<h2><b>English</b></h2>
+								<p>Now, open (your) eyes and look at me!<br>
+								See, (can you) still (feel) even the warmth?…While the present time,1 being held with the palms of my hands<br>
+								Is having no more pain<br>
+								What are (you) thinking even now?<br><br>
+
+								I, who paint pictures in the night and the darkness which is covering this back <br>(of mine)…am controlled by the person2 whose name is “Time” and…
+
+								(I) was crying, gazing at (us) two…who were dancing in the memory projected upon the canopy of the heavens<br>
+								Without being able to even say goodbye until the end…(I) want to hold you, who fell asleep at this place and…<br><br>
+
+								While swaying, letting (your) feet float…<br><br>
+
+								In the night when this pain increases, (I) repeat the same words and…while swaying, letting (your) feet float in the sky and…<br><br>
+
+								In the memory projected upon the canopy of the heavens…you, who gaze at me, smile and<br>
+								Stretching (my) arms until the end, (my) voice becoming fainter…wishes (to be) looking intensely at the present time3 and…<br><br>
+
+								Gently…<br><br>
+
+								The two (of us), who dance….in the memory projected upon the canopy of the heavens, smile even now<br>
+								(I) want to continue holding you, who fell asleep…in these arms that tell the end of a long night and…<br><br>
+
+								While swaying, letting (your) feet float…<br><br>
+
+								While swaying, letting (your) body come closer to the sky and…</p>
+							</div>
+						</div>	
+						Romaji and English translation by <a href="https://the-lair-of-madame-tarantula.blogspot.com/">Madame Tarantula</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingThree">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+				ILLUMINATI
+				</button>
+				</h2>
+				<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<h3>Lyrics by Gackt / Composed by Közi</h3>
+						<div class="lyric-columns">								
+							<div>
+								<h2><b>Japanese</b></h2>
+								<p>Magical or Meriment. Comunion with Nimrod.<br>
+								服を脱ぎ横たわる姿に祈りを捧げて<br>
+								Magical or Meriment. Comunion with Nimrod.<br>
+								もし一度手にしてしまえば逃れることは出来ない<br>
+								ダビデの星のもとで全てと交わる<br><br>
+
+								解き放たれたその躰から流れる血も傷みも快楽へと変わる
+
+								救われぬ躰で踊る仕草はセミラミスのように美しく<br>
+								身を委ねもがき狂い舞う躰を<br>
+								ホーリーグレイルで頂へと昇り詰めればいい<br><br>
+
+								“CALL BACK”<br>
+								I’m sunk in the abysmal swamp<br>
+								“BORN AGAIN”<br>
+								Where there is no foothold<br>
+								“GROVE”<br>
+								I have reached the watery depths<br>
+								“WHAT SHOULD YOU DO?”<br>
+								Distorted face…<br><br>
+
+								Magical or Meriment. Comunion with Nimrod.<br>
+								モーリヤに身を落とし揺れて…揺れて夢の中で踊る<br><br>
+
+								夢の狭間でボアズを口にくわえ揺れる胸も躰も永遠に操られて<br><br>
+
+								救われぬ躰で踊る仕草はセミラミスのように美しく<br>
+								身を委ねもがき狂い舞う躰を<br>
+								ホーリーグレイルで頂へと昇り詰めればいい<br>
+								Magical or Meriment. Comunion with Nimrod.<br><br></p>
+						  	</div>	
+						   	<div>
+								<h2><b>Romaji</b></h2>
+								<p>
+								</p>
+						  	</div>
+						  	<div>
+								<h2><b>English</b></h2>
+								<p>I need to kill you in order to escape…
+								I need to run away in order to get to you…
+								You can’t know…what I took away
+								Why…?  Why can’t you kill me?
+								Death is the submission for me and I want to die…
+								Touch me and ignore your senses…
+								That’s the Way of Illuminati…
+
+								Magical or merriment. Communion with Nimrod
+								Now offer your prayer to the figure lying down after taking off (their) clothes
+
+								(Magical or merriment. Communion with Nimrod)
+								If I can keep you in my possession one more time, (you) will not be able to escape
+								I have intercourse with everything…4
+
+								…Under…
+
+								…The Star of David
+
+								The pain/grief and the blood flowing out of that unleashed body (of yours) changes to pleasure
+
+								The way you dance with your unsaveable body is beautiful like Semiramis
+								And you are free to drive your helpless, ecstatic, dancing body/And (you) are free to hand over and have your squirming and wildly dancing body
+								Up to the climax/Reach the climax at the Holy Grail
+
+								Magical or merriment. Communion with Nimrod
+
+								“CALL BACK”
+								I’m sunk in the abysmal swamp
+								“BORN AGAIN”
+								Where there is no foothold
+								“GROVE”
+								I have reached the watery depths
+								“WHAT SHOULD YOU DO?”
+								Distorted face…
+
+								Magical or merriment. Communion with Nimrod
+								Disguising yourself as Moria7, swaying…swaying and dancing in a dream
+
+								Between dreams, holding Boaz8 in (your) mouth, both (your) swaying chest and body are being controlled forever and…
+
+								And although I may have tried to kill you   (If in my memory I tried to kill you, would you        remain the way you are? 
+								I really am a pawn of my ??? and my own lies ???  Or would I kill you on my own?  Because she can?
+								When you love someone…you die    When you also love someone, you die ???        telling ???
+								Crying to ???      And that’s the way you remain until everyone fades        away
+								Take me up, up into Heaven)    And you’re taken ???)9
+
+								The way you dance with your unsaveable body is beautiful like Semiramis 
+								And (you) are free to drive (your) helpless, ecstatic, dancing body/And (you) are free to hand over and have (your) squirming and wildly dancing body
+								Up to the climax/Reach the climax at the Holy Grail
+
+								Magical or merriment.  Communion with Nimrod</p>
+							</div>
+						</div>	
+						Romaji and English translation by <a href="https://the-lair-of-madame-tarantula.blogspot.com/">Madame Tarantula</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingFour">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+				Brise
+				</button>
+				</h2>
+				<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<h3>Lyrics by Gackt / Composed by Közi</h3>
+						<div class="lyric-columns">								
+							<div>
+								<h2><b>Japanese</b></h2>
+								<p>肌が透き通り夜を優しく抱き締める空がそっと舞い降りて来る頃<br>
+								風のざわめきは指の隙間をすりぬけながら遊んでいる<br>
+								君はてのひらを優しく差し出して<br>
+								この空に飛び込んだ僕の行き先を瞬きもせずじっと見てる<br><br>
+
+								何もない白い部屋の窓から小さな体をのばして<br>
+								この空に少し近づいた君は僕と二人で踊っている<br><br>
+
+								静かな夜には僕がこの子守歌でなぐさめてあげるから<br>
+								そんなに泣かないで<br><br>
+
+								風がささやいた<br>
+								「アスファルトの焼けた匂いもこの夜にはないよ」と<br>
+								突然の周りの出来事に君はどうしていいか… 戸惑っている？<br><br>
+
+								君はてのひらを優しく差し出してこの胸に飛び込んだ<br>
+								街の静けさも歳の数の灯も君のために<br><br>
+
+								何もない白い部屋の窓から遠くの景色を眺めて<br>
+								夕暮れに少し冷たい風をまとい<br>
+								この日のためにいつも奇跡を祈っていた<br><br>
+
+								何もない白い部屋の窓から小さな体をのばして<br>
+								この空に少し近づいた君は僕と二人で踊っている<br>
+
+								この空に少し近づいた君は僕と二人で踊っている<br><br>
+
+								静かな夜には君の素敵な顔を見せて</p>
+						  	</div>
+						   	<div>
+								<h2><b>Romaji</b></h2>
+								<p>Hada ga sukitōri yoru o yasashiku dakishimeru sora ga sotto maifurite kuru koro<br>
+								Kaze no zawameki wa yubi no sukima o surinukenagara asonde iru<br>
+								Kimi wa tenohira o yasashiku sashidashite<br>
+								Kono sora ni tobikonda boku no yukisaki o matataki mo sezu jitto miteru<br><br>
+
+								Nanimo nai shiroi heya no mado kara chiisa na karada o nobashite<br>
+								Kono sora ni sukoshi chikazuita kimi wa boku to futari de odotte iru<br><br>
+
+								Shizuka na yoru ni wa boku ga kono komoriuta de nagusamete ageru kara<br>
+								Sonna ni nakanaide<br><br>
+
+								Kaze ga sasayaita
+								“Asufaruto no yaketa nioi mo kono yoru ni wa nai yo,” to<br>
+								Totsuzen no mawari no dekigoto ni kimi wa dōshite ii ka?… Tomadotte iru?<br><br>
+
+								Kimi wa tenohira o yasashiku sashidashite kono mune ni tobikonda<br>
+								Machi no shizukesa mo toshi no kazu no akari mo kimi no tame ni<br><br>
+
+								Nanimo nai shiroi heya no mado kara tōku no keshiki o nagamete<br>
+								Yūgure ni sukoshi tsumetai kaze o matoi<br>
+								Kono hi no tame ni, itsumo kiseki o inotte ita<br><br>
+
+								Nanimo nai shiroi heya no mado kara chiisa na karada o nobashite<br>
+								Kono sora ni sukoshi chikazuita kimi wa boku to futari de odotte iru<br><br>
+
+								Kono sora ni sukoshi chikazuita kimi wa boku to futari de odotte iru<br><br>
+
+								Shizuka na<sup>1</sup> yoru ni wa kimi no suteki na kao o misete</p>
+						  	</div>
+						  	<div>
+								<h2><b>English</b></h2>
+								<p>The skin of the breeze gently embraces closely the sky of the night that becomes transparent and comes to softly swoop down toward us<br>
+								The wind’s stir is slipping through our fingers while it is playing<br>
+								You gently held out your palm to me and<br>
+								I stared intently without even blinking at my destination as I leapt into this sky<br><br>
+
+								My small body grows longer from the window of this empty, white room and<br>
+								You are dancing with me as the two of us got a little closer to this sky<br><br>
+
+								Because I will do you the favor of and comfort you with this lullaby in the quiet night<br>
+								Do not cry like that<br><br>
+
+								The wind whispered<br>
+								“There is not on this night even the smell of heated asphalt”<br>
+								Why is it good that you are in an incident of unexpected surroundings?…<br>
+								Are you being bewildered?<br><br>
+
+								You gently held out your palm to me and leapt into this heart of mine<br>
+								For you are the light of the number of years and the stillness of the streets<br><br>
+
+								I gaze at the distant scenery from the window of this empty, white room and<br>
+								The cold wind shoots the sky a little in this evening<br>
+								For the sake of this day, I always prayed and still do for a miracle<br><br>
+
+								My small body grows longer from the window of this empty, white room and<br>
+								You are dancing with me as the two of us got a little closer to this sky<br><br>
+
+								You are dancing with me as the two of us got a little closer to this sky<br><br>
+
+								I see your wonderful face in the quiet<sup>1</sup> night</p>
+							</div>
+						</div>	
+						Romaji and English translation by <a href="https://the-lair-of-madame-tarantula.blogspot.com/">Madame Tarantula</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingFive">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+				エーゲ ～過ぎ去りし風と共に～ (Ēge ～Sugisarishi Kaze to Tomo ni～ / Aegean ～Together with the Past Wind)
+				</button>
+				</h2>
+				<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<h3>Lyrics by Gackt / Composed by Mana</h3>
+						<div class="lyric-columns">								
+							<div>
+								<h2><b>Japanese</b></h2>
+								<p>琥珀の想い誘う蒼い風…<br>
+								部屋に響く映写機の回る音<br>
+								古いフィルムの中だけで微笑ってる君…<br>
+								指でそっと壁際の君をなぞる<br><br>
+
+								何も変わらないこの空が<br>
+								あの時の二人を雲に乗せて運んでゆく<br>
+								何も変わらないこの空を<br>
+								見つめてた白い君を思い出す<br><br>
+
+								重なり合う記憶の中で君を抱き<br>
+								指を絡め眠りに落ちてゆく<br>
+								重なり合う記憶の中で君を抱き<br>
+								夢の中へ深く沈んでゆける<br><br>
+
+								何も変わらないこの空があの時の想いを<br>
+								雲に乗せて運んでゆく<br>
+								何も変わらない二人だけのこの場所で<br>
+								白い君を思い出す<br><br>
+
+								重なり合う記憶の中で君を抱き<br>
+								指を絡め眠りに落ちてゆく<br>
+								重なり合う記憶の中で君を抱き<br>
+								夢の中へ深く沈んでゆける<br><br>
+
+								指を絡め眠りに落ちてゆける…<br>
+								夢の中へ深く沈んでゆける<br><br>
+
+								同じ日々を今日もまたこの同じ部屋で…<br>
+								壁の中だけで微笑んでいる変わらないあの時の君と僕が<br>
+								また深く沈んでゆく…</p>
+						  	</div>
+						   	<div>
+								<h2><b>Romaji</b></h2>
+								<p>Kohaku no omoi sasō aoi kaze…<br>
+								Heya ni hibiku eishaki no mawaru oto<br>
+								Furui firumu no naka dake de waratteru kimi…<br>
+								Yubi de sotto kabegiwa no kimi o nazoru<br><br>
+
+								Nanimo kawaranai kono sora ga<br>
+								Ano toki no futari o kumo ni nosete hakonde yuku<br>
+								Nanimo kawaranai kono sora o<br>
+								Mitsumeteta, shiroi kimi o omoidasu<br><br>
+
+								Kasanariau kioku no naka de kimi o daki<br>
+								Yubi o karame, nemuri ni ochite yuku<br>
+								Kasanariau kioku no naka de kimi o daki<br>
+								Yume no naka e fukaku shizunde yukeru<br><br>
+
+								Nanimo kawaranai kono sora ga ano toki no omoi o<br>
+								Kumo ni nosete hakonde yuku<br>
+								Nanimo kawaranai futari dake no kono basho de<br>
+								Shiroi kimi o omoidasu<br><br>
+
+								Kasanariau kioku no naka de kimi o daki<br>
+								Yubi o karame, nemuri ni ochite yuku<br>
+								Kasanariau kioku no naka de kimi o daki<br>
+								Yume no naka e fukaku shizunde yukeru<br><br>
+
+								Yubi o karame, nemuri ni ochite yukeru…<br><br>
+
+								Yume no naka e fukaku shizunde yukeru<br><br>
+
+								Onaji hibi o kyō mo mata kono onaji heya de…<br>
+								Kabe no naka dake de hohoende iru kawaranai ano toki no kimi to boku ga<br>
+								Mata fukaku shizunde yuku…</p>
+						  	</div>
+						  	<div>
+								<h2><b>English</b></h2>
+								<p>The blue wind calls for amber sentiments…<br>
+								The revolving sound of a film projector resounds in the room<br>
+								You are laughing only inside of the old film…<br>
+								I trace the you (on the film) alongside the wall softly with my finger<br><br>
+
+								Nothing is constant in this sky<br>
+								But the two (of us) of that time are picked up and carried away on the clouds<br>
+								I gazed at the this sky where nothing is constant<br>
+								I remember the white you<br><br>
+
+								I embrace you inside of my memories that overlap<br>
+								Our fingers intertwine and we fall into sleep<br>
+								I embrace you inside of my memories that overlap<br>
+								We can descend deep inside the dream<br><br>
+
+								Nothing is constant in this sky, but the sentiments of that time<br>
+								Are picked up and carried away on the clouds<br>
+								Nothing is constant, in this place only the two of us are<br>
+								I remember the white you<br><br>
+
+								I embrace you inside of my memories that overlap<br>
+								Our fingers intertwine and we fall into sleep<br>
+								I embrace you inside of my memories that overlap<br>
+								We can descend deep inside the dream<br><br>
+
+								Our fingers intertwine and we fall into sleep…<br><br>
+
+								We can descend deep inside the dream<br><br>
+
+								After those same days, in this same room again even today…<br>
+								The you and I of that constant time are laughing on only the inside of the wall<br>
+								But we descend deep again…</p>
+							</div>
+						</div>	
+						Romaji and English translation by <a href="https://the-lair-of-madame-tarantula.blogspot.com/">Madame Tarantula</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingSix">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+				au revoir
+				</button>
+				</h2>
+				<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<h3>Lyrics by Gackt / Composed by Mana</h3>
+						<div class="lyric-columns">								
+							<div>
+								<h2><b>Japanese</b></h2>
+								<p>いつも二人分の響く足音が続いてた道で<br>
+								枯れ果ててしまった街路樹達が<br>
+								大きくなった歩幅を気付かせた<br><br>
+
+								肩にすれ違う小さな落ち葉がまた空に戻って<br>
+								そんな吹き荒ぶ風さえも今はなぜか愛しくて<br>
+								そっと微笑んでいた<br><br>
+
+								窓辺にもたれる見なれた姿が<br>
+								陰る陽射に映し出されて消える<br>
+								あふれる想いにつぶやいた言葉は<br>
+								「せめて夢が覚めるまで…」<br><br>
+
+								もっと<br>
+								あなたを抱きしめ眠りたい<br>
+								優しい記憶に変わった今でさえも<br>
+								この腕で抱きしめ眠りたい<br>
+								出会った頃の二人のように<br><br>
+
+								窓辺にもたれてざわめく並木に<br>
+								そっとつぶやく同じ言葉をもう一度…<br>
+								あの時の姿が見えなくなっても<br>
+								せめて夢の中だけは<br><br>
+
+								もっと<br>
+								あなたを抱きしめ眠りたい<br>
+								優しい記憶に変わった今でさえも
+								この腕で抱きしめ眠りたい<br>
+								出会った頃のあの日のままの<br>
+								二人のように<br><br>
+
+								あなたを抱きしめ眠りたい<br><br>
+
+								この腕で抱きしめ眠りたい</p>
+						  	</div>
+						   	<div>
+								<h2><b>Romaji</b></h2>
+								<p>Itsumo futaribun no hibiku ashioto ga tsuzuiteta michi de<br>
+								Karehatete shimatta gairojutachi ga<br>
+								Ōkiku natta hohaba o kizukaseta<br><br>
+
+								Kata ni sure chigau chiisa na ochiba ga mata sora ni modotte<br>
+								Sonna fukisusabu kaze sae mo ima wa nazeka itoshikute<br>
+								Sotto hohoende ita<br><br>
+
+								Madobe ni motareru minareta sugata ga<br>
+								Kageru hizashi ni utsushidasarete kieru<br>
+								Afureru omoi ni tsubuyaita kotoba wa<br>
+								“Semete yume ga sameru made…”<br><br>
+
+								Motto<br>
+								Anata o dakishimenemuritai<br>
+								Yasashii kioku ni kawatta ima de sae mo<br>
+								Kono ude de dakishimenemuritai<br>
+								Deatta koro no futari no yō ni<br><br>
+
+								Madobe ni motarete zawameku namiki ni<br>
+								Sotto tsubuyaku onaji kotoba o mō ichido…<br>
+								Ano toki no sugata ga mienaku natte mo<br>
+								Semete yume no naka dake wa<br><br>
+
+								Motto<br>
+								Anata o dakishimenemuritai<br>
+								Yasashii kioku ni kawatta ima de sae mo<br>
+								Kono ude de dakishimenemuritai<br>
+								Deatta koro no ano hi no mama no<br>
+								Futari no yō ni<br><br>
+
+								Anata o dakishimenemuritai<br><br>
+
+								Kono ude de dakishimenemuritai</p>
+						  	</div>
+						  	<div>
+								<h2><b>English</b></h2>
+								<p>On the street where the footsteps for the two of us were always continuing to echo<br>
+								The sadly withered trees lining the street<br>
+								Let us notice our increased steps<br><br>
+
+								The small falling leaves that brush past my shoulders return to the sky again<br>
+								And now even such a raging wind is somehow dear to me<br>
+								And I was gently smiling<br><br>
+
+								A familiar figure leaning by the window<br>
+								Appears like a projected image in the darkening sunlight and disappears<br>
+								The words I murmured in my overflowing feelings are<br>
+								“At least until I come out of this dream…”<br><br>
+
+								More<br>
+								I want to sleep while holding you tight<br>
+								Even now when my remembrance has turned tender<br>
+								I want to sleep while holding you tight with these arms<br>
+								Like when we first met<br><br>
+
+								I want to hear the same words one more time<br>
+								Which you gently murmured towards the rustling roadside trees while leaning by the window…<br>
+								Even if I cannot see your figure from that time anymore<br>
+								At least just in my dream<br><br>
+
+								More<br>
+								I want to sleep while holding you tight<br>
+								Even now when my remembrance has turned tender<br>
+								I want to sleep while holding you tight with these arms<br>
+								Like when we<br>
+								First met that day, the same way<br><br>
+
+								I want to sleep while holding you tight<br><br>
+
+								I want to sleep while holding you tight with these arms<br><br>
+								</p>
+							</div>
+						</div>	
+						Romaji and English translation by <a href="https://the-lair-of-madame-tarantula.blogspot.com/">Madame Tarantula</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingSeven">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSevn">
+				title
+				</button>
+				</h2>
+				<div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<h3>Lyrics by  / Composed by </h3>
+						<div class="lyric-columns">								
+							<div>
+								<h2><b>Japanese</b></h2>
+								<p>
+								</p>
+						  	</div>
+						   	<div>
+								<h2><b>Romaji</b></h2>
+								<p>
+								</p>
+						  	</div>
+						  	<div>
+								<h2><b>English</b></h2>
+								<p></p>
+							</div>
+						</div>	
+						Romaji and English translation by <a href="https://the-lair-of-madame-tarantula.blogspot.com/">Madame Tarantula</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingEight">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+				title
+				</button>
+				</h2>
+				<div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<h3>Lyrics by  / Composed by </h3>
+						<div class="lyric-columns">								
+							<div>
+								<h2><b>Japanese</b></h2>
+								<p>
+								</p>
+						  	</div>
+						   	<div>
+								<h2><b>Romaji</b></h2>
+								<p>
+								</p>
+						  	</div>
+						  	<div>
+								<h2><b>English</b></h2>
+								<p></p>
+							</div>
+						</div>	
+						Romaji and English translation by <a href="https://the-lair-of-madame-tarantula.blogspot.com/">Madame Tarantula</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingNine">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+				title
+				</button>
+				</h2>
+				<div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<h3>Lyrics by  / Composed by </h3>
+						<div class="lyric-columns">								
+							<div>
+								<h2><b>Japanese</b></h2>
+								<p>
+								</p>
+						  	</div>
+						   	<div>
+								<h2><b>Romaji</b></h2>
+								<p>
+								</p>
+						  	</div>
+						  	<div>
+								<h2><b>English</b></h2>
+								<p></p>
+							</div>
+						</div>	
+						Romaji and English translation by <a href="https://the-lair-of-madame-tarantula.blogspot.com/">Madame Tarantula</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingTen">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+				title
+				</button>
+				</h2>
+				<div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<h3>Lyrics by  / Composed by </h3>
+						<div class="lyric-columns">								
+							<div>
+								<h2><b>Japanese</b></h2>
+								<p>
+								</p>
+						  	</div>
+						   	<div>
+								<h2><b>Romaji</b></h2>
+								<p>
+								</p>
+						  	</div>
+						  	<div>
+								<h2><b>English</b></h2>
+								<p></p>
+							</div>
+						</div>	
+						Romaji and English translation by <a href="https://the-lair-of-madame-tarantula.blogspot.com/">Madame Tarantula</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingEleven">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+				title
+				</button>
+				</h2>
+				<div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<h3>Lyrics by  / Composed by </h3>
+						<div class="lyric-columns">								
+							<div>
+								<h2><b>Japanese</b></h2>
+								<p>
+								</p>
+						  	</div>
+						   	<div>
+								<h2><b>Romaji</b></h2>
+								<p>
+								</p>
+						  	</div>
+						  	<div>
+								<h2><b>English</b></h2>
+								<p></p>
+							</div>
+						</div>	
+						Romaji and English translation by <a href="https://the-lair-of-madame-tarantula.blogspot.com/">Madame Tarantula</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingTwelve">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
+				title
+				</button>
+				</h2>
+				<div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<h3>Lyrics by  / Composed by </h3>
+						<div class="lyric-columns">								
+							<div>
+								<h2><b>Japanese</b></h2>
+								<p>
+								</p>
+						  	</div>
+						   	<div>
+								<h2><b>Romaji</b></h2>
+								<p>
+								</p>
+						  	</div>
+						  	<div>
+								<h2><b>English</b></h2>
+								<p></p>
+							</div>
+						</div>	
+						Romaji and English translation by <a href="https://the-lair-of-madame-tarantula.blogspot.com/">Madame Tarantula</a>
+					</div>
+				</div>
+			</div>-->
+			
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="headingThirteen">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen">
+				Credits
+				</button>
+				</h2>
+				<div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+						<p style="text-align: center">
+							1. ～de merveilles (music: Mana / arrangement: MALICE MIZER)<br>
+							2. Syunikiss ～二度目の哀悼～ (lyrics: Gackt. C / music: Yu～ki / arrangement: MALICE MIZER & Yohei Shimada)<br>
+							3. ヴェル・エール ～空白の瞬間の中で～ (lyrics: Gackt. C / music: Mana / arrangement: MALICE MIZER & Yohei Shimada)<br>
+							4. ILLUMINATI (lyrics: Gackt. C / music: Közi / arrangement: MALICE MIZER)<br>
+							5. Brise (lyrics: Gackt. C / music: Közi / arrangement: MALICE MIZER & Yohei Shimada)<br>
+							6. エーゲ ～過ぎ去りし風と共に～ (lyrics: Gackt. C / music: Mana / arrangement: MALICE MIZER)<br>
+							7. au revoir (lyrics: Gackt. C / music: Mana / arrangement: MALICE MIZER & Yohei Shimada)<br>
+							8. Je te veux (lyrics: Gackt. C / music: Közi / arrangement: MALICE MIZER)<br>
+							9. S-CONSCIOUS (lyrics: Gackt. C / music: Mana / arrangement: MALICE MIZER)<br>
+							10. Le ciel (lyrics: Gackt. C / music: Gackt. C/ arrangement: MALICE MIZER & Yohei Shimada)<br>
+							11. 月下の夜想曲 (lyrics: Gackt. C / music: Közi / arrangement: MALICE MIZER & Yohei Shimada)<br>
+							12. Bois de merveilles (lyrics: Gackt. C / music: MALICE MIZER / arrangement: MALICE MIZER & Yohei Shimada)
+						</p>
+							
+						 <span class="invisible">.</span>						 						 
+							
+						<p style="text-align: center">
+							MALICE MIZER<br>
+							Gackt, vocal & piano<br>
+							Mana, guitar & synthesizer<br>
+							Közi, guitar & synthesizer<br>
+							Yu～ki, bass<br>
+							Kami, drums<br><br>
+							 
+							Directed by Naoki Ichimura (NIPPON COLUMBIA)<br><br>
+							 
+							Arranger, Sound Adviser & Keyboards: Yohei Shimada<br><br>
+							 
+							All Instruments & Computer Programmings: Mana, Közi, Yu～ki, Kami and Gackt<br>
+							Synthesizer Programmings & Sound Design: Hobuhiko Nakayama (Z's)<br>
+							Drum Tech: Hiro Shiga<br><br>
+							 
+							Recorded & Mixed by Atsuo Akabae<br>
+							Additional Engineers: Hideyuki Hanaki (HITOKUCHIZAKA st.), Hirohito Fujishima (SOUND SKY st.)<br><br>
+							 
+							Recorded & Mixed at HITOKUCHIZAKA st., st. SOUND VALLEY, FREEDOM st., BUNKAMURA st.<br><br>
+							 
+							Mastered by Masao Nakazato (ONKIO HAUS)<br><br>
+							 
+							 
+							Additional Musicians: Toshihiro Nakanishi (violin), Chieko Kinbara (violin), Masashi Abe (cello)<br>
+							Music Co-ordination: Koji Nagai (HOT WAVE)<br><br>
+							 
+							Art Direction, Design & Cover College: Teruhisa Abe (Columbia Creative)<br>
+							Design: Hiroyuki Kumagai (Columbia Creative), Takaaki Inoue<br>
+							Photography	: asatoshi Makino<br>
+							Costume Design & Styling: Yukari Ohba (Midi:nette)<br>
+							Hair & Make-up: Tamayo Kotake (Kido Office)<br>
+							Object: Rui Toda (Penn Communications)<br>
+							Mana, Közi, & Yu～ki's Image Art: TAQueya Yamashita<br>
+							Image Photo: ©amana images, ©Uniphoto Press<br>
+							Editor: Chika Fujita (NIPPON COLUMBIA)<br>
+							Special Thanks to: Aoi Tsutsumi, Shin Watanbe, Naoki Kimura, SHOXX, Vicious<br><br>
+							 
+							Artist Management: Shizu Arai (Midi:Nette)<br><br>
+							 
+							Promotion Staffs: Yoshiyuki Kasuya (NIPPON COLUMBIA), Yumiko Kajino (NIPPON COLUMBIA) & All of NIPPON COLUMBIA staffs<br>
+							Sales Promotion: Koji Takahashi (NIPPON COLUMBIA) & All of NIPPON COLUMBIA staffs<br><br>
+							 
+							Executive Producers: Yukie Itoh (Midi:Nette), Nobuhiko Miyazawa (NIPPON COLUMBIA)
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			(() => {
+			//If you want to add more images, add the link name and URL image URL in the array list below.
+				const images_list = [
+			{
+				"url": "https://malice-mizer.info/merveilles-limited.webp",
+				"alt": "voyage limited edition cover",
+				"name": "Limited Edition"
+			},
+			{
+				"url": "https://malice-mizer.info/merveilles-regular.webp",
+				"alt": "voyage regular edition cover",
+				"name": "Regular Edition"
+			}
+				];
+
+			// generated by https://www.html-code-generator.com/html/image-slideshow-generator
+				let slider_id = document.querySelector("#hcg-slider-1");
+
+				// append all images
+				let dots_div = "";
+				let images_div = "";
+				for (let i = 0; i < images_list.length; i++) {
+					// if no link without href="" tag
+					let href = (images_list[i].link == "" ? "":' href="'+images_list[i].link+'"');
+					images_div += '<a'+href+' class="hcg-slides animated"'+(i === 0 ? ' style="display:flex"':'')+'>'+
+									'<span class="hcg-slide-number">'+(i+1)+'/'+images_list.length+'</span>'+
+									'<img src="'+images_list[i].url+'" alt="'+images_list[i].name+'">'+
+									'<span class="hcg-slide-text">'+images_list[i].name+'</span>'+
+								 '</a>';
+					dots_div += '<a href="#" class="hcg-slide-dot'+(i === 0 ? ' dot-active':'')+'" data-id="'+i+'"></a>';
+				}
+				slider_id.querySelector(".hcg-slider-body").innerHTML = images_div;
+				slider_id.querySelector(".hcg-slide-dot-control").innerHTML = dots_div;
+
+				let slide_index = 0;
+
+				const images = slider_id.querySelectorAll(".hcg-slides");
+				const dots = slider_id.querySelectorAll(".hcg-slide-dot");
+				const showSlides = () => {
+					if (slide_index > images.length-1) {
+						slide_index = 0;
+					}
+					if (slide_index < 0) {
+						slide_index = images.length-1;
+					}
+					for (let i = 0; i < images.length; i++) {
+						images[i].style.display = "none";
+						dots[i].classList.remove("dot-active");
+						if (i == slide_index) {
+							images[i].style.display = "flex";
+							dots[i].classList.add("dot-active");
+						}
+					}
+				}
+
+				const dot_click = event => {
+					event.preventDefault();
+					slide_index = event.target.dataset.id;
+					showSlides();
+				}
+
+				for (let i = 0; i < dots.length; i++) {
+					dots[i].addEventListener("click", dot_click, false);
+				}
+				// auto play
+				setInterval(() => {
+					slide_index++;
+					showSlides();
+				}, 5000);
+
+			})();
+		</script>
+		
+		<!-- back to top button starts -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+		
+		<script>
+			// Get the button
+			let mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<!-- back to top button ends -->
+
+	</body>
+</html>

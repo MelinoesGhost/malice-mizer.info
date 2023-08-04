@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Société de parenté | MALICE MIZER Info</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<style>
+			.bg {
+				background-image: url(red-curtain-bg-min.webp);
+				height: 100%; 
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		
+			body {
+				padding: 63px 0;
+			}
+
+			img {
+				display: block;
+				margin: auto;
+				width: 100%;
+				max-width: 500px;
+			}
+			
+			.vhs-dvd-container {
+				display: flex;
+			}
+
+			.vhs-dvd-container > div {
+				margin: 20px;
+				font-size: 22px;
+			}
+			
+			span {
+				color: gray;
+			}
+			
+			invisible {
+				visibility: hidden;
+			}
+			
+			a:hover {
+				color: darkred;
+			}
+					
+			* {
+				box-sizing: border-box;
+			}
+			
+			#hcg-slider-1 .hcg-slide-container {
+				max-width:: 500px;
+				height: auto;
+			}
+			.hcg-slider {
+				text-align: center;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			.hcg-slide-container {
+				max-width: 100%;
+				display: inline-block;
+				position: relative;
+			}
+			.hcg-slides {
+				display: none;
+				overflow: hidden;
+				justify-content: center;
+				align-items: center;
+				border-radius: 5px;
+				border: solid 1px #a0a0a0;
+			}
+			.hcg-slides img {
+				max-width: 500px;
+				max-height: auto;
+				display: inline-block;
+			}
+			.hcg-slide-text {
+				color: #ffffff;
+				font-size: 14px;
+				padding: 3px 5px;
+				position: absolute;
+				bottom: 0;
+				border-radius: 5px;
+				left: 50%;
+				text-align: center;
+				text-shadow: 0 0 2px #000;
+				background-color: rgba(255,255,255,0.30);
+				display: inline-block;
+				transform: translate(-50%, -5px);
+			}
+			.hcg-slide-dot-control {
+				margin-top: 10px;
+				text-align: center;
+			}
+			.hcg-slide-dot {
+				cursor: pointer;
+				height: 13px;
+				width: 13px;
+				margin: 0 2px;
+				background-color: #bbb;
+				border-radius: 50%;
+				display: inline-block;
+			}
+			.hcg-slide-dot.dot-active {
+				background-color: #717171;
+			}
+			.hcg-slide-number {
+				color: #ffffff;
+				font-size: 12px;
+				padding: 4px 7px;
+				position: absolute;
+				border-radius: 5px;
+				top: 5px;
+				left: 5px;
+				background-color: rgba(255,255,255,0.30);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bg"></div>
+	
+		<!-- responsive nav-bar starts -->
+		<div class="topnav" id="myTopnav">
+			<a href="/">MALICE MIZER Info</a>
+		  	<a href="/#about">About</a>
+			<a href="/#members">Members</a>
+			<a href="/#releases">Releases</a>
+		  	<a href="/#biography">Biography</a>
+			<a href="/links">Links</a>
+
+		  	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+		</script>
+		<!-- responsive nav-bar ends -->
+		
+		<div class="previous-next-container">
+			<div class="previous">
+				<a class="previous-next-link" href="/bara-no-rinbu">
+					<span>←&nbsp;</span>
+					<div class="previous-next-link-text">Bara no Rinbu ～Mayonaka ni Kawashita Yakusoku～</div>
+				</a>
+			</div>
+			<div class="next">
+				<a class="previous-next-link" href="/garnet">				
+					<div class="previous-next-link-text">Garnet ～Kindan no Sono e～</div>
+					<span>&nbsp;→</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="release-container">
+			<div class="booklet-slider-left">
+				<img src="https://malice-mizer.info/Société-de-parenté-VHS.webp" alt="Société de parenté VHS cover">
+			</div>
+			
+			<div class="tracklist-info-right">
+				<p class="size28" lang="ja-jp">Société de parenté</p>
+				
+				<p class="size22">
+				[VHS]<br>
+				2001.11.19<br>
+				MCVC-0001<br>
+				¥ (tax out) / ¥ (tax in)<br>
+				Midi:Nette</p>
+				
+				<span class="invisible">.</span>
+				
+				<p>A digest version of the fanclub event “Societe de parente” that took place on the same day a year prior at Zepp TOKYO</p>
+				
+				<p>※only sold to members of the fanclub, ma chérie</p>
+			</div>
+		</div>		
+		
+		<script>
+			(() => {
+			//If you want to add more images, add the link name and URL image URL in the array list below.
+				const images_list = [
+			{
+				"url": "https://malice-mizer.info/Beast-of-Blood-VHS.webp",
+				"alt": "",
+				"name": "VHS",
+				"link": ""
+			},
+			{
+				"url": "https://malice-mizer.info/Beast-of-Blood-DVD.webp",
+				"alt": "",
+				"name": "DVD",
+				"link": ""
+			}
+				];
+
+			// generated by https://www.html-code-generator.com/html/image-slideshow-generator
+				let slider_id = document.querySelector("#hcg-slider-1");
+
+				// append all images
+				let dots_div = "";
+				let images_div = "";
+				for (let i = 0; i < images_list.length; i++) {
+					// if no link without href="" tag
+					let href = (images_list[i].link == "" ? "":' href="'+images_list[i].link+'"');
+					images_div += '<a'+href+' class="hcg-slides animated"'+(i === 0 ? ' style="display:flex"':'')+'>'+
+									'<span class="hcg-slide-number">'+(i+1)+'/'+images_list.length+'</span>'+
+									'<img src="'+images_list[i].url+'" alt="'+images_list[i].name+'">'+
+									'<span class="hcg-slide-text">'+images_list[i].name+'</span>'+
+								 '</a>';
+					dots_div += '<a href="#" class="hcg-slide-dot'+(i === 0 ? ' dot-active':'')+'" data-id="'+i+'"></a>';
+				}
+				slider_id.querySelector(".hcg-slider-body").innerHTML = images_div;
+				slider_id.querySelector(".hcg-slide-dot-control").innerHTML = dots_div;
+
+				let slide_index = 0;
+
+				const images = slider_id.querySelectorAll(".hcg-slides");
+				const dots = slider_id.querySelectorAll(".hcg-slide-dot");
+				const showSlides = () => {
+					if (slide_index > images.length-1) {
+						slide_index = 0;
+					}
+					if (slide_index < 0) {
+						slide_index = images.length-1;
+					}
+					for (let i = 0; i < images.length; i++) {
+						images[i].style.display = "none";
+						dots[i].classList.remove("dot-active");
+						if (i == slide_index) {
+							images[i].style.display = "flex";
+							dots[i].classList.add("dot-active");
+						}
+					}
+				}
+
+				const dot_click = event => {
+					event.preventDefault();
+					slide_index = event.target.dataset.id;
+					showSlides();
+				}
+
+				for (let i = 0; i < dots.length; i++) {
+					dots[i].addEventListener("click", dot_click, false);
+				}
+				// auto play
+				setInterval(() => {
+					slide_index++;
+					showSlides();
+				}, 5000);
+
+			})();
+		</script>
+		
+		<!-- back to top button starts -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+		
+		<script>
+			// Get the button
+			let mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<!-- back to top button ends -->
+
+	</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ma chérie magazines | MALICE MIZER Info</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+		<style>		
+			span {
+				font-size: 30px;
+			}
+			
+			a:hover {
+				color: darkred;
+			}
+			
+			.magazine-container {
+				display: grid;
+				grid-template-columns: repeat(6, 1fr);
+				grid-gap: 1rem;
+				padding: 0 30px;
+			}
+
+			.magazine-item {
+				padding: 10px;
+				font-size: 30px;
+				text-align: center;
+				position: relative;
+			}			
+
+			img {
+				max-height: 255px;
+				width: 100%;
+				object-fit: contain;
+			}
+			
+			@media (max-width: 1337px) {
+				.magazine-container {
+					grid-template-columns: repeat(3, 1fr);					
+				}
+			}
+			
+			@media (max-width: 480px) {
+				.magazine-container {
+					grid-template-columns: repeat(2, 1fr);					
+				}
+			}
+		</style>
+	</head>
+	<body>
+	
+		<!-- responsive nav-bar starts -->
+		<div class="topnav" id="myTopnav">
+			<a href="/">MALICE MIZER Info</a>
+		  	<a href="/#about">About</a>
+			<a href="/#members">Members</a>
+			<a href="/#releases">Releases</a>
+		  	<a href="/#biography">Biography</a>
+			<a href="/links">Links</a>
+			<a class="active" href="/ma-cherie-magazine">ma chérie</a>
+
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		</div>
+
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+		</script>
+		<!-- responsive nav-bar ends -->
+		
+		<p class="title2">ma chérie<br>
+		<span>fan club magazine</span></p>
+		
+		<div class="magazine-container">
+			<div class="magazine-item">
+				<a href="/ma-cherie-vol1">
+					<img src="vol1_frontcover.webp" alt="vol 1 cover" loading="lazy">
+					<span>Vol 1</span>
+				</a>
+			</div>
+			<div class="magazine-item">
+				<a href="#">
+					<img src="vol2&3_frontcover.webp" alt="vol 2&3 cover" loading="lazy">
+					<span>Vol 2 & 3</span>
+				</a>
+			</div>
+			<div class="magazine-item">
+				<a href="#">
+					<img src="vol4_frontcover.webp" alt="vol 4 cover" loading="lazy">
+					<span>Vol 4</span>
+				</a>
+			</div>
+			<div class="magazine-item">
+				<a href="#">
+					<img src="vol5_frontcover.webp" alt="vol 5 cover" loading="lazy">
+					<span>Vol 5</span>
+				</a>
+			</div>
+			<div class="magazine-item">
+				<a href="#">
+					<img src="vol6&7_frontcover.webp" alt="vol 6&7 cover" loading="lazy">
+					<span>Vol 6 & 7</span>
+				</a>
+			</div>
+			<div class="magazine-item">
+				<a href="#">
+					<img src="vol8_frontcover.webp" alt="vol 8 cover" loading="lazy">
+					<span>Vol 8</span>
+				</a>
+			</div>
+			<div class="magazine-item">
+				<a href="#">
+					<img src="vol9_frontcover.webp" alt="vol 9 cover" loading="lazy">
+					<span>Vol 9</span>
+				</a>
+			</div>
+			<div class="magazine-item">
+				<a href="#">
+					<img src="vol10&11_frontcover.webp" alt="vol 10&11 cover" loading="lazy">
+					<span>Vol 10 & 11</span>
+				</a>
+			</div>
+			<div class="magazine-item">
+				<a href="#">
+					<img src="vol12_frontcover.webp" alt="vol 12 cover" loading="lazy">
+					<span>Vol 12</span>
+				</a>
+			</div>
+			<div class="magazine-item">
+				<a href="#">
+					<img src="vol13_frontcover.webp" alt="vol 13 cover" loading="lazy">
+					<span>Vol 13</span>
+				</a>
+			</div>
+			<div class="magazine-item">
+				<a href="#">
+					<img src="vol14_frontcover.webp" alt="vol 14 cover" loading="lazy">
+					<span>Vol 14</span>
+				</a>
+			</div>
+			<div class="magazine-item">
+				<a href="#">
+					<img src="vol15_frontcover.webp" alt="vol 15 cover" loading="lazy">
+					<span>Vol 15</span>
+				</a>
+			</div>
+			<div class="magazine-item">
+				<a href="#">
+					<img src="vol16_frontcover.webp" alt="vol 16 cover" loading="lazy">
+					<span>Vol 16</span>
+				</a>
+			</div>
+			<div class="magazine-item">
+				<a href="#">
+					<img src="vol17_frontcover.webp" alt="vol 17 cover" loading="lazy">
+					<span>Vol 17</span>
+				</a>
+			</div>
+			<div class="magazine-item">
+				<a href="#">
+					<img src="vol18_frontcover.webp" alt="vol 18 cover" loading="lazy">
+					<span>Vol 18</span>
+				</a>
+			</div>
+			<div class="magazine-item">
+				<a href="#">
+					<img src="vol19_frontcover.webp" alt="vol 19 cover" loading="lazy">
+					<span>Vol 19</span>
+				</a>
+			</div>
+			<div class="magazine-item">
+				<a href="#">
+					<img src="vol20_frontcover.webp" alt="vol 20 cover" loading="lazy">
+					<span>Vol 20</span>
+				</a>
+			</div>
+			<div class="magazine-item">
+				<a href="#">
+					<img src="vol21_frontcover.webp" alt="vol 21 cover" loading="lazy">
+					<span>Vol 21</span>
+				</a>
+			</div>
+		</div>
+		
+		<!-- back to top button starts -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+		
+		<script>
+			// Get the button
+			let mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<!-- back to top button ends -->
+
+	</body>
+</html>

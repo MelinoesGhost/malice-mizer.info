@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bara no Denshou | MALICE MIZER Info</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<style>
+			.main {
+				padding: 63px 0;
+			}
+
+			img {
+				display: block;
+				margin: auto;
+				width: 100%;
+				max-width: 500px;
+			}
+			
+			.vhs-dvd-container {
+				display: flex;
+			}
+
+			.vhs-dvd-container > div {
+				margin: 20px;
+				font-size: 22px;
+			}
+			
+			span {
+				color: gray;
+			}
+			
+			.invisible {
+				visibility: hidden;
+			}
+			
+			a:hover {
+				color: darkred;
+			}
+					
+			* {
+			  box-sizing: border-box;
+			}
+			
+			.accordion {
+				padding: 0 5%;
+			}
+		
+			.accordion-button {
+				background-color: #671316;
+				font-size: 24px;
+				color: white;
+			}		
+
+			.accordion-button:not(.collapsed) {
+				background-color: #48090c;
+				color: white;
+			}
+			
+			.accordion-button::after {
+				background-image: url(white-arrow.png);
+			}
+			
+			.accordion-button:not(.collapsed)::after {
+				background-image: url(white-arrow.png);
+			}
+					
+			.accordion-button:focus {
+				z-index: 3;
+				outline: 0;
+				box-shadow: none;
+			}
+			
+			.accordion-body {
+				background-color: #121212;
+				font-size: 18px;
+                color: white;
+			}
+			
+			#hcg-slider-1 .hcg-slide-container {
+				max-width:: 500px;
+				height: auto;
+			}
+			
+			.hcg-slider {
+				text-align: center;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			
+			.hcg-slide-container {
+				max-width: 100%;
+				display: inline-block;
+				position: relative;
+			}
+			
+			.hcg-slides {
+				display: none;
+				overflow: hidden;
+				justify-content: center;
+				align-items: center;
+				border-radius: 5px;
+				border: solid 1px #a0a0a0;
+			}
+			
+			.hcg-slides img {
+				max-width: 500px;
+				max-height: auto;
+				display: inline-block;
+			}
+			
+			.hcg-slide-text {
+				color: #ffffff;
+				font-size: 14px;
+				padding: 3px 5px;
+				position: absolute;
+				bottom: 0;
+				border-radius: 5px;
+				left: 50%;
+				text-align: center;
+				text-shadow: 0 0 2px #000;
+				background-color: rgba(255,255,255,0.30);
+				display: inline-block;
+				transform: translate(-50%, -5px);
+			}
+			
+			.hcg-slide-dot-control {
+				margin-top: 10px;
+				text-align: center;
+			}
+			
+			.hcg-slide-dot {
+				cursor: pointer;
+				height: 15px;
+				width: 15px;
+				margin: 0 2px;
+				background-color: #bbb;
+				border-radius: 50%;
+				display: inline-block;
+			}
+			
+			.hcg-slide-dot.dot-active {
+				background-color: #717171;
+			}
+			
+			.hcg-slide-number {
+				color: #ffffff;
+				font-size: 12px;
+				padding: 4px 7px;
+				position: absolute;
+				border-radius: 5px;
+				top: 5px;
+				left: 5px;
+				background-color: rgba(255,255,255,0.30);
+			}
+		</style>
+	</head>
+	<body>
+	
+		<!-- responsive nav-bar starts -->
+		<div class="topnav" id="myTopnav">
+			<a href="/">MALICE MIZER Info</a>
+		  	<a href="/#about">About</a>
+			<a href="/#members">Members</a>
+			<a href="/#releases" class="active">Releases</a>
+		  	<a href="/#biography">Biography</a>
+			<a href="/links">Links</a>
+			<div class="dropdown">
+				<button class="dropbtn">Gallery 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="flyers">Flyers</a>
+					<!-- <a href="#">Interviews</a> -->
+					<a href="ma-cherie-magazine">ma chérie volumes</a>
+				</div>
+			</div>
+
+		  	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+		</script>
+		<!-- responsive nav-bar ends -->
+		
+		<div class="main">
+			<div class="previous-next-container">
+				<div class="previous">
+					<a class="previous-next-link" href="/beast-of-blood-de-limage">
+						<span>←&nbsp;</span>
+						<div class="previous-next-link-text">Beast of Blood～de l'image～</div>
+					</a>
+				</div>
+				<div class="next">
+					<a class="previous-next-link" href="/mayonaka">				
+						<div class="previous-next-link-text">Mayonaka ni Kawashita Yakusoku ~Bara no Konrei~</div>
+						<span>&nbsp;→</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="release-container">
+				<div class="booklet-slider-left">
+					<div id="hcg-slider-1" class="hcg-slider">
+						<div class="hcg-slide-container">
+							<div class="hcg-slider-body">
+								<a class="hcg-slides animated" style="display:flex">
+									<span class="hcg-slide-number">1/5</span>
+									<img src="https://malice-mizer.info/薔薇の婚礼-vhs.webp" alt="bara no konrei vhs cover">
+									<span class="hcg-slide-text"></span>
+								</a>
+							</div>
+						</div>
+						<div class="hcg-slide-dot-control"></div>
+					</div>
+
+				</div>
+				
+				<div class="tracklist-info-right">
+					<p class="size28" lang="ja-jp">Bara no Denshou ～Joshou～<br>
+					<span><sup>薔薇の伝承 ～序章～</sup></span></p>
+					
+					<div class="vhs-dvd-container">
+						<div>[VHS]<br>
+							2001.9.21 Release<br>
+							<br>
+							¥ (tax out) / ¥ (tax in)<br>
+							KSS, Inc.
+						</div>
+						<div>[DVD]<br>
+							2001.9.21 Release<br>
+							KSXD24198<br>
+							¥3,000 (tax out) / ¥3,150 (tax in)<br>
+							KSS, Inc.
+						</div>
+					</div>
+					
+					<span class="invisible">.</span>
+					
+					<p>Commentary video of MALICE MIZER's first movie, Bara no Kenrei, with 40 minutes of runtime</p>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			(() => {
+			//If you want to add more images, add the link name and URL image URL in the array list below.
+				const images_list = [
+			{
+				"url": "https://malice-mizer.info/薔薇の伝承-序章-VHS.webp",
+				"alt": "Bara no Denshou VHS cover",
+				"name": "VHS"
+			},
+			{
+				"url": "https://malice-mizer.info/薔薇の伝承-序章-DVD.webp",
+				"alt": "Bara no Denshou DVD cover",
+				"name": "DVD"
+			}
+				];
+
+			// generated by https://www.html-code-generator.com/html/image-slideshow-generator
+				let slider_id = document.querySelector("#hcg-slider-1");
+
+				// append all images
+				let dots_div = "";
+				let images_div = "";
+				for (let i = 0; i < images_list.length; i++) {
+					// if no link without href="" tag
+					let href = (images_list[i].link == "" ? "":' href="'+images_list[i].link+'"');
+					images_div += '<a'+href+' class="hcg-slides animated"'+(i === 0 ? ' style="display:flex"':'')+'>'+
+									'<span class="hcg-slide-number">'+(i+1)+'/'+images_list.length+'</span>'+
+									'<img src="'+images_list[i].url+'" alt="'+images_list[i].name+'">'+
+									'<span class="hcg-slide-text">'+images_list[i].name+'</span>'+
+								 '</a>';
+					dots_div += '<a href="#" class="hcg-slide-dot'+(i === 0 ? ' dot-active':'')+'" data-id="'+i+'"></a>';
+				}
+				slider_id.querySelector(".hcg-slider-body").innerHTML = images_div;
+				slider_id.querySelector(".hcg-slide-dot-control").innerHTML = dots_div;
+
+				let slide_index = 0;
+
+				const images = slider_id.querySelectorAll(".hcg-slides");
+				const dots = slider_id.querySelectorAll(".hcg-slide-dot");
+				const showSlides = () => {
+					if (slide_index > images.length-1) {
+						slide_index = 0;
+					}
+					if (slide_index < 0) {
+						slide_index = images.length-1;
+					}
+					for (let i = 0; i < images.length; i++) {
+						images[i].style.display = "none";
+						dots[i].classList.remove("dot-active");
+						if (i == slide_index) {
+							images[i].style.display = "flex";
+							dots[i].classList.add("dot-active");
+						}
+					}
+				}
+
+				const dot_click = event => {
+					event.preventDefault();
+					slide_index = event.target.dataset.id;
+					showSlides();
+				}
+
+				for (let i = 0; i < dots.length; i++) {
+					dots[i].addEventListener("click", dot_click, false);
+				}
+				// auto play
+				setInterval(() => {
+					slide_index++;
+					showSlides();
+				}, 5000);
+
+			})();
+		</script>
+		
+		<!-- back to top button starts -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+		
+		<script>
+			// Get the button
+			let mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<!-- back to top button ends -->
+
+	</body>
+</html>

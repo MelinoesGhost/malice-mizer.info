@@ -1,0 +1,43 @@
+.subsidiary {
+	margin: 0 5%;
+}
+
+.accordion {
+	font-family: CaslonAntique;
+	background-color: #671316;
+	color: white;
+	cursor: pointer;
+	padding: 16px 20px;
+	width: 100%;
+	text-align: left;
+	border: white solid .5px;
+	font-size: 24px;
+	transition: 0.4s;
+	border-radius: 5px;
+}
+
+.accordion-active, .accordion:hover {
+	background-color: #48090c;
+	}
+
+.accordion:after {
+	content: '\25BC';
+	color: white;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+.accordion-active:after {
+	content: "\25B2";
+}
+
+.panel {
+	padding: 0 18px;
+	background-color: #121212;
+	color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	border: white solid .5px;
+}

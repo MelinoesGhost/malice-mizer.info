@@ -1,0 +1,370 @@
+/*---------- BODY STYLINGS  START ----------*/
+body {
+	background-image: url(red-curtain-bg-min.webp); 
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100vh;
+}
+
+.main {
+	padding: 63px 0;
+}
+
+img {
+	pointer-events: none;
+}
+
+
+
+/*::selection {
+	background: silver; /* WebKit/Blink Browsers */
+}*/
+
+@font-face { 
+	font-family: CaslonAntique;
+	src: url('CaslonAntique.TTF');
+}
+
+@font-face {
+	font-family: CaslonAntique;
+	src: url('CaslonAntique-Bold.TTF');
+	font-weight: bold;
+}
+
+li {
+	font-family: CaslonAntique;
+	color: white;
+}
+
+/* text specifications */
+h1, h2, h3, p,
+.size36,
+.size28,
+.size24,
+.size22  {
+	font-family: CaslonAntique;
+	color: white;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	font-size: 20px;
+}
+
+.size36 {
+	font-size: 36px;
+}
+
+.size28 {
+	font-size: 28px;
+}
+
+.size24 {
+	font-size: 24px;
+}
+
+.size22 {
+	font-size: 22px;
+}
+	  
+div {
+    font-family: CaslonAntique;
+	color: white;
+}
+
+li {
+	font-size: 18px;
+	list-style-type: none;
+	padding-left: 40px;
+	color: white;
+}
+
+.title {
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    margin: 50px 0px;
+    text-align: center;
+    text-transform: uppercase;
+	padding-top: 80px;
+}
+
+.title2 {
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    margin: 50px 0px;
+    text-align: center;
+}
+
+
+/*other stylings*/
+hr {
+	border: .5px solid silver;
+}
+
+a:link {
+  color: grey;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: darkred;
+}
+
+a:active {
+  color: darkred;
+}
+
+.responsive {
+	height: auto;
+}
+
+/*CSS variables section*/
+:root {
+	/* background-color: rgba(0, 0, 21, 1); */
+	--card-size: 20.7vw;				
+}
+/*---------- BODY STYLINGS  END ----------*/
+
+
+
+
+/* ---------- responsive nav bar start ---------- */
+.topnav {
+	background-color: #121212;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 4;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 24px;
+}
+
+.active {
+	background-color: #671316;
+	color: white;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	font-size: 24px;    
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #121212;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.topnav a:hover, 
+.dropdown:hover .dropbtn,
+.dropdown-content a:hover {
+	background-color: silver;
+	color: black;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+/* ---------- responsive nav bar end ---------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------- for individual release pages ----------*/
+/*---------- previous/next links starts ----------*/
+.previous-next-container {
+	font-size: 28px;
+	padding: 3%;
+	
+}
+
+.previous-next-container > a {
+	max-width: 300px;
+}
+
+.next {
+	text-align: right;
+}
+
+.previous-next-link {
+    display: inline-flex;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+.previous-next-link-text {
+	white-space: nowrap; 
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/*flex-shrink: 1;
+    width: 300px;*/
+}
+
+.previous-next-container,			
+.release-container {					
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem;	
+}
+/*---------- previous/next links ends ----------*/
+
+
+
+/*---------- individual release pages / grids ends ----------*/
+
+
+
+	
+
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 768px) {
+				
+	.release-container,
+	.lyric-columns {					
+		grid-template-columns: repeat(1, 1fr);
+	}
+				
+	.release-container {
+		padding: 0;
+		grid-gap: 0;	
+	}
+				
+	.previous-next-link-text {
+		white-space: nowrap; 
+		width: 100px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+		
+/*---------- individual release pages ----------*/
+
+
+
+
+
+
+
+
+/*---------- MEDIA QUERIES START ----------*/
+/*----- responsive nav bar start -----*/
+@media (max-width: 768px) {
+	.topnav a:not(:first-child), 
+	.dropdown .dropbtn {
+    	display: none;
+  	}
+	
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+	
+	.topnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+  
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	
+	.topnav.responsive .dropdown {
+		float: none;
+	}
+	
+  	.topnav.responsive .dropdown-content {
+		position: relative;
+	}
+	
+  	.topnav.responsive .dropdown .dropbtn {
+		display: block;
+		width: 100%;
+		text-align: left;
+  	}
+}
+/*----- responsive nav bar end -----*/
+
+
+
+
+/* ---------- back to top button start ---------- */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #671316;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #121212;
+}
+/* ---------- back to top button end ---------- */
+/*---------- MEDIA QUERIES END ----------*/

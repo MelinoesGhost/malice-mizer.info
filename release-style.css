@@ -1,0 +1,98 @@
+/*text stylings*/
+span {
+	color: gray;
+}
+			
+.invisible {
+	visibility: hidden;
+}
+/*text stylings*/
+
+img {
+	display: block;
+	margin: auto;	
+	max-width: 500px;
+	height: auto;
+}
+
+.release-container > div {
+	font-size: 30px;
+	text-align: left;
+}
+
+.booklet-slider-left {
+	margin: 0 3%;
+}
+			
+.tracklist-info-right {
+	padding: 30px;
+	text-align: left;
+}
+
+
+/* vhs & dvd releases with same name */
+.vhs-dvd-container {
+	display: flex;
+}
+
+.vhs-dvd-container > div {
+	margin: 20px;
+	font-size: 22px;
+}
+/* vhs & dvd releases with same name */
+
+
+/* three equal lyric columns */
+.lyric-columns {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	padding: 10px;
+}
+
+.lyric-columns > div {
+	padding: 20px;
+	font-size: 30px;
+}
+
+
+/* two equal lyric columns */
+.lyric-columns-half {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	padding: 10px;
+}
+
+.lyric-column-half {
+	float: left;
+	width: 50%;
+	padding: 10px;
+}
+
+
+.lyrics {
+	color: white;
+	font-weight: 600;
+	font-size: 40px;
+	margin: 20px 0px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 40px;
+}
+
+
+/*---------- MEDIA QUERIES START ----------*/
+@media (max-width: 768px) {
+				
+	.release-container,
+	.lyric-columns {					
+		grid-template-columns: repeat(1, 1fr);
+	}
+				
+	.release-container {
+		padding: 0;
+		grid-gap: 0;	
+	}	
+}
+/*---------- MEDIA QUERIES END ----------*/

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Garnet | MALICE MIZER Info</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<style>
+			.main {
+				padding: 63px 0;
+			}
+			
+			img {
+				display: block;
+				margin: auto;
+				width: 100%;
+				max-width: 500px;
+				padding-top: 20px;
+			}
+			
+			span {
+				color: gray;
+			}
+			
+			.invisible {
+				visibility: hidden;
+			}
+			
+			hr {
+				color: silver;
+			}
+			
+			a:hover {
+				color: darkred;
+			}			
+			
+			.subsidiary {
+				margin: 0 5%;
+			}
+
+			.accordion {
+				font-family: CaslonAntique;
+				background-color: #671316;
+				color: white;
+				cursor: pointer;
+				padding: 16px 20px;
+				width: 100%;
+				text-align: left;
+				border: white solid .5px;
+				font-size: 24px;
+				transition: 0.4s;
+				border-radius: 5px;
+			}
+
+			.accordion-active, .accordion:hover {
+				background-color: #48090c;
+			}
+
+			.accordion:after {
+				content: '\25BC';
+				color: white;
+				font-weight: bold;
+				float: right;
+				margin-left: 5px;
+			}
+
+			.accordion-active:after {
+				content: "\25B2";
+			}
+
+			.panel {
+				padding: 0 18px;
+				background-color: #121212;
+				color: white;
+				max-height: 0;
+				overflow: hidden;
+				transition: max-height 0.2s ease-out;
+				border: white solid .5px;
+			}
+			
+		</style>
+	</head>
+	<body>
+	
+		<!-- responsive nav-bar starts -->
+		<div class="topnav" id="myTopnav">
+			<a href="/">MALICE MIZER Info</a>
+		  	<a href="/#about">About</a>
+			<a href="/#members">Members</a>
+			<a href="/#releases" class="active">Releases</a>
+		  	<a href="/#biography">Biography</a>
+			<a href="/links">Links</a>
+			<div class="dropdown">
+				<button class="dropbtn">Gallery 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="flyers">Flyers</a>
+					<!-- <a href="#">Interviews</a> -->
+					<a href="ma-cherie-magazine">ma chérie volumes</a>
+				</div>
+			</div>
+
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		</div>
+
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+		</script>
+		<!-- responsive nav-bar ends -->
+		
+		<div class="main">
+			<div class="previous-next-container">
+				<div class="previous">
+					<a class="previous-next-link" href="/societe">
+						<span>←&nbsp;</span>
+						<div class="previous-next-link-text">Société de parenté</div>
+					</a>
+				</div>
+				<div class="next">
+					<a class="previous-next-link" href="/cathedrale">				
+						<div class="previous-next-link-text">Cathédrale de la rose Livre Rosé</div>
+						<span>&nbsp;→</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="release-container">
+				<div class="booklet-slider-left">
+					<img src="https://malice-mizer.info/Garnet.webp">
+				</div>
+				
+				<div class="tracklist-info-right">
+					<p class="size28" lang="ja-jp">Garnet ～Kindan no Sono e～<br>
+					<span><sup>Garnet～禁断の園へ～</sup></span></p>
+					<p class="size22">
+					[14th Single]<br>
+					2001.11.30<br>
+					MMCD-026<br>
+					¥1,200 (tax out) / ¥1,260 (tax in)<br>
+					Midi:Nette</p>
+					
+					<span class="invisible">.</span>
+					
+					<p lang="ja-jp">
+					I. Garnet ～Kindan no Sono e～<br>
+					<span class="invisible">I. </span><span><sup>Garnet～禁断の園へ～</sup></span><br>
+					<sup>(Lyrics by Klaha / Composed by Közi)</sup><br>
+					II. Gensōrakuen<br>
+					<span class="invisible">II. </span><span><sup>幻想楽園</sup></span><br>
+					<sup>(Lyrics by Klaha / Composed by Közi)</sup><br>
+					III. Garnet ～Kindan no Sono e～ (Instrumental)<br>
+					<span class="invisible">III. </span><span><sup>Garnet～禁断の園へ～ (Instrumental)</sup></span><br>
+					<sup>(Composed by Közi)</sup><br>
+					IV. Gensourakuen (Instrumental)<br>
+					<span class="invisible">IV. </span><span><sup>幻想楽園</sup></span><br>
+					<sup>(Composed by Közi)</sup></p>
+				</div>
+			</div>
+			
+			<!-- <h2 class="lyrics">Lyrics</h2> -->
+			
+			<div class="subsidiary">
+				<!-- <button class="accordion">I. Garnet～禁断の園へ～</button>
+				<div class="panel">
+					<p class="size22">Lyrics by Klaha / Composed by Közi</p>
+					<div class="lyric-columns">								
+						<div>
+							<p class="size22" lang="ja-jp"><b>Japanese</b><br>
+							Garnet～禁断の園へ～</p>
+									
+							<hr>
+									
+							<p>この手の中にある小さな欠片は　不思議な夢を見せてくれる<br>
+							そっと握り締めると　懐かしい風景が記憶の中に溶け込んでゆく<br><br>
+
+							夜空を見上げると星のざわめきが優しく君に降りそそぐ<br>
+							ひとすじの光に願いを込めて　静かにその手を翳す瞬間<br><br>
+							赤い煌き　溢れる想いが　夢の果てに繋いだ階段を　どこまでも照らす<br><br>
+
+							white stair to sky<br><br>
+
+							遥か禁断の園　広がる迷宮の中　君を導くGarnet in the Eden<br>
+							もう二度と戻れない時の中を　歩いてゆく　君が還るべき場所まで<br><br>
+
+							赤い煌き　昂まる想いが　夢の果てに浮かべた扉を　ゆるやかに開く<br>
+							white door to sky<br><br>
+
+							遥か禁断の園　広がる迷宮の中　君を導くGarnet in the Eden<br>
+							もう二度と戻れない時の中を　歩いてゆく…<br><br>
+
+							遥か忘却の園　失くした記憶の中　君を導くGarnet in the Eden<br>
+							もう二度と戻れない時の中を　歩いてゆく　君が還るべき場所まで<br><br>
+
+							真紅の輝き<br>
+							Garnet in the Eden</p>
+						</div>													
+						<div>
+							<p class="size22"><b>Romaji</b><br>
+							Garnet ～Kindan no Sono e～</p>
+									
+							<hr>
+									
+							<p>konote no naka ni aru chiisana kakera wa fushigi na yume o misete kureru<br>
+							sotto nigirishimeru to natsukashii fuukei ga kioku no naka ni tokekonde yuku<br><br>
+
+							Yozora o miageru to hoshi no zawameki ga yasashiku kimi ni furisosogu<br>
+							hitosuji no hikari ni negai o komete shizuka ni sonote o kazasu shunkan<br><br>
+
+							akai kirameki afureru omoi ga yume no hate ni tsunaida kaidan o doko made mo terasu<br><br>
+									
+							white stair to sky<br><br>
+
+							haruka kindan no sono hirogaru meikyuu no naka kimi o michibiku Garnet in the Eden<br>
+							Mō nido to modorenai toki no naka o aruite yuku kimi ga kaerubeki basho made<br><br>
+
+							Akai kirameki takamaru omoi ga yume no hate ni ukabeta tobira o yuruyaka ni hiraku
+							white door to sky<br><br>
+
+							haruka kindan no sono hirogaru meikyuu no naka kimi o michibiku Garnet in the Eden<br>
+							Mō nido to modorenai toki no naka o aruite yuku…<br><br>
+
+							Haruka Bōkyaku no Sono nakushita kioku no naka kimi o michibiku Garnet in the Eden<br>
+							Mō nido to modorenai toki no naka o aruite yuku kimi ga kaerubeki basho made<br><br>
+
+							Shinku no kagayaki<br>
+							Garnet in the Eden </p>
+						</div>
+						<div>
+							<p class="size22"><b>English</b><br>
+							Garnet ～To the Forbidden Garden～</p>
+									
+							<hr>
+									
+							<p>The small fragment in my hand shows a mysterious dream<br>
+							When I gently grasp it, the nostalgic scenery melts into my memory<br><br>
+
+							When you look up at the night sky, the murmur of the stars gently rain down on you<br>
+									
+							The moment you quietly hold up your hand and wish on a ray of light<br>
+							When you serenely hold that hand up high toward a ray of light with a wish<br><br>
+
+							A reddish twinkling illuminates a stairway that an overflowing wish laid to the end of the dream<br>
+							white stair to sky<br><br>
+
+							Through the maze to the distant forbidden garden leads you Garnet in the Eden<br>
+							You walk through the time where you can never go back to the place you must return…<br><br>
+
+							A reddish twinkling slowly opens the door that a rising wish floated to at the end of the dream<br>
+							white door to sky<br><br>
+
+							Garnet in the Eden leads you in the labyrinth the Forbidden Garden extending far away<br>
+							You walk through the time where you can never go back<br><br>
+
+							Garnet in the Eden leads you in the memories you lost the Garden of Oblivion far away<br>
+							You walk through the time where you can never go back to the place you must return<br><br>
+
+							A deep red radiance<br>
+							Garnet in the Eden</p>																	
+						</div>
+					</div>
+				</div>
+
+				<button class="accordion">II. 幻想楽園</button>
+				<div class="panel">
+					<p class="size22">Lyrics by Klaha / Composed by Közi</p>
+						<div class="lyric-columns">								
+						<div>
+							<p class="size22" lang="ja-jp"><b>Japanese</b><br>
+							幻想楽園</p>
+									
+							<hr>
+									
+							<p>冷たく囁く声に導かれ　開かれた無数の扉の向うは<br>
+							眩い光に包まれた　彩り溢れる世界の果て<br>
+							限りない時の流れに誘う「楽園」<br><br>
+
+							風は甘い蜜を運び偽りの影躍らせる<br>
+							深い倒錯に触れた恍惚の果てに溺れてゆく<br><br>
+
+							静かに迫る終焉の時刻は絶望の香に包まれる<br>
+							The end of dream<br><br>
+
+							咲き乱れる花のように影さえ無く<br>
+							終わりのない夢の中で永遠に揺れる<br><br>
+
+							現実と夢を弄ぶ<br>
+							The end of dream<br>
+
+							闇に浮かぶ黒い声は密かに告げる崩壊を<br>
+							精神に描かれた淡い光景はやがて暗い陰に姿を隠す<br>
+
+							夜の来ない空は儚く遠ざかり<br>
+							途切れゆく記憶に光が消えてゆく<br><br>
+
+							咲き乱れる花のように影さえ無く<br>
+							終わりのない夢の中で永遠に揺れる<br><br>
+
+							光挿す楽園は永遠の時の中で…<br>
+							翳りゆく楽園は終わらない夢の中で…</p>
+						</div>													
+						<div>
+							<p class="size22"><b>Romaji</b><br>
+							Gensourakuen</p>
+							
+							<hr>
+									
+							<p>Tsumetaku sasayaku koe ni michibikare hirakareta musū no tobira no mukau wa<br>
+							Mabayui hikari ni tsutsumareta irodori afureru sekai no hate<br>
+							Kagirinai toki no nagare ni sasō “rakuen”<br><br>
+
+							Kaze wa amai mitsu o hakobi itsuwari no kage odoraseru<br>
+							Fukai tōsaku ni fureta kōkotsu no hate ni oborete yuku<br><br>
+
+							Shizuka ni semaru shūen no jikoku wa zetsubō no kaori ni tsutsumareru<br>
+							The end of dream<br><br>
+
+							Sakimidareru hana no yō ni kage sae naku<br>
+							Owari no nai yume no naka de towa ni yureru<br><br>
+
+							Genjitsu to yume o moteasobu<br>
+							The end of dream<br><br>
+									
+							Yami ni ukabu kuroi koe wa hisoka ni tsugeru hōkai o<br>
+							Seishin ni egakareta awai kōkei wa yagate kurai kage ni sugata o kakusu<br><br>
+
+							Yoru no konai sora wa hakanaku tōzakari<br>
+							Togireyuku kioku ni hikari ga kiete yuku<br><br>
+
+							Sakimidareru hana no yō ni kage sae naku<br>
+							Owari no nai yume no naka de towa ni yureru<br><br>
+
+							Hikari sasu rakuen wa towa no toki no naka de…<br>
+							Kageriyuku rakuen wa owaranai yume no naka de…</p>
+									
+							<p>Tsumetaku sasayaku koe ni michibika re hiraka re ta musū no tobira no mukō wa<br>
+							Mabayui hikari ni tsutsuma re ta irodori afureru sekai no hate<br><br>
+
+							Kagirinai toki no nagare ni izanau `rakuen'-fū wa amai mitsu o hakobi itsuwarinokage odora seru<br>
+							Fukai tōsaku ni fure ta kōkotsu no hate ni obore te yuku<br><br>
+									
+							Shizukani semaru shūen no jikoku wa zetsubō no ka ni tsutsuma reru<br>								
+							The end of dream<br><br>
+									
+							Sakimidareru hana no yō ni kage sae naku<br>
+							Owari no nai yume no naka de eien ni yureru<br><br>
+									
+							Genjitsu to yume o moteasobu<br>								
+							The end of dream<br><br>
+									
+							Yami ni ukabu kuroi koe wa hisoka ni tsugeru hōkai o<br>
+							Seishin ni egaka reta awai kōkei wa yagate kurai ni sugata o kakusu<br><br>
+									
+							Yoru no konai sora wa hakanaku tōzakari<br>
+							Togire yuku kioku ni hikari ga kiete yuku<br><br>
+									
+							Sakimidareru hana no yō ni kage sae naku<br>
+							Owari no nai yume no naka de eien ni yureru<br><br>
+									
+							Hikari sasu rakuen wa eien no toki no naka de…<br>
+							Kageri yuku rakuen wa owara nai yume no naka de…</p>
+						</div>
+						<div>
+							<p class="size22"><b>English</b><br>
+							<p>
+										
+							<hr>
+										
+							<p>Being led by a cold whispering voice… on the place behind of countless opened doors is the extremity of the world<br>
+							Filled with brilliant light that is exceedingly dazzling and exciting<br>
+							“Paradise” invites you to the flow of infinite time<br><br>
+
+							The wind carries sweet honey and manipulates false figures<br>
+							Drowning away to the extreme ecstasies that touched deep perversions<br><br>
+
+							The silently approaching, demise instant is engulfed by the scent of despair<br>
+							The end of dream<br>
+
+							Eternally shimmering in the dream of no ending<br>
+							Having no shadows like flowers blooming in profusion<br><br>
+
+							Playing with reality and the dream<br>
+							The end of dream<br><br>
+
+							The black voice floating in the darkness stealthily tells of the collapse…<br>
+							A faint scene painted in the heart will eventually hide itself in the dark shadows<br><br>
+
+							The nightless sky ephemerally drifts away<br>
+							And the light is disappearing in the memory disconnecting away<br><br>
+									
+							Eternally shimmering in the dream of no ending<br>
+							Having no shadows like flowers blooming in profusion<br><br>
+
+							A shining paradise in the eternal time…<br>
+							A waning paradise in the endless dream…</p>
+									
+							<p>Guided by a cold whispering voice, beyond the countless open doors<br>
+							The end of the colorful world enveloped in dazzling light<br>
+							"Paradise" invites you to the endless flow of time<br><br>
+
+							The wind carries sweet honey and dances false shadows<br>
+							Drowning in the end of the ecstasy that touched the deep perversion<br><br>
+
+							The quietly approaching time of demise is enveloped in the scent of despair<br>
+							The end of dream<br>
+
+							Like a flower in full bloom without even a shadow<br>
+							Eternally swaying in an endless dream<br>
+
+							Play with reality and dreams<br>
+							The end of dream<br><br>
+
+							A black voice floating in the darkness secretly announces the collapse<br>
+							The faint sight drawn in the mind will eventually hide in the dark shadows<br><br>
+
+							The sky where night does not come ephemerally recedes<br>
+							The light disappears in the discontinuous memories<br><br>
+
+							Like a flower in full bloom without even a shadow<br>
+							Eternally swaying in an endless dream<br><br>
+
+							A paradise filled with light in eternal time...<br>
+							The fading paradise is an endless dream...</p>
+						</div>
+					</div>
+				</div> -->
+
+				<button class="accordion">Credits</button>
+				<div class="panel">
+					<p style="text-align: center;">
+						1. Garnet～禁断の園へ～ (Lyrics by Klaha / Composed & Sound Programmed by Mana / Arranged by MALICE MIZER)<br>
+						2. 幻想楽園 (Lyrics by Klaha / Composed & Sound Programmed by Mana / Arranged by MALICE MIZER)<br><br>
+							
+						MALICE MIZER<br>
+						Klaha<br>
+						Mana<br>
+						Közi<br>
+						Yu～ki<br><br>
+							
+						Directed: Motohide Tanaka<br>
+						Sound Adviser: Kyo Ichinose<br>
+						Adviser: Kazune (M-1)<br><br>
+								
+						Synthesizer Manipulator: Shigehiko Saito<br><br>
+								
+						Recorded & Mixed: Atsuo Akahae<br><br>
+								
+						Additional Engineer: Hitomi Suzuki (ON AIR AZABU st.)<br>
+						Recorded & Mixed at ON AIR AZABU st.<br>
+								
+						Additional Musician: Kiichirou Akui (Drums)<br>
+						Musician Coordinator: Tetsuya Kawashima (Shinshitsu)<br><br>
+								
+						Art Direction & Design: Asaka Yamamoto<br>
+						Photography: Kenji Tsukagoshi<br>
+						Styling: Yukari Ohba<br>
+						Hairstyling: Tamayo Kotake (be • glee)<br><br>
+								
+						Management & Promotion: Keiko Hachitani (Midi:Nette)<br><br>
+								
+						Executive Producer: Yukie Itoh (Midi:Nette)<br><br>
+								
+						Special Thanks to<br>
+						All of you always in need of MALICE MIZER<br><br>
+								
+						Eternal blood relative<br>
+						Kami<br><br>
+								
+						Total Produced by MALICE MIZER
+					</p>
+				</div>
+			</div>
+		</div>
+	
+		<!-- accordion script starts -->
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+				this.classList.toggle("accordion-active");
+				var panel = this.nextElementSibling;
+				if (panel.style.maxHeight) {
+				  panel.style.maxHeight = null;
+				} else {
+				  panel.style.maxHeight = panel.scrollHeight + "px";
+				} 
+			  });
+			}
+		</script>
+		<!-- accordion script ends -->
+		
+		<!-- back to top button starts -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+		
+		<script>
+			// Get the button
+			let mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					mybutton.style.display = "block";
+				} else {
+					mybutton.style.display = "none";
+				}
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<!-- back to top button ends -->
+
+	</body>
+</html>

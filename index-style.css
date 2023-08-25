@@ -1,0 +1,698 @@
+/* ---------- about begins ---------- */
+section {
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent), url(25th.webp);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+	padding: 8% 5% 5% 5%;
+	text-shadow: 2px 2px 5px #671319;
+}
+/* ---------- about ends ---------- */
+
+
+
+
+/* ---------- responsive member flip card grid begins ---------- */
+/* ----------member grid ---------- */
+.member-flip-grid-container {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(4, var(--card-size));
+	grid-gap: 1rem;
+	width: calc(4 * var(--card-size) + 3 * 1rem);
+	margin: 0 auto;
+	justify-content: center;
+}
+	
+/* ---------- flip cards ---------- */
+/* ---------- text stylings ---------- */
+.flip-card-back > .member-stage-name {
+	font-size: 26px;
+	padding-top: 10%;
+	margin-top: -.75em;
+}
+
+.flip-card-back > .member-real-name {
+	font-size: 20px;
+	margin-top: -1.5em;
+}
+
+.flip-card-back > .position-years {
+	font-size: 22px;
+	margin-top: -.75em;
+}
+
+.flip-card-back > p  {
+	font-size: 16px;
+	font-family: CaslonAntique;
+	color: white;
+	line-height: normal;
+	margin-top: -1em;
+}
+/* ---------- text stylings ---------- */
+
+.flip-card-front > img {
+	width: 20.7vw;
+	height: 20.7vw;
+}
+
+.flip-card {
+	background-color: transparent;
+	width: var(--card-size);
+	height: var(--card-size);
+	perspective: 1000px;
+}
+				
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.flip-card-front {
+	background-color: #bbb;
+	color: black;
+}
+
+.flip-card-back {
+	background-color: #121212;
+	color: white;
+	font-size: 18px;
+	transform: rotateY(180deg);
+}
+
+.mana-signature {
+	background-image: url(mana-signature.webp);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.közi-signature {
+	background-image: url(kozi-signature.webp);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.yuki-signature {
+	background-image: url(yuki-signature.webp);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.tetsu-signature {
+	background-image: url(tetsu-signature.webp);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.gackt-signature {
+	background-image: url(gackt-signature.webp);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.klaha-signature {
+	background-image: url(klaha-signature.webp);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+/* ---------- responsive member flip card grid ends ---------- */
+
+
+
+
+/*---------- css tabs start ----------*/
+.warpper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.tab {
+	cursor: pointer;
+	padding: 10px 20px;
+	margin: 0 2px;
+	background: #671316;
+	display: inline-block;
+	font-size: 24px;
+	color: #fff;
+	border-radius: 3px 3px 0px 0px;
+}
+
+.release-panels {
+	box-shadow: 0 2rem 2rem #00000080;
+	border: 1px solid silver;
+	min-height: auto;
+	width: 85%;
+	max-width: auto;
+	border-radius: 3px;
+	overflow: hidden;
+	padding: 20px;
+}
+
+.release-panel {
+	display: none;
+	animation: fadein 0.8s;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}			
+
+.radio {
+	display: none;
+}
+
+#one:checked ~ .release-panels #single,
+#two:checked ~ .release-panels #album,
+#three:checked ~ .release-panels #video,
+#four:checked ~ .release-panels #book, 
+#five:checked ~ .release-panels #other {
+	display: block;
+}
+
+#one:checked ~ .tabs #single,
+#two:checked ~ .tabs #album,
+#three:checked ~ .tabs #video,
+#four:checked ~ .tabs #book,
+#five:checked ~ .tabs #other {
+	background: #fff;
+	color: #000;
+	border-top: 3px solid #2e3d67;
+}
+/*---------- css tabs end ----------*/
+
+
+
+
+/* ---------- responsive release grid begins ---------- */
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1rem;	
+}
+
+.grid-item {
+	padding: 10px;
+	font-size: 30px;
+	text-align: center;
+	position: relative;
+}
+
+.grid-item:before {
+	padding-bottom: 100%;
+	content: '';
+	display: block;
+}
+
+.grid-item-content {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+}
+
+.grid-item > img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+/* ---------- responsive release grid ends ---------- */
+
+
+
+
+/* ---------- bg cover images start ---------- */
+/*---------- singles ----------*/
+.garnet {
+	background-image: url(Garnet.webp);
+}
+
+.mayonaka {
+	background-image: url(mayonaka.webp);
+}
+
+.beast {
+	background-image: url(Beast-of-Blood.webp);
+}
+
+.gardenia-r {
+	background-image: url(Gardenia-regular.webp);
+}
+
+.gardenia-l {
+	background-image: url(Gardenia-limited.webp);
+}
+
+.le-ciel {
+	background-image: url(Le-ciel.webp);
+}
+
+.shiroi {
+	background-image: url(白い肌に狂う愛と哀しみの輪舞.webp);
+}
+
+.kyomu {
+	background-image: url(虚無の中での遊戯.webp);
+}
+
+.saikai-cd {
+	background-image: url(再会の血と薔薇.webp);
+}
+
+.saikai-vinyl{
+	background-image: url(再会の血と薔薇-vinyl.webp);
+}
+
+.ILLUMINATI {
+	background-image: url(ILLUMINATI.webp);
+}
+.gekka {
+	background-image: url(Gekka.webp);
+}
+
+.au-revoir {
+	background-image: url(au-revoir.webp);
+}
+
+.bel-air {
+	background-image: url(Bel-Air-regular.webp);
+}
+
+.ma-cherie {
+	background-image: url(ma-cherie.webp);
+}
+
+.uruwashiki {
+	background-image: url(麗しき仮面の招待状.webp);
+}
+/*---------- singles ----------*/
+
+
+/*---------- albums ----------*/
+.meilleur {
+	background-image: url(La-meilleur-selection-de-MALICE-MIZER.webp);
+}
+
+.collection-des-singles {
+	background-image: url(La-Collection-des-Singles-CD.webp);
+}
+
+.seidou-limited {
+	background-image: url(薔薇の聖堂-limited.webp);
+}
+
+.seidou-regular {
+	background-image: url(薔薇の聖堂-regular.webp);
+}
+
+.merveilles-limited {
+	background-image: url(merveilles-limited.webp);
+}
+
+.merveilles-regular {
+	background-image: url(merveilles-regular.webp);
+}
+
+.voyage-limited {
+	background-image: url(Voyage-limited.webp);
+}
+
+.voyage-regular {
+	background-image: url(Voyage-regular.webp);
+}
+
+.memoire-DX {
+	background-image: url(mermorie-DX.webp);
+}
+
+.memoire {
+	background-image: url(mermorie.webp);
+}
+/*---------- albums ----------*/
+
+
+/*---------- videos ----------*/
+.deep-sanctuary {
+	background-image: url(Deep-Sanctuary.webp);
+}
+.selection-de-performances {
+	background-image: url(performances.webp);
+}
+.cinq-parallele～dvd {
+	background-image: url(merveilles～cinq-parallele～DVD.webp);
+}
+.lespace-dvd {
+	background-image: url(merveilles-DVD.webp);
+}
+.konrei-dvd {
+	background-image: url(薔薇の婚礼-DVD.webp);
+}
+.konrei-vhs {
+	background-image: url(薔薇の婚礼-VHS.webp);
+}
+.cardinal-dvd {
+	background-image: url(Cardinal-DVD.webp);
+}
+.cardinal-vhs {
+	background-image: url(Cardinal-VHS.webp);
+}
+.société-de-parenté-vhs {
+	background-image: url(Société-de-parenté-VHS.webp);
+}
+.denshou-dvd {
+	background-image: url(薔薇の伝承-序章-DVD.webp);
+}
+.denshou-vhs {
+	background-image: url(薔薇の伝承-序章-VHS.webp);
+}
+.beast-dvd {
+	background-image: url(Beast-of-Blood-DVD.webp);
+}
+.beast-vhs {
+	background-image: url(Beast-of-Blood-VHS.webp);
+}
+.kiseki-dvd {
+	background-image: url(薔薇の軌跡-DVD.webp);
+}
+.kiseki-vhs {
+	background-image: url(薔薇の軌跡-VHS.webp);
+}
+.san-retour-dvd {
+	background-image: url(san-retour-DVD.webp);
+}
+.irodorareta-dvd {
+	background-image: url(薔薇に彩られた悪意と悲劇の幕開け-DVD.webp);
+}
+.irodorareta-vhs {
+	background-image: url(薔薇に彩られた悪意と悲劇の幕開け-VHS.webp);
+}
+.kyomu-vhs {
+	background-image: url(虚無の中での遊戯-VHS.webp);
+}
+.saikai-vhs {
+	background-image: url(再会の血と薔薇-VHS.webp);
+}
+.cinq-parallele～vhs {
+	background-image: url(merveilles～cinq-parallele～VHS.webp);
+}
+.lespace-vhs {
+	background-image: url(merveilles-VHS.webp);
+}
+.bel-air-vhs {
+	background-image: url(Bel-Air-VHS.webp);
+}
+.san-retour-vhs {
+	background-image: url(san-retour-VHS.webp);
+}
+/*---------- videos ----------*/
+
+
+/*---------- books ----------*/
+.higeki {
+	background-image: url(Higeki.webp);
+}
+.kousai-rikurihen {
+	background-image: url(Kousai.webp);
+}
+.cathédrale {
+	background-image: url(Cathédrale.webp);
+}
+.rinbu {
+	background-image: url(Rinbu.webp);
+}
+.livre {
+	background-image: url(Livre-Rosé-Blanche.webp);
+}
+.hyaku-hanahen {
+	background-image: url(Hyaku.webp);
+}
+.tenchi-meidouhen {
+	background-image: url(Tenchi.webp);
+}
+.uv {
+	background-image: url(UV-Special.webp);
+}
+.retour {
+	background-image: url(retour_1992-1998.webp);
+}
+.band-score {
+	background-image: url(merveilles-band-score.webp);
+}
+.itanjinmon {
+	background-image: url(異端審問.webp);
+}
+.tanbi {
+	background-image: url(耽美実験革命.webp);
+}
+.merveilles {
+	background-image: url(merveilles-book.webp);
+}
+
+/*. {
+	background-image: url(.webp);
+}*/
+/*---------- books ----------*/
+
+
+/* ---------- other ---------- */
+.merveilles-box-set {
+	background-image: url(La-Collection-Merveilles.webp);
+}
+.singles-box-set {
+	background-image: url(La-Collection-des-Singles.webp);
+}
+.kami-box-set {
+	background-image: url(神話.webp);
+}
+.bel-air-box-set {
+	background-image: url(Bel-Air-limited.webp);
+}
+
+.anniversary {
+	background-image: url(THE-1TH-ANNIVERSARY.webp);
+}
+.sadness {
+	background-image: url(SADNESS.webp);
+}
+.speed {
+	background-image: url(SPEED-OF-DESPERATE.webp);
+}
+.sans-logique {
+	background-image: url(SANS-LOGIQUE.webp);
+}
+
+.genten {
+	background-image: url(原点.webp);
+}
+.rock-nippon {
+	background-image: url(ロックNIPPON.webp);
+}
+.shock-wave {
+	background-image: url(SHOCK-WAVE-96.webp);
+}
+.braintrash {
+	background-image: url(BRAINTRASH.webp);
+}
+/* ---------- other ---------- */
+/* ---------- bg cover images end ---------- */
+
+
+
+
+/*---------- biography accordion begins ----------*/
+.accordion-header {
+	font-size: 32px;
+}
+
+/*---------- biography grid starts ----------*/
+.biography-grid-container {
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);
+	gap: 2px;
+	padding: 20px;
+}
+
+.biography-grid-container > div {
+	text-align: left;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.item2 {
+	grid-column: 2 / span 15;
+}
+
+.item5 {
+	grid-column: 3 / span 14;
+}
+
+.item6 {
+	grid-column: 1 / span 16;
+}
+/*---------- biography grid ends ----------*/
+/*---------- biography accordion ends ----------*/
+
+
+
+/*---------- MEDIA QUERIES START ----------*/
+@media (min-width: 768px) and (max-width: 1337px) {
+	/* flip cards */
+	.member-flip-grid-container {					
+		grid-template-columns: repeat(2, 1fr);
+	}
+				
+	.flip-card {
+		width: calc(2 * var(--card-size));
+		height: calc(2 * var(--card-size));
+	}
+				
+	.flip-card-front > img {
+		width: inherit;
+		height: auto;
+	}
+	
+	.member-stage-name {
+		font-size: 22px;
+	}
+	
+	.member-real-name {
+		font-size: 20px;
+	}
+	
+	.position {
+		font-size: 18px;
+	}
+	
+	.years {
+		font-size: 14px;
+	}
+	
+	.flip-card-back > p {
+		font-size: 16px;
+	}
+	
+	/* disco section */
+	.grid-container {	
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: center;
+		background-color: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.flip-card-back > .member-name {
+		font-size: 18px;
+	}
+	
+	.flip-card-back > .position-years {
+		font-size: 16px;
+	}
+	
+	.flip-card-back > p {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 768px) {
+	/* about section */
+	section {		
+		padding: 5%;
+	}
+	
+	/* flip cards */
+	.member-flip-grid-container {
+		grid-template-columns: repeat(1, calc(3 * var(--card-size)));
+		width: calc(3 * var(--card-size));
+	}
+	
+	.flip-card {
+		width: calc(3 * var(--card-size));
+		height: calc(3 * var(--card-size));
+	}
+	
+	.flip-card-front > img {
+		width: inherit;
+		height: auto;
+	}
+	
+	
+	
+	/* disco section */
+	.grid-container {
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: center;
+		background-color: none;
+	}
+	
+	/* individual release pages */
+	.grid-arrow {
+		grid-template-columns: repeat(1, 3fr);
+	}
+	
+	.grid-release-info {
+		grid-template-columns: repeat(1, 2fr);
+	}
+	
+	.info-text {
+		float: center;
+		padding: 30px;
+	}
+	
+	.tracklist-info-right {
+		margin: auto;
+	}
+	
+	/*---------- biography grid starts ----------*/
+	.biography-grid-container {
+		grid-template-columns: repeat(4, 1fr);
+		gap: 2px;
+		padding: 0 10px;
+	}
+
+	.biography-grid-container > div {
+		text-align: left;
+		padding: 5px;
+		font-size: 20px;
+	}
+
+	.item2 {
+		grid-column: 2 / span 3;
+	}
+
+	.item5 {
+		grid-column: 3 / span 2;
+	}
+
+	.item6 {
+		grid-column: 1 / span 4;
+	}
+/*---------- biography grid ends ----------*/
+}
+/*---------- MEDIA QUERIES END ----------*/

@@ -1,153 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- identity -->
 		<title>Bara ni Irodorareta | MALICE MIZER Info</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="style.css">
 		<link rel="icon" type="image/x-icon" href="favicon.png">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">	
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">		
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-		<style>
-			body {
-				padding: 63px 0;
-			}
-
-			img {
-				display: block;
-				margin: auto;
-				width: 100%;
-				max-width: 500px;
-			}
-			
-			.vhs-dvd-container {
-				display: flex;
-			}
-
-			.vhs-dvd-container > div {
-				margin: 20px;
-				font-size: 22px;
-			}
-			
-			span {
-				color: gray;
-			}
-			
-			invisible {
-				visibility: hidden;
-			}
-			
-			a:hover {
-				color: darkred;
-			}
-					
-			* {
-			  box-sizing: border-box;
-			}
-			
-			.accordion {
-				padding: 0 5%;
-			}
-		
-			.accordion-button {
-				background-color: #671316;
-				font-size: 24px;
-				color: white;
-			}		
-
-			.accordion-button:not(.collapsed) {
-				background-color: #48090c;
-				color: white;
-			}
-			
-			.accordion-button::after {
-				background-image: url(white-arrow.png);
-			}
-			
-			.accordion-button:not(.collapsed)::after {
-				background-image: url(white-arrow.png);
-			}
-					
-			.accordion-button:focus {
-				z-index: 3;
-				outline: 0;
-				box-shadow: none;
-			}
-			
-			.accordion-body {
-				background-color: #121212;
-				font-size: 18px;
-                color: white;
-			}
-			
-			#hcg-slider-1 .hcg-slide-container {
-				max-width:: 500px;
-				height: auto;
-			}
-			.hcg-slider {
-				text-align: center;
-				font-family: Arial, Helvetica, sans-serif;
-			}
-			.hcg-slide-container {
-				max-width: 100%;
-				display: inline-block;
-				position: relative;
-			}
-			.hcg-slides {
-				display: none;
-				overflow: hidden;
-				justify-content: center;
-				align-items: center;
-				border-radius: 5px;
-				border: solid 1px #a0a0a0;
-			}
-			.hcg-slides img {
-				max-width: 500px;
-				max-height: auto;
-				display: inline-block;
-			}
-			.hcg-slide-text {
-				color: #ffffff;
-				font-size: 14px;
-				padding: 3px 5px;
-				position: absolute;
-				bottom: 0;
-				border-radius: 5px;
-				left: 50%;
-				text-align: center;
-				text-shadow: 0 0 2px #000;
-				background-color: rgba(255,255,255,0.30);
-				display: inline-block;
-				transform: translate(-50%, -5px);
-			}
-			.hcg-slide-dot-control {
-				margin-top: 10px;
-				text-align: center;
-			}
-			.hcg-slide-dot {
-				cursor: pointer;
-				height: 13px;
-				width: 13px;
-				margin: 0 2px;
-				background-color: #bbb;
-				border-radius: 50%;
-				display: inline-block;
-			}
-			.hcg-slide-dot.dot-active {
-				background-color: #717171;
-			}
-			.hcg-slide-number {
-				color: #ffffff;
-				font-size: 12px;
-				padding: 4px 7px;
-				position: absolute;
-				border-radius: 5px;
-				top: 5px;
-				left: 5px;
-				background-color: rgba(255,255,255,0.30);
-			}
-		</style>
+		<!-- musts -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<!-- stylesheets -->
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="release-style.css">
+		<link rel="stylesheet" href="accordion-style.css">
+		<link rel="stylesheet" href="image-slider-style.css">		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	</head>
 	<body>
 	
@@ -156,9 +21,19 @@
 			<a href="/">MALICE MIZER Info</a>
 		  	<a href="/#about">About</a>
 			<a href="/#members">Members</a>
-			<a href="/#releases">Releases</a>
+			<a href="/#releases" class="active">Releases</a>
 		  	<a href="/#biography">Biography</a>
 			<a href="/links">Links</a>
+			<div class="dropdown">
+				<button class="dropbtn">Gallery 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="flyers">Flyers</a>
+					<!-- <a href="#">Interviews</a> -->
+					<a href="ma-cherie-magazine">ma chérie volumes</a>
+				</div>
+			</div>
 
 		  	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 				<i class="fa fa-bars"></i>
@@ -177,148 +52,156 @@
 		</script>
 		<!-- responsive nav-bar ends -->
 		
-		<div class="previous-next-container">
-			<div class="previous">
-				<a class="previous-next-link" href="/bara-no-seidou">
-					<span>←&nbsp;</span>
-					<div class="previous-next-link-text">Bara no Seidou</div>
-				</a>
+		<div class="main">
+			<div class="previous-next-container">
+				<div class="previous">
+					<a class="previous-next-link" href="/bara-no-seidou">
+						<span>←&nbsp;</span>
+						<div class="previous-next-link-text">Bara no Seidou</div>
+					</a>
+				</div>
+				<div class="next">
+					<a class="previous-next-link" href="/hyaku-hanahen">				
+						<div class="previous-next-link-text">MALICE MIZER no "Aa, Mujou" -Hyaku Hanahen-</div>
+						<span>&nbsp;→</span>
+					</a>
+				</div>
 			</div>
-			<div class="next">
-				<a class="previous-next-link" href="/hyaku-hanahen">				
-					<div class="previous-next-link-text">MALICE MIZER no "Aa, Mujou" -Hyaku Hanahen-</div>
-					<span>&nbsp;→</span>
-				</a>
-			</div>
-		</div>
 
-		<div class="release-container">
-			<div class="booklet-slider-left">
-				<div id="hcg-slider-1" class="hcg-slider">
-					<div class="hcg-slide-container">
-						<div class="hcg-slider-body">
-							<a class="hcg-slides animated" style="display:flex">
-								<span class="hcg-slide-number">1/5</span>
-								<img src="https://malice-mizer.info/薔薇の婚礼-vhs.webp" alt="bara no konrei vhs cover">
-								<span class="hcg-slide-text"></span>
-							</a>
+			<div class="release-container">
+				<div class="booklet-slider-left">
+					<div id="hcg-slider-1" class="hcg-slider">
+						<div class="hcg-slide-container">
+							<div class="hcg-slider-body">
+								<a class="hcg-slides animated" style="display:flex">
+									<span class="hcg-slide-number">1/5</span>
+									<img src="https://malice-mizer.info/薔薇の婚礼-vhs.webp" alt="bara no konrei vhs cover">
+									<span class="hcg-slide-text"></span>
+								</a>
+							</div>
+						</div>
+						<div class="hcg-slide-dot-control"></div>
+					</div>
+
+				</div>
+				
+				<div class="tracklist-info-right">
+					<p class="size28" lang="ja-jp">Bara ni Irodorareta Akui to Higeki no Makuake<br>
+					<span><sup>薔薇に彩られた悪意と悲劇の幕開け</sup></span></p>					
+					
+					<div class="vhs-dvd-container">
+						<div>[VHS]<br>
+							2000.11.22 Release<br>
+							MMVC-014<br>
+							¥5,800 (tax out) / ¥6,090 (tax in)<br>
+							Midi:Nette
+						</div>
+						<div>[DVD]<br>
+							2000.11.22 Release<br>
+							MMBV-015<br>
+							¥6,200 (tax out) / ¥6,150 (tax in)<br>
+							Midi:Nette
 						</div>
 					</div>
-					<div class="hcg-slide-dot-control"></div>
+					
+					<span class="invisible">.</span>
+					
+					<p>Recording of the performances at Nippon Budokan on 2000.8.31 and 2020.9.1 and includes a rearranged version of Kioku to Sora ～Saikai Soshite Yakusoku～ (記憶と空～再会そして約束～). The VHS contains bonus footage that differs from the DVD.</p>
+					
+					<p>1. Saikai no Chi to Bara<br>
+					<span class="invisible">1. </span><span><sup>再会の血と薔薇</sup></span><br>
+					2. Bara ni Irodorareta Akui to Higeki no Makuake<br>
+					<span class="invisible">2. </span><span><sup>薔薇に彩られた悪意と悲劇の幕開け</sup></span><br>
+					3. Seinaru Toki Eien no Inori<br>
+					<span class="invisible">3. </span><span><sup>聖なる刻 永遠の祈り</sup></span><br>
+					4. Kagami no Butou Genwaku no Yoru<br>
+					<span class="invisible">4. </span><span><sup>鏡の舞踏 幻惑の夜</sup></span><br>
+					5. Chikasuimyaku no Meiro<br>
+					<span class="invisible">5. </span><span><sup>地下水脈の迷路</sup></span><br>
+					6. Mayonaka ni Kawashita Yakusoku<br>
+					<span class="invisible">6. </span><span><sup>真夜中に交わした約束</sup></span><br>
+					7. Bara no Souretsu<br>
+					<span class="invisible">7. </span><span><sup>薔薇の葬列</sup></span><br>
+					8. Kyomu no Naka de no Yuugi<br>
+					<span class="invisible">8.</span><span><sup>虚無の中での遊戯</sup></span><br>
+					9. Bara no Senrei<br>
+					<span class="invisible">9. </span><span><sup>薔薇の洗礼</sup></span><br>
+					10. Gensou Rakuen<br>
+					<span class="invisible">10. </span><span><sup>幻想楽園</sup></span><br>
+					11. Chinurareta Kajitsu<br>
+					<span class="invisible">11. </span><span><sup>血塗られた果実</sup></span><br>
+					12. Hokai Jokyoku<br>
+					<span class="invisible">12. </span><span><sup>崩壊序曲</sup></span><br>
+					13. Kioku to Sora ～Saikai Soshite Yakusoku～<br>
+					<span class="invisible">13. </span><span><sup>記憶と空～再会そして約束～</sup></span><br>
+					14. Hakai no Hate<br>
+					<span class="invisible">14. </span><span><sup>破誡の果て</sup></span><br>
+					15. Unmei no Deai<br>
+					<span class="invisible">15. </span><span><sup>運命の出会い</sup></span><br>
+					16. Shiroi Hada ni Kuruu Ai to Kanashimi no Rondo<br>
+					<span class="invisible">16. </span><span><sup>白い肌に狂う愛と哀しみの輪舞</sup></span><br>
+					17. Yakusoku<br>
+					<span class="invisible">17. </span><span><sup>約束</sup></span></p>
 				</div>
-
 			</div>
 			
-			<div class="tracklist-info-right">
-				<p class="size28" lang="ja-jp">Bara ni Irodorareta Akui to Higeki no Makuake<br>
-				<span><sup>薔薇に彩られた悪意と悲劇の幕開け</sup></span></p>
-				
-				
-				
-				<div class="vhs-dvd-container">
-					<div>[VHS]<br>
-						2000.11.22 Release<br>
-						Midi:Nette<br>
-						¥5,800 (tax out) / ¥6,090 (tax in)<br>
-						Midi:Nette
-					</div>
-					<div>[DVD]<br>
-						2000.11.22 Release<br>
-						MMBV-015<br>
-						¥6,200 (tax out) / ¥6,150 (tax in)<br>
-						Midi:Nette
-					</div>
+			<div class="subsidiary">
+				<button class="accordion">Credits</button>
+				<div class="panel">
+					<p style="text-align: center">
+						MALICE MIZER<br>
+						Klaha<br>
+						Mana<br>
+						Közi<br>
+						Yu～ki<br><br>
+
+						Additional Musician<br>
+						Support Drummer	Shue<br><br>
+
+						Total Concept Direction<br>
+						Mana<br><br>
+
+						DVD Authoring Engineer<br>
+						Junji Ito (Hibino Westlake Studio)<br><br>
+								
+						&lt;Jacket Staff&gt;<br>
+						Art Direction & Design: Teruhisa Abe (C2)<br>
+						Photography: Kenji Tsukagoshi<br><br>
+
+						Artist Manager: Keiko Hachitani (Midi:Nette)<br>
+						Promotion: Yoko Kuga (Midi:Nette / M.†.M)<br>
+
+						Executive Producer<br>
+						Yukie Itoh (Midi:Nette)<br><br>
+
+						Special Thanks to<br>
+						All of you in need of MALICE MIZER<br><br>
+
+						Eternal blood relative<br>
+						Kami<br><br>
+
+						Total Produced by MALICE MIZER
+					</p>
 				</div>
-				
-				<span class="invisible">.</span>
-				
-				<p>Recording of the performances at Nippon Budokan on 2000.8.31 and 2020.9.1 and includes a rearranged version of Kioku to Sora ～Saikai Soshite Yakusoku～ (記憶と空～再会そして約束～). The VHS contains bonus footage that differs from the DVD.</p>
-				
-				<p>1. Saikai no Chi to Bara<br>
-				<span class="invisible">1.</span><span><sup>再会の血と薔薇</sup></span><br>
-				2. Bara ni Irodorareta Akui to Higeki no Makuake<br>
-				<span class="invisible">2.</span><span><sup>薔薇に彩られた悪意と悲劇の幕開け</sup></span><br>
-				3. Seinaru Toki Eien no Inori<br>
-				<span class="invisible">3.</span><span><sup>聖なる刻 永遠の祈り</sup></span><br>
-				4. Kagami no Butou Genwaku no Yoru<br>
-				<span class="invisible">4.</span><span><sup>鏡の舞踏 幻惑の夜</sup></span><br>
-				5. Chikasuimyaku no Meiro<br>
-				<span class="invisible">5.</span><span><sup>地下水脈の迷路</sup></span><br>
-				6. Mayonaka ni Kawashita Yakusoku<br>
-				<span class="invisible">6.</span><span><sup>真夜中に交わした約束</sup></span><br>
-				7. Bara no Souretsu<br>
-				<span class="invisible">7.</span><span><sup>薔薇の葬列</sup></span><br>
-				8. Kyomu no Naka de no Yuugi<br>
-				<span class="invisible">8.</span><span><sup>虚無の中での遊戯</sup></span><br>
-				9. Bara no Senrei<br>
-				<span class="invisible">9.</span><span><sup>薔薇の洗礼</sup></span><br>
-				10. Gensou Rakuen<br>
-				<span class="invisible">10.</span><span><sup>幻想楽園</sup></span><br>
-				11. Chinurareta Kajitsu<br>
-				<span class="invisible">11.</span><span><sup>血塗られた果実</sup></span><br>
-				12. Hokai Jokyoku<br>
-				<span class="invisible">12.</span><span><sup>崩壊序曲</sup></span><br>
-				13. Kioku to Sora ～Saikai Soshite Yakusoku～<br>
-				<span class="invisible">13.</span><span><sup>記憶と空～再会そして約束～</sup></span><br>
-				14. Hakai no Hate<br>
-				<span class="invisible">14.</span><span><sup>破誡の果て</sup></span><br>
-				15. Unmei no Deai<br>
-				<span class="invisible">15.</span><span><sup>運命の出会い</sup></span><br>
-				16. Shiroi Hada ni Kuruu Ai to Kanashimi no Rondo<br>
-				<span class="invisible">16.</span><span><sup>白い肌に狂う愛と哀しみの輪舞</sup></span><br>
-				17. Yakusoku<br>
-				<span class="invisible">17.</span><span><sup>約束</sup></span></p>
 			</div>
 		</div>
 		
-		<div class="accordion" id="accordionExample">
-			
-			<div class="accordion-item">
-				<h2 class="accordion-header" id="headingOne">
-					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=	"#collapseOne" aria-expanded="false" aria-controls="collapseOne" lang="ja-jp">
-					CREDITS
-					</button>
-				</h2>
-				<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-					<div class="accordion-body">
-						<p style="text-align: center">
-							MALICE MIZER<br>
-							Klaha<br>
-							Mana<br>
-							Közi<br>
-							Yu～ki<br><br>
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
 
-							Additional Musician<br>
-							Support Drummer	Shue<br><br>
-
-							Total Concept Direction<br>
-							Mana<br><br>
-
-							DVD Authoring Engineer<br>
-							Junji Ito (Hibino Westlake Studio)<br><br>
-							
-							&lt;Jacket Staff&gt;<br>
-							Art Direction & Design: Teruhisa Abe (C2)<br>
-							Photography: Kenji Tsukagoshi<br><br>
-
-							Artist Manager: Keiko Hachitani (Midi:Nette)<br>
-							Promotion: Yoko Kuga (Midi:Nette / M.†.M)<br>
-
-							Executive Producer<br>
-							Yukie Itoh (Midi:Nette)<br><br>
-
-							Special Thanks to<br>
-							All of you in need of MALICE MIZER<br><br>
-
-							Eternal blood relative<br>
-							Kami<br><br>
-
-							Total Produced by MALICE MIZER
-						</p>	
-					</div>
-				</div>
-			</div>			
-		</div>
+			for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function() {
+					this.classList.toggle("accordion-active");
+					var panel = this.nextElementSibling;
+					if (panel.style.maxHeight) {
+						panel.style.maxHeight = null;
+					} else {
+						panel.style.maxHeight = panel.scrollHeight + "px";
+					} 
+				});
+			}
+		</script>
 		
 		<script>
 			(() => {
@@ -394,8 +277,10 @@
 			})();
 		</script>
 		
+		
+		
 		<!-- back to top button starts -->
-		<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
 		
 		<script>
 			// Get the button
@@ -405,17 +290,17 @@
 			window.onscroll = function() {scrollFunction()};
 
 			function scrollFunction() {
-			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-				mybutton.style.display = "block";
-			  } else {
-				mybutton.style.display = "none";
-			  }
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					mybutton.style.display = "block";
+				} else {
+					mybutton.style.display = "none";
+				}
 			}
 
 			// When the user clicks on the button, scroll to the top of the document
 			function topFunction() {
-			  document.body.scrollTop = 0;
-			  document.documentElement.scrollTop = 0;
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
 			}
 		</script>
 		<!-- back to top button ends -->

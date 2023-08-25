@@ -1,37 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Bara no Higeki | MALICE MIZER Info</title>
+	<head>		
+		<!-- identity -->
+		<title>Bara no Rinbu | MALICE MIZER Info</title>
+		<!-- musts -->
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<!-- stylesheets -->
 		<link rel="stylesheet" href="style.css">
-		<link rel="icon" type="image/x-icon" href="favicon.png">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">	
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">		
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-		<style>
-			body {
-				padding: 63px 0;
-			}
-
-			img {
-				display: block;
-				margin: auto;
-				width: 100%;
-				max-width: 500px;
-			}
-			
-			a:hover {
-				color: darkred;
-			}
-			
-			span {
-				color: gray;
-			}
-			
-			.invisible {
-				visibility: hidden;
-			}
-		</style>
+		<link rel="stylesheet" href="release-style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	</head>
 	<body>
 	
@@ -40,9 +18,19 @@
 			<a href="/">MALICE MIZER Info</a>
 		  	<a href="/#about">About</a>
 			<a href="/#members">Members</a>
-			<a href="/#releases">Releases</a>
+			<a href="/#releases" class="active">Releases</a>
 		  	<a href="/#biography">Biography</a>
 			<a href="/links">Links</a>
+			<div class="dropdown">
+				<button class="dropbtn">Gallery 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="flyers">Flyers</a>
+					<!-- <a href="#">Interviews</a> -->
+					<a href="ma-cherie-magazine">ma chérie volumes</a>
+				</div>
+			</div>
 
 		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
 			<i class="fa fa-bars"></i>
@@ -61,47 +49,49 @@
 		</script>
 		<!-- responsive nav-bar ends -->
 		
-		<div class="previous-next-container">
-			<div class="previous">
-				<a class="previous-next-link" href="/mayonaka">
-					<span>←&nbsp;</span>
-					<div class="previous-next-link-text">Mayonaka ni Kawashita Yakusoku ~Bara no Konrei~</div>
-				</a>
+		<div class="main">
+			<div class="previous-next-container">
+				<div class="previous">
+					<a class="previous-next-link" href="/mayonaka">
+						<span>←&nbsp;</span>
+						<div class="previous-next-link-text">Mayonaka ni Kawashita Yakusoku ～Bara no Konrei～</div>
+					</a>
+				</div>
+				<div class="next">
+					<a class="previous-next-link" href="/societe">				
+						<div class="previous-next-link-text">Société de parenté</div>
+						<span>&nbsp;→</span>
+					</a>
+				</div>
 			</div>
-			<div class="next">
-				<a class="previous-next-link" href="/societe">				
-					<div class="previous-next-link-text">Société de parenté</div>
-					<span>&nbsp;→</span>
-				</a>
+
+			<div class="release-container">
+				<div class="booklet-slider-left">
+					<img src="https://malice-mizer.info/Rinbu.webp" alt="bara no higeki cover">
+				</div>
+				
+				<div class="tracklist-info-right">
+					<p class="size28" lang="ja-jp">Bara no Rinbu ～Mayonaka ni Kawashita Yakusoku～<br>
+					<span><sup>薔薇の輪舞～真夜中に交わした約束～</sup></span></p>
+					<p class="size22">
+					[Photobook]<br>
+					2001.10.31 Release<br>
+					¥3,500  (tax out) / ¥3,675 (tax in)<br>
+					ISBN-10: 4877095489<br>
+					ISBN-13: 978-4877095482<br>
+					KSS</p>
+					
+					<span class="invisible">.</span>
+					
+					<p>37.6 x 26.2 x 1.4 cm</p>
+				
+				<p>The first photobook for MALICE MIZER's movie, "<a href="bara-no-konrei">Bara no Konrei</a>"</p>
 			</div>
 		</div>
-
-		<div class="release-container">
-			<div class="booklet-slider-left">
-				<img src="https://malice-mizer.info/Rinbu.webp" alt="bara no higeki cover">
-			</div>
-			
-			<div class="tracklist-info-right">
-				<p class="size28" lang="ja-jp">Bara no Rinbu ～Mayonaka ni Kawashita Yakusoku～<br>
-				<span><sup>薔薇の輪舞～真夜中に交わした約束～</sup></span></p>
-				<p class="size22">
-				[Photobook]<br>
-				2001.10.31 Release<br>
-				¥3,500  (tax out) / ¥3,675 (tax in)<br>
-				ISBN-10: 4877095489<br>
-				ISBN-13: 978-4877095482<br>
-				KSS</p>
-				
-				<span class="invisible">.</span>
-				
-				<p>37.6 x 26.2 x 1.4 cm</p>
-				
-				<p>The first photobook for MALICE MIZER's movie, "Bara no Konrei"</p>
-			</div>
-		</div>		
+		</div>
 		
 		<!-- back to top button starts -->
-		<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
 		
 		<script>
 			// Get the button

@@ -1,16 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- identity -->
-		<title>Bara no Higeki | MALICE MIZER Info</title>
-		<link rel="icon" type="image/x-icon" href="favicon.png">
-		<!-- musts -->
+		<title>SADNESS | MALICE MIZER Info</title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<!-- stylesheets -->
 		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="release-style.css">
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">	
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<style>
+			body {
+				padding: 63px 0;
+			}
+
+			img {
+				display: block;
+				margin: auto;
+				width: 100%;
+				max-width: 500px;
+			}
+			
+			a:hover {
+				color: darkred;
+			}
+			
+			span {
+				color: gray;
+			}
+			
+			.invisible {
+				visibility: hidden;
+			}
+			
+			* {
+			  box-sizing: border-box;
+			}
+			
+			.accordion {
+				padding: 0 5%;
+			}
+		
+			.accordion-button {
+				background-color: #671316;
+				font-size: 24px;
+				color: white;
+			}		
+
+			.accordion-button:not(.collapsed) {
+				background-color: #48090c;
+				color: white;
+			}
+			
+			.accordion-button::after {
+				background-image: url(white-arrow.png);
+			}
+			
+			.accordion-button:not(.collapsed)::after {
+				background-image: url(white-arrow.png);
+			}
+					
+			.accordion-button:focus {
+				z-index: 3;
+				outline: 0;
+				box-shadow: none;
+			}
+			
+			.accordion-body {
+				background-color: #121212;
+				font-size: 18px;
+                color: white;
+			}
+			
+		</style>
 	</head>
 	<body>
 	
@@ -50,17 +110,17 @@
 		</script>
 		<!-- responsive nav-bar ends -->
 		
-		<div class="main">
+		<div class="main">		
 			<div class="previous-next-container">
 				<div class="previous">
-					<a class="previous-next-link" href="cardinal">
+					<a class="previous-next-link" href="braintrash">
 						<span>←&nbsp;</span>
-						<div class="previous-next-link-text">Cardinal</div>
+						<div class="previous-next-link-text">BRAINTRASH</div>
 					</a>
 				</div>
 				<div class="next">
-					<a class="previous-next-link" href="bara-no-konrei">				
-						<div class="previous-next-link-text">Bara no Konrei</div>
+					<a class="previous-next-link" href="1th-anniversary">
+						<div class="previous-next-link-text">THE 1TH ANNIVERSARY</div>
 						<span>&nbsp;→</span>
 					</a>
 				</div>
@@ -68,31 +128,29 @@
 
 			<div class="release-container">
 				<div class="booklet-slider-left">
-					<img src="https://malice-mizer.info/Higeki.webp" alt="bara no higeki cover">
+					<img src="https://malice-mizer.info/SADNESS.webp" alt="sans logique cover">				
 				</div>
 				
 				<div class="tracklist-info-right">
-					<p class="size28" lang="ja-jp">Bara no Higeki ～Mayonaka ni Kawashita Yakusoku～<br>
-					<span><sup>薔薇の悲劇～真夜中に交わした約束～</sup></span></p>
+					<!-- image credit: vk.gy -->
+					<p class="size28" lang="ja-jp">SADNESS</p>
 					<p class="size22">
-					[Photobook]<br>
-					2002.3 Release<br>
-					¥3,500  (tax out) / ¥3,675 (tax in)<br>
-					ISBN-10: 4877095683<br>
-					ISBN-13: 978-4877095680<br>
-					KSS</p>
+					[2nd Demo Tape]<br>
+					1993.04.05 Release<br>
+					¥0</p>
 					
 					<span class="invisible">.</span>
 					
-					<p>37.6 x 26.2 x 1.4 cm</p>
-					
-					<p>The second photobook for MALICE MIZER's movie, "Bara no Konrei"</p>
+					<p lang="ja-jp">
+						I. SADNESS ～I know the reason for her sadness～<br>
+						<sup>(Lyrics by Tetsu / Composed by Közi)</sup>
+					</p>				
 				</div>
 			</div>
 		</div>
 		
 		<!-- back to top button starts -->
-		<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
 		
 		<script>
 			// Get the button

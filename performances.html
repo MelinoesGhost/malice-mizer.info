@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Sélection de performances live | MALICE MIZER Info</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<style>
+			body {
+				padding: 63px 0;
+			}
+
+			img {
+				display: block;
+				margin: auto;
+				width: 100%;
+				max-width: 500px;
+			}
+			
+			a:hover {
+				color: darkred;
+			}			
+						
+			span {
+				color: gray;
+			}
+			
+			.invisible {
+				visibility: hidden;
+			}
+		</style>
+	</head>
+	<body>
+	
+		<!-- responsive nav-bar starts -->
+		<div class="topnav" id="myTopnav">
+			<a href="/">MALICE MIZER Info</a>
+		  	<a href="/#about">About</a>
+			<a href="/#members">Members</a>
+			<a href="/#releases">Releases</a>
+		  	<a href="/#biography">Biography</a>
+			<a href="/links">Links</a>
+
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		</div>
+
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+		</script>
+		<!-- responsive nav-bar ends -->
+		
+		<div class="previous-next-container">
+			<div class="previous">
+				<a class="previous-next-link" href="/rock-nippon">
+					<span>←&nbsp;</span>
+					<div class="previous-next-link-text">Rock NIPPON Noriko Shouji Selection</div>
+				</a>
+			</div>
+			<div class="next">
+				<a class="previous-next-link" href="/genten">				
+					<div class="previous-next-link-text">Genten</div>
+					<span>&nbsp;→</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="release-container">
+			<div class="booklet-slider-left">
+				<img src="performances.webp">
+			</div>
+			
+			<div class="tracklist-info-right">
+				<p class="size28" lang="ja-jp">Sélection de performances live</p>
+				<p class="size22">
+				2007.03.28 Release<br>
+				COBA-50985<br>
+				¥4,571 (tax out) / ¥4,800 (tax in)<br>				
+				Maitrize</p>
+				
+				<span class="invisible">.</span>
+				
+				<p lang="ja-jp">
+					1. Inishie no Romania<br>
+					<span class="invisible">1. </span><span><sup>古のルーマニア</sup></span><br>
+					2. Transylvania<br>
+					3. Tsuioku no Kakera<br>
+					<span class="invisible">3. </span><span><sup>追憶の破片</sup></span><br>
+					4. CROIX<br>
+					5. N・p・s N・g・s<br>
+					6. Bois de merveilles<br>
+					7. Madrigal<br>
+					8. ma chérie 〜Itoshii Kimi e〜<br>
+					<span class="invisible">8. </span><span><sup>ma chérie 〜愛しい君へ〜</sup></span><br>
+					9. S-CONSCIOUS<br>
+					10. Me same no rasen<br>
+					<span class="invisible">10. </span><span><sup>目醒めの螺旋</sup></span><br>
+					11.	Gekka no Yasoukyoku<br>
+					<span class="invisible">11. </span><span><sup>月下の夜想曲</sup></span><br>
+					12.	Bel Air 〜Kuuhaku no Toki no Naka de〜<br>
+					<span class="invisible">12. </span><span><sup>ヴェル・エール〜空白の瞬間の中で〜</sup></span><br>
+					13.	Aegean 〜Sugisarishi Kaze to Tomo ni〜<br>
+					<span class="invisible">13. </span><span><sup>エーゲ〜過ぎ去りし風と共に〜</sup></span><br>
+					14.	Hamon/Kyousoukyoku<br>
+					<span class="invisible">14. </span><span><sup>波紋/協奏曲</sup></span><br>
+					15.	Ju te veux<br>
+					16.	Brise<br>
+					17.	Le ciel
+				</p>
+			</div>
+		</div>
+		
+		<!-- back to top button starts -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+		
+		<script>
+			// Get the button
+			let mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<!-- back to top button ends -->
+
+	</body>
+</html>

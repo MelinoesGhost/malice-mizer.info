@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- identity -->
-		<title>Bara no Denshou | MALICE MIZER Info</title>
-		<title>Bara no Higeki | MALICE MIZER Info</title>
-		<!-- musts -->
+		<title>Cardinal | MALICE MIZER Info</title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<!-- stylesheets -->
 		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="release-style.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 		<style>
-			.main {
+			body {
 				padding: 63px 0;
 			}
 
@@ -36,7 +33,7 @@
 				color: gray;
 			}
 			
-			.invisible {
+			invisible {
 				visibility: hidden;
 			}
 			
@@ -45,60 +42,22 @@
 			}
 					
 			* {
-			  box-sizing: border-box;
-			}
-			
-			.accordion {
-				padding: 0 5%;
-			}
-		
-			.accordion-button {
-				background-color: #671316;
-				font-size: 24px;
-				color: white;
-			}		
-
-			.accordion-button:not(.collapsed) {
-				background-color: #48090c;
-				color: white;
-			}
-			
-			.accordion-button::after {
-				background-image: url(white-arrow.png);
-			}
-			
-			.accordion-button:not(.collapsed)::after {
-				background-image: url(white-arrow.png);
-			}
-					
-			.accordion-button:focus {
-				z-index: 3;
-				outline: 0;
-				box-shadow: none;
-			}
-			
-			.accordion-body {
-				background-color: #121212;
-				font-size: 18px;
-                color: white;
+				box-sizing: border-box;
 			}
 			
 			#hcg-slider-1 .hcg-slide-container {
-				max-width:: 500px;
+				width: auto;
 				height: auto;
 			}
-			
 			.hcg-slider {
 				text-align: center;
 				font-family: Arial, Helvetica, sans-serif;
 			}
-			
 			.hcg-slide-container {
 				max-width: 100%;
 				display: inline-block;
 				position: relative;
 			}
-			
 			.hcg-slides {
 				display: none;
 				overflow: hidden;
@@ -107,13 +66,11 @@
 				border-radius: 5px;
 				border: solid 1px #a0a0a0;
 			}
-			
 			.hcg-slides img {
 				max-width: 500px;
 				max-height: auto;
 				display: inline-block;
 			}
-			
 			.hcg-slide-text {
 				color: #ffffff;
 				font-size: 14px;
@@ -128,26 +85,22 @@
 				display: inline-block;
 				transform: translate(-50%, -5px);
 			}
-			
 			.hcg-slide-dot-control {
 				margin-top: 10px;
 				text-align: center;
 			}
-			
 			.hcg-slide-dot {
 				cursor: pointer;
-				height: 15px;
-				width: 15px;
+				height: 13px;
+				width: 13px;
 				margin: 0 2px;
 				background-color: #bbb;
 				border-radius: 50%;
 				display: inline-block;
 			}
-			
 			.hcg-slide-dot.dot-active {
 				background-color: #717171;
 			}
-			
 			.hcg-slide-number {
 				color: #ffffff;
 				font-size: 12px;
@@ -167,19 +120,9 @@
 			<a href="/">MALICE MIZER Info</a>
 		  	<a href="/#about">About</a>
 			<a href="/#members">Members</a>
-			<a href="/#releases" class="active">Releases</a>
+			<a href="/#releases">Releases</a>
 		  	<a href="/#biography">Biography</a>
 			<a href="/links">Links</a>
-			<div class="dropdown">
-				<button class="dropbtn">Gallery 
-					<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropdown-content">
-					<a href="flyers">Flyers</a>
-					<!-- <a href="#">Interviews</a> -->
-					<a href="ma-cherie-magazine">ma chérie volumes</a>
-				</div>
-			</div>
 
 		  	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 				<i class="fa fa-bars"></i>
@@ -198,78 +141,91 @@
 		</script>
 		<!-- responsive nav-bar ends -->
 		
-		<div class="main">
-			<div class="previous-next-container">
-				<div class="previous">
-					<a class="previous-next-link" href="/beast-of-blood-de-limage">
-						<span>←&nbsp;</span>
-						<div class="previous-next-link-text">Beast of Blood～de l'image～</div>
-					</a>
-				</div>
-				<div class="next">
-					<a class="previous-next-link" href="/mayonaka">				
-						<div class="previous-next-link-text">Mayonaka ni Kawashita Yakusoku ~Bara no Konrei~</div>
-						<span>&nbsp;→</span>
-					</a>
-				</div>
+		<div class="previous-next-container">
+			<div class="previous">
+				<a class="previous-next-link" href="/kousai-rikurihen">
+					<span>←&nbsp;</span>
+					<div class="previous-next-link-text">MALICE MIZER no "Aa, Mujou" -Hyaku Hanahen-</div>
+				</a>
 			</div>
-
-			<div class="release-container">
-				<div class="booklet-slider-left">
-					<div id="hcg-slider-1" class="hcg-slider">
-						<div class="hcg-slide-container">
-							<div class="hcg-slider-body">
-								<a class="hcg-slides animated" style="display:flex">
-									<span class="hcg-slide-number">1/5</span>
-									<img src="https://malice-mizer.info/薔薇の婚礼-vhs.webp" alt="bara no konrei vhs cover">
-									<span class="hcg-slide-text"></span>
-								</a>
-							</div>
-						</div>
-						<div class="hcg-slide-dot-control"></div>
-					</div>
-
-				</div>
-				
-				<div class="tracklist-info-right">
-					<p class="size28" lang="ja-jp">Bara no Denshou ～Joshou～<br>
-					<span><sup>薔薇の伝承～序章～</sup></span></p>
-					
-					<div class="vhs-dvd-container">
-						<div>[VHS]<br>
-							2001.9.21 Release<br>
-							<br>
-							¥ (tax out) / ¥ (tax in)<br>
-							KSS, Inc.
-						</div>
-						<div>[DVD]<br>
-							2001.9.21 Release<br>
-							KSXD24198<br>
-							¥3,000 (tax out) / ¥3,150 (tax in)<br>
-							KSS, Inc.
-						</div>
-					</div>
-					
-					<span class="invisible">.</span>
-					
-					<p>Commentary video of MALICE MIZER's first movie, Bara no Kenrei, with 40 minutes of runtime</p>
-				</div>
+			<div class="next">
+				<a class="previous-next-link" href="/bara-no-higeki">				
+					<div class="previous-next-link-text">Bara no Higeki Mayonaka ni Kawashita Yakusoku</div>
+					<span>&nbsp;→</span>
+				</a>
 			</div>
 		</div>
+
+		<div class="release-container">
+			<div class="booklet-slider-left">
+				<div id="hcg-slider-1" class="hcg-slider">
+					<div class="hcg-slide-container">
+						<div class="hcg-slider-body">
+							<a class="hcg-slides animated" style="display:flex">
+								<span class="hcg-slide-number">1/5</span>
+								<img src="https://malice-mizer.info/merveilles-VHS.webp" alt="">
+								<span class="hcg-slide-text"></span>
+							</a>
+						</div>
+					</div>
+					<div class="hcg-slide-dot-control"></div>
+				</div>
+
+			</div>
+			
+			<div class="tracklist-info-right">
+				<p class="size28" lang="ja-jp">Cardinal</p>				
+				
+				<div class="vhs-dvd-container">
+					<div>[VHS]<br>
+						MMVC-027<br>						
+						2002.02.06 Release<br>
+						¥5,200 (tax out) / ¥5,460 (tax in)<br>
+						Midi:Nette
+					</div>
+					<div>[DVD]<br>
+						MMBV-028<br>
+						2002.02.06 Release<br>
+						¥5,200 (tax out) / ¥5,460 (tax in)<br>
+						Midi:Nette						
+					</div>
+				</div>				
+				
+				<span class="invisible">.</span>
+				
+				<p>A collection of MALICE MIZER's video clips</p>
+				
+				<p lang="ja-jp">
+				1. Saikai no Chi to Bara<br>
+				<span class="invisible">1. </span><span><sup>再会の血と薔薇</sup></span><br>
+				2. Kyomu no Naka de no Yuugi<br>
+				<span class="invisible">2. </span><span><sup>虚無の中での遊戯</sup></span><br>
+				3. Shiroi Hada ni Kuruu Ai to Kanashimi no Rondo<br>
+				<span class="invisible">3. </span><span><sup>白い肌に狂う愛と哀しみの輪舞</sup></span><br>
+				4. Gardenia<br>
+				5. Beat of Blood<br>
+				6. Garnet ～Kindan no Sono e～<br>
+				<span class="invisible">6. </span><span><sup>Garnet～禁断の園へ～</sup></span><br></p>
+			</div>
+		</div>
+		
+		
 		
 		<script>
 			(() => {
 			//If you want to add more images, add the link name and URL image URL in the array list below.
 				const images_list = [
 			{
-				"url": "https://malice-mizer.info/薔薇の伝承-序章-VHS.webp",
-				"alt": "Bara no Denshou VHS cover",
-				"name": "VHS"
+				"url": "https://malice-mizer.info/Cardinal-VHS.webp",
+				"alt": "Cardinal VHS cover",
+				"name": "VHS",
+				"link": ""
 			},
 			{
-				"url": "https://malice-mizer.info/薔薇の伝承-序章-DVD.webp",
-				"alt": "Bara no Denshou DVD cover",
-				"name": "DVD"
+				"url": "https://malice-mizer.info/Cardinal-DVD.webp",
+				"alt": "Cardinal VHS cover",
+				"name": "DVD",
+				"link": ""
 			}
 				];
 
@@ -332,7 +288,7 @@
 		</script>
 		
 		<!-- back to top button starts -->
-		<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
 		
 		<script>
 			// Get the button
